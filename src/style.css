@@ -3,6 +3,7 @@
 @config "../tailwind.config.js";
 @theme {
   --font-display: 'Vazirmatn', sans-serif;
+  
 }
 
 @layer components {
@@ -12,4 +13,13 @@
   .selected-items {
     @apply flex justify-center items-center py-2 px-3 text-[10.5px] text-[#403F4C] border-b  border-b-[#EEF0F1]
   }
+
+  .image-position {
+    @apply  bg-cover rounded-xl  h-[172px]
+  }
+
+  .flex-col-center {
+    @apply flex flex-col items-center justify-center;
+  }
+
 }
