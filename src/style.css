@@ -4,3 +4,9 @@
 @theme {
   --font-display: 'Vazirmatn', sans-serif;
 }
+
+@layer components {
+  .nav-item {
+    @apply text-sm py-2.5 pt-[9px] px-3 border-b-2 border-transparent  cursor-pointer hover:border-b-2 hover:border-[#FF4040] hover:text-[#FF4040] transition-all duration-300;
+  }
+}
