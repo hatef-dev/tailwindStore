@@ -39,7 +39,13 @@
     @apply absolute top-0 text-small left-6 py-[2px] px-4 inline-block bg-[#BEE5FB4D]   rounded-full text-[#52B9F3];
   }
   .non-existent{
-    @apply absolute top-0 text-small left-6 py-[2px] px-4 inline-block bg-[#BEE5FB4D]   rounded-full text-[#52B9F3];
+    @apply absolute top-0 text-small left-6 py-[2px] px-4 inline-block bg-[#FFE0E099]   rounded-full text-[#B3261E];
+  }
+  .existing{
+    @apply absolute top-0 text-small left-6 py-[2px] px-4 inline-block bg-[#05C26A1A]   rounded-full text-[#05C56C];
+  }
+  .customized{
+    @apply absolute top-0 text-small left-6 py-[2px] px-4 inline-block bg-[#F1E9FC]   rounded-full text-[#9747FF];
   }
 
 }
