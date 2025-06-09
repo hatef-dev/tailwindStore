@@ -3,7 +3,15 @@
 @config "../tailwind.config.js";
 @theme {
   --font-display: 'Vazirmatn', sans-serif;
+  --color-red: #FF4040;
+  --color-gray: #6B697F;
+  --color-blue: #52B9F3;
   
+  --color-bg-clock: #E8EBED;
+  --color-gray-light: #9B9AAB;
+  --color-neutral: #E8EBED;
+
+  --text-small : 12.8px;
 }
 
 @layer components {
@@ -20,6 +28,18 @@
 
   .flex-col-center {
     @apply flex flex-col items-center justify-center;
+  }
+  .buy-guide-card {
+    @apply flex flex-col px-6 rounded-[20px] gap-y-4;
+  }
+  .buy-guide-card-content {
+    @apply flex flex-col gap-y-4;
+  }
+  .soon{
+    @apply absolute top-0 text-small left-6 py-[2px] px-4 inline-block bg-[#BEE5FB4D]   rounded-full text-[#52B9F3];
+  }
+  .non-existent{
+    @apply absolute top-0 text-small left-6 py-[2px] px-4 inline-block bg-[#BEE5FB4D]   rounded-full text-[#52B9F3];
   }
 
 }
