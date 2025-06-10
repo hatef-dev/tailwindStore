@@ -1,336 +1,391 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" />
 
-    <title>Vite App</title>
-  </head>
-  <body class="font-display bg-[#F9FAFA]">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" />
 
-    
-    <!-- Header -->
-    <header class="flex flex-col">
-      
-      <!-- Middle Header -->
-      <section class="container pt-6 pb-2">
-        <section class="flex items-center justify-between space-x-8">
-          <div class="flex items-center space-x-6">
-            <!-- Logo -->
-            <img
-              src="./images/logo.png"
-              alt="logo"
-              class="w-[242px] px-2 pt-2"
-            />
-            <!-- Search -->
-            <div class="w-[522px] relative">
-              <input type="text" class="w-[186px] h-[24px] outline-0 pr-7" />
-              <div class="absolute right-0 top-0">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                    stroke="#403F4C"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M21 21.0004L16.65 16.6504"
-                    stroke="#403F4C"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="flex justify-start items-center space-x-6">
-             <!-- Shopping Cart Icon-->
-             <div class="p-2">
+  <title>Vite App</title>
+</head>
+
+<body class="font-display bg-[#F9FAFA]">
+
+
+  <!-- Header -->
+  <header class="flex flex-col">
+
+    <!-- Middle Header -->
+    <section class="container pt-6 pb-2">
+      <section class="flex items-center justify-between space-x-8">
+        <div class="flex items-center space-x-6">
+          <!-- Logo -->
+          <img src="./images/logo.png" alt="logo" class="w-[242px] px-2 pt-2" />
+          <!-- Search -->
+          <div class="w-[522px] relative">
+            <input type="text" class="w-[186px] h-[24px] outline-0 pr-7" />
+            <div class="absolute right-0 top-0">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.5 7.66952V6.69952C7.5 4.44952 9.31 2.23952 11.56 2.02952C14.24 1.76952 16.5 3.87952 16.5 6.50952V7.88952" stroke="#403F4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8.99995 22H14.9999C19.0199 22 19.7399 20.39 19.9499 18.43L20.6999 12.43C20.9699 9.99 20.2699 8 15.9999 8H7.99995C3.72995 8 3.02995 9.99 3.29995 12.43L4.04995 18.43C4.25995 20.39 4.97995 22 8.99995 22Z" stroke="#403F4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M15.4955 12H15.5045" stroke="#403F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M8.49451 12H8.50349" stroke="#403F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <rect x="11.6666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040"/>
-                <rect x="11.6666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white" stroke-width="1.66667"/>
+                <path
+                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                  stroke="#403F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M21 21.0004L16.65 16.6504" stroke="#403F4C" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-start items-center space-x-6">
+          <!-- Shopping Cart Icon-->
+          <div class="p-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.5 7.66952V6.69952C7.5 4.44952 9.31 2.23952 11.56 2.02952C14.24 1.76952 16.5 3.87952 16.5 6.50952V7.88952"
+                stroke="#403F4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M8.99995 22H14.9999C19.0199 22 19.7399 20.39 19.9499 18.43L20.6999 12.43C20.9699 9.99 20.2699 8 15.9999 8H7.99995C3.72995 8 3.02995 9.99 3.29995 12.43L4.04995 18.43C4.25995 20.39 4.97995 22 8.99995 22Z"
+                stroke="#403F4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M15.4955 12H15.5045" stroke="#403F4C" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M8.49451 12H8.50349" stroke="#403F4C" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <rect x="11.6666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040" />
+              <rect x="11.6666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white" stroke-width="1.66667" />
+            </svg>
+          </div>
+          <!-- Person Icon-->
+          <div class="p-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4 22C4 19.8783 4.84285 17.8434 6.34315 16.3431C7.84344 14.8429 9.87827 14 12 14C14.1217 14 16.1566 14.8429 17.6569 16.3431C19.1571 17.8434 20 19.8783 20 22H18C18 20.4087 17.3679 18.8826 16.2426 17.7574C15.1174 16.6321 13.5913 16 12 16C10.4087 16 8.88258 16.6321 7.75736 17.7574C6.63214 18.8826 6 20.4087 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z"
+                fill="#403F4C" />
+            </svg>
+
+          </div>
+
+        </div>
+      </section>
+    </section>
+    <!-- Bottom Header (Navbar) -->
+    <section class="container ">
+      <nav class="grid grid-cols-12">
+        <ul class="flex items-center col-span-6 space-x-1 w-full justify-between">
+          <li class="nav-item">
+            <a href="" class="">ویدیو پروژکتور</a>
+          </li>
+          <li class="nav-item">
+            <a href="">نمایشگر لمسی</a>
+          </li>
+          <li class="nav-item">
+            <a href="">کامپیوتر و تجهیزات</a>
+          </li>
+          <li class="nav-item">
+            <a href="">برد هوشمند</a>
+          </li>
+          <li class="nav-item">
+            <a href="">یو پی اس</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+
+
+
+  <!-- Main -->
+  <main class="container grid grid-cols-12 mt-8 gap-5">
+    <!-- Product Details -->
+    <section class="grid grid-cols-10 col-span-8 bg-white">
+      <!-- Product Details Left Side -->
+      <div class="flex flex-col col-span-4 space-y-4">
+        <div
+          class="relative flex justify-start items-center after:absolute   after:w-7 after:h-full after:left-[19px]  after:aspect-[0.866] after:bg-[#FF4040] after:[clip-path:polygon(100%_0,0_50%,100%_100%)]">
+          <h3 class="bg-[#FF4040] text-[12.5px] text-white rounded-tr-4xl font-semibold py-3.5 pr-5 ">مانیتور گیمینگ
+            ایسوس ASUS ROG Strix </h3>
+        </div>
+        <div dir="ltr" class="w-full h-[254px] overflow-y-auto">
+          <ul dir="rtl" class="flex flex-col justify-center pl-7 items-center gap-y-1">
+            <li class="selected-items">
+              <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
+            </li>
+            <li class="selected-items">
+              <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
+            </li>
+            <li class="selected-items">
+              <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
+            </li>
+            <li class="selected-items">
+              <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
+            </li>
+            <li class="selected-items">
+              <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
+            </li>
+            <li class="selected-items">
+              <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
+            </li>
+            <li class="selected-items">
+              <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
+            </li>
+            <li class="selected-items">
+              <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
+            </li>
+            <li class="selected-items">
+              <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Product Details Right Side with image-->
+      <div class="flex flex-col col-span-6 pl-8">
+        <div class="flex flex-col justify-center items-center p-4">
+          <img src="./images/manitor.jpg" alt="product-image" class="">
+          <div class="flex justify-center items-center">
+            <div class="flex justify-center items-center w-[38px] h-[38px] bg-bg-clock rounded-xl">
+
+            </div>
+            <span class="text-gray-light">:</span>
+            <div class="flex justify-center pt-1 items-center w-[38px] h-[38px] bg-bg-clock rounded-xl">
+              <span class="text-lg">04</span>
+            </div>
+            <span class="text-gray-light">:</span>
+            <div class="flex justify-center items-center w-[38px] h-[38px] bg-bg-clock rounded-xl">
+
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-4">
+          <div class="flex flex-col  col-span-2 col-start-3">
+            <div class="flex flex-col items-center ">
+              <div class="flex justify-between items-center space-x-2 ">
+                <span class="text-gray-light text-sm line-through">23,500,000</span>
+                <span class="text-gray-light text-sm">تومان</span>
+              </div>
+            </div>
+            <div class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]">
+              <div
+                class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 7.66952V6.69952C8 4.44952 9.81 2.23952 12.06 2.02952C14.74 1.76952 17 3.87952 17 6.50952V7.88952"
+                    stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M9.49995 22H15.4999C19.5199 22 20.24 20.39 20.4499 18.43L21.1999 12.43C21.4699 9.99 20.7699 8 16.4999 8H8.49995C4.22995 8 3.52995 9.99 3.79995 12.43L4.54995 18.43C4.75995 20.39 5.47995 22 9.49995 22Z"
+                    fill="white" />
+                  <path d="M15.9955 12H16.0045" stroke="#049F57" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M8.99451 12H9.00349" stroke="#049F57" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040" />
+                  <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white"
+                    stroke-width="1.66667" />
                 </svg>
-            </div>
-            <!-- Person Icon-->
-            <div class="p-2">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 22C4 19.8783 4.84285 17.8434 6.34315 16.3431C7.84344 14.8429 9.87827 14 12 14C14.1217 14 16.1566 14.8429 17.6569 16.3431C19.1571 17.8434 20 19.8783 20 22H18C18 20.4087 17.3679 18.8826 16.2426 17.7574C15.1174 16.6321 13.5913 16 12 16C10.4087 16 8.88258 16.6321 7.75736 17.7574C6.63214 18.8826 6 20.4087 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z" fill="#403F4C"/>
-                </svg>
-                
-            </div>
-           
-          </div>
-        </section>
-      </section>
-      <!-- Bottom Header (Navbar) -->
-      <section class="container ">
-          <nav class="grid grid-cols-12">
-            <ul class="flex items-center col-span-6 space-x-1 w-full justify-between">
-              <li class="nav-item">
-                <a href="" class="">ویدیو پروژکتور</a>
-              </li>
-              <li class="nav-item">
-                <a href="">نمایشگر لمسی</a>
-              </li>
-              <li class="nav-item">
-                <a href="">کامپیوتر و تجهیزات</a>
-              </li>
-              <li class="nav-item">
-                <a href="">برد هوشمند</a>
-              </li>
-              <li class="nav-item">
-                <a href="">یو پی اس</a>
-              </li>
-            </ul>
-          </nav>
-      </section>
-    </header>
-
-
-
-
-    <!-- Main -->
-    <main class="container grid grid-cols-12 mt-8 gap-5">
-      <!-- Product Details -->
-      <section class="grid grid-cols-10 col-span-8 bg-white">
-        <!-- Product Details Left Side -->
-        <div class="flex flex-col col-span-4 space-y-4">
-          <div class="relative flex justify-start items-center after:absolute   after:w-7 after:h-full after:left-[19px]  after:aspect-[0.866] after:bg-[#FF4040] after:[clip-path:polygon(100%_0,0_50%,100%_100%)]">
-            <h3 class="bg-[#FF4040] text-[12.5px] text-white rounded-tr-4xl font-semibold py-3.5 pr-5 ">مانیتور گیمینگ ایسوس ASUS ROG Strix </h3>
-          </div>  
-          <div dir="ltr" class="w-full h-[254px] overflow-y-auto" >
-            <ul dir="rtl" class="flex flex-col justify-center pl-7 items-center gap-y-1">
-              <li class="selected-items">
-                <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
-              </li>
-              <li class="selected-items">
-                <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
-              </li>
-              <li class="selected-items">
-                <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
-              </li>
-              <li class="selected-items">
-                <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
-              </li>
-              <li class="selected-items">
-                <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
-              </li>
-              <li class="selected-items">
-                <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
-              </li> 
-              <li class="selected-items">
-                <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
-              </li> 
-              <li class="selected-items">
-                <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
-              </li> 
-              <li class="selected-items">
-                <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix </a>
-              </li> 
-            </ul>
-          </div>
-        </div>
-        <!-- Product Details Right Side with image-->
-        <div class="flex flex-col col-span-6 pl-8">
-          <div class="flex flex-col justify-center items-center p-4">
-            <img src="./images/manitor.jpg" alt="product-image" class="">
-            <div class="flex justify-center items-center">
-              <div class="flex justify-center items-center w-[38px] h-[38px] bg-bg-clock rounded-xl">
 
               </div>
-              <span class="text-gray-light">:</span>
-              <div class="flex justify-center pt-1 items-center w-[38px] h-[38px] bg-bg-clock rounded-xl">
-                <span class="text-lg">04</span>
-              </div>
-              <span class="text-gray-light">:</span>
-              <div class="flex justify-center items-center w-[38px] h-[38px] bg-bg-clock rounded-xl">
-
-              </div>
-            </div>
-          </div>
-          <div class="grid grid-cols-4">
-            <div class="flex flex-col  col-span-2 col-start-3" >
-              <div class="flex flex-col items-center ">
-                <div class="flex justify-between items-center space-x-2 ">
-                  <span class="text-gray-light text-sm line-through">23,500,000</span>
-                  <span class="text-gray-light text-sm">تومان</span>
-                </div>
-              </div>
-              <div class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]" >
-                <div class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center">
-                  <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 7.66952V6.69952C8 4.44952 9.81 2.23952 12.06 2.02952C14.74 1.76952 17 3.87952 17 6.50952V7.88952" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M9.49995 22H15.4999C19.5199 22 20.24 20.39 20.4499 18.43L21.1999 12.43C21.4699 9.99 20.7699 8 16.4999 8H8.49995C4.22995 8 3.52995 9.99 3.79995 12.43L4.54995 18.43C4.75995 20.39 5.47995 22 9.49995 22Z" fill="white"/>
-                    <path d="M15.9955 12H16.0045" stroke="#049F57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.99451 12H9.00349" stroke="#049F57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040"/>
-                    <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white" stroke-width="1.66667"/>
-                    </svg>
-                    
-                </div>
-                <div class="">
-                  <span class="text-white text-sm ml-14">12,590,000</span>
-                </div>
+              <div class="">
+                <span class="text-white text-sm ml-14">12,590,000</span>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-      </section>
-      <!-- Product images -->
-      <section class="col-span-4">
-        <div class="flex flex-col ">
-          <div class="flex flex-col items-end space-y-3">
-            <div class="bg-position-[21rem] bg-[url('./images/ad1.jpg')] image-position w-full "></div>
-            <div class="bg-position-[-20rem] bg-[url('./images/ad2.jpg')] image-position w-full">
-            </div>
+    </section>
+    <!-- Product images -->
+    <section class="col-span-4">
+      <div class="flex flex-col ">
+        <div class="flex flex-col items-end space-y-3">
+          <div class="bg-position-[21rem] bg-[url('./images/ad1.jpg')] image-position w-full "></div>
+          <div class="bg-position-[-20rem] bg-[url('./images/ad2.jpg')] image-position w-full">
           </div>
         </div>
-      </section>
-      <!-- Product images -->
-      <section class="col-span-12 gap-y-5 w-full">
-        <div class="grid grid-cols-12 gap-x-5">
-          <div class="col-span-4">
-            <div class="bg-position-[21rem] bg-[url('./images/ad5.jpg')] image-position"></div>
-          </div>
-          <div class="col-span-4">
-            <div class="bg-position-[-20rem] bg-[url('./images/ad4.jpg')] image-position">
-            </div>
-          </div>
-          <div class="col-span-4 bg-position-[-20rem] bg-[url('./images/ad3.jpg')] image-position">
-  
+      </div>
+    </section>
+    <!-- Product images -->
+    <section class="col-span-12 gap-y-5 w-full">
+      <div class="grid grid-cols-12 gap-x-5">
+        <div class="col-span-4">
+          <div class="bg-position-[21rem] bg-[url('./images/ad5.jpg')] image-position"></div>
+        </div>
+        <div class="col-span-4">
+          <div class="bg-position-[-20rem] bg-[url('./images/ad4.jpg')] image-position">
           </div>
         </div>
-      </section>
-      <!-- Icons section -->
-      <section class="col-span-12 mt-14">
-        <div class="flex flex-col items-center space-y-3">
-          <p class="text-red text-sm">تخصصی‌ترین مرجع خرید و فروش ویدئو پروژکتور در ایران</p>
-          <div class="flex justify-center items-center gap-8 my-8">
-            
-            <div class="flex-col-center ">
+        <div class="col-span-4 bg-position-[-20rem] bg-[url('./images/ad3.jpg')] image-position">
+
+        </div>
+      </div>
+    </section>
+    <!-- Icons section -->
+    <section class="col-span-12 mt-14">
+      <div class="flex flex-col items-center space-y-3">
+        <p class="text-red text-sm">تخصصی‌ترین مرجع خرید و فروش ویدئو پروژکتور در ایران</p>
+        <div class="flex justify-center items-center gap-8 my-8">
+
+          <div class="flex-col-center ">
+            <div class="flex-col-center">
               <div class="flex-col-center">
-                <div class="flex-col-center">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <mask id="path-1-inside-1_171_10328" fill="white">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.09399 9.92773C4.98942 9.92773 4.09399 10.8232 4.09399 11.9277V29.1357C4.09399 30.2403 4.98942 31.1357 6.09399 31.1357H33.9059C35.0105 31.1357 35.9059 30.2403 35.9059 29.1357V11.9277C35.9059 10.8232 35.0105 9.92773 33.9059 9.92773H6.09399ZM8.21477 12.0485C7.1102 12.0485 6.21477 12.9439 6.21477 14.0485V27.0149C6.21477 28.1195 7.1102 29.0149 8.21477 29.0149H31.7851C32.8897 29.0149 33.7851 28.1195 33.7851 27.0149V14.0485C33.7851 12.9439 32.8897 12.0485 31.7851 12.0485H8.21477Z"/>
-                    </mask>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.09399 9.92773C4.98942 9.92773 4.09399 10.8232 4.09399 11.9277V29.1357C4.09399 30.2403 4.98942 31.1357 6.09399 31.1357H33.9059C35.0105 31.1357 35.9059 30.2403 35.9059 29.1357V11.9277C35.9059 10.8232 35.0105 9.92773 33.9059 9.92773H6.09399ZM8.21477 12.0485C7.1102 12.0485 6.21477 12.9439 6.21477 14.0485V27.0149C6.21477 28.1195 7.1102 29.0149 8.21477 29.0149H31.7851C32.8897 29.0149 33.7851 28.1195 33.7851 27.0149V14.0485C33.7851 12.9439 32.8897 12.0485 31.7851 12.0485H8.21477Z" fill="#403F4C"/>
-                    <path d="M5.09399 11.9277C5.09399 11.3755 5.54171 10.9277 6.09399 10.9277V8.92773C4.43714 8.92773 3.09399 10.2709 3.09399 11.9277H5.09399ZM5.09399 29.1357V11.9277H3.09399V29.1357H5.09399ZM6.09399 30.1357C5.54171 30.1357 5.09399 29.688 5.09399 29.1357H3.09399C3.09399 30.7926 4.43714 32.1357 6.09399 32.1357V30.1357ZM33.9059 30.1357H6.09399V32.1357H33.9059V30.1357ZM34.9059 29.1357C34.9059 29.688 34.4582 30.1357 33.9059 30.1357V32.1357C35.5628 32.1357 36.9059 30.7926 36.9059 29.1357H34.9059ZM34.9059 11.9277V29.1357H36.9059V11.9277H34.9059ZM33.9059 10.9277C34.4582 10.9277 34.9059 11.3754 34.9059 11.9277H36.9059C36.9059 10.2709 35.5628 8.92773 33.9059 8.92773V10.9277ZM6.09399 10.9277H33.9059V8.92773H6.09399V10.9277ZM7.21477 14.0485C7.21477 13.4962 7.66249 13.0485 8.21477 13.0485V11.0485C6.55792 11.0485 5.21477 12.3917 5.21477 14.0485H7.21477ZM7.21477 27.0149V14.0485H5.21477V27.0149H7.21477ZM8.21477 28.0149C7.66249 28.0149 7.21477 27.5672 7.21477 27.0149H5.21477C5.21477 28.6717 6.55792 30.0149 8.21477 30.0149V28.0149ZM31.7851 28.0149H8.21477V30.0149H31.7851V28.0149ZM32.7851 27.0149C32.7851 27.5672 32.3374 28.0149 31.7851 28.0149V30.0149C33.442 30.0149 34.7851 28.6717 34.7851 27.0149H32.7851ZM32.7851 14.0485V27.0149H34.7851V14.0485H32.7851ZM31.7851 13.0485C32.3374 13.0485 32.7851 13.4962 32.7851 14.0485H34.7851C34.7851 12.3917 33.442 11.0485 31.7851 11.0485V13.0485ZM8.21477 13.0485H31.7851V11.0485H8.21477V13.0485Z" fill="#403F4C" mask="url(#path-1-inside-1_171_10328)"/>
-                    <mask id="path-3-inside-2_171_10328" fill="white">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2872 9.45703C16.2872 10.0093 16.7349 10.457 17.2872 10.457H22.1798C22.7321 10.457 23.1798 10.0093 23.1798 9.45703V8.80603C23.1798 8.25375 22.7321 7.80604 22.1798 7.80604H17.2872C16.7349 7.80604 16.2872 8.25375 16.2872 8.80604V9.45703ZM17.0837 9.39664C16.9373 9.39664 16.8186 9.27795 16.8186 9.13154C16.8186 8.98513 16.9373 8.86644 17.0837 8.86644H22.3857C22.5321 8.86644 22.6508 8.98513 22.6508 9.13154C22.6508 9.27795 22.5321 9.39664 22.3857 9.39664H17.0837Z"/>
-                    </mask>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2872 9.45703C16.2872 10.0093 16.7349 10.457 17.2872 10.457H22.1798C22.7321 10.457 23.1798 10.0093 23.1798 9.45703V8.80603C23.1798 8.25375 22.7321 7.80604 22.1798 7.80604H17.2872C16.7349 7.80604 16.2872 8.25375 16.2872 8.80604V9.45703ZM17.0837 9.39664C16.9373 9.39664 16.8186 9.27795 16.8186 9.13154C16.8186 8.98513 16.9373 8.86644 17.0837 8.86644H22.3857C22.5321 8.86644 22.6508 8.98513 22.6508 9.13154C22.6508 9.27795 22.5321 9.39664 22.3857 9.39664H17.0837Z" fill="#403F4C"/>
-                    <path d="M17.1761 9.6258H21.4575V10.6258H17.1761V9.6258ZM17.1761 10.6258C16.7902 10.6258 16.4773 10.3129 16.4773 9.92698H17.4773C17.4773 9.76064 17.3424 9.6258 17.1761 9.6258V10.6258ZM22.1798 11.457H17.2872V9.45703H22.1798V11.457ZM24.1798 8.80603V9.45703H22.1798V8.80603H24.1798ZM17.2872 6.80604H22.1798V8.80604H17.2872V6.80604ZM15.2872 9.45703V8.80604H17.2872V9.45703H15.2872ZM17.8186 9.13154C17.8186 8.72567 17.4896 8.39664 17.0837 8.39664V10.3966C16.385 10.3966 15.8186 9.83024 15.8186 9.13154H17.8186ZM17.0837 9.86644C17.4895 9.86644 17.8186 9.53742 17.8186 9.13154H15.8186C15.8186 8.43285 16.385 7.86644 17.0837 7.86644V9.86644ZM22.3857 9.86644H17.0837V7.86644H22.3857V9.86644ZM21.6508 9.13154C21.6508 9.53742 21.9798 9.86644 22.3857 9.86644V7.86644C23.0844 7.86644 23.6508 8.43285 23.6508 9.13154H21.6508ZM22.3857 8.39664C21.9798 8.39664 21.6508 8.72567 21.6508 9.13154H23.6508C23.6508 9.83024 23.0844 10.3966 22.3857 10.3966V8.39664ZM17.0837 8.39664H22.3857V10.3966H17.0837V8.39664ZM17.2872 8.80604V8.80604H15.2872C15.2872 7.70147 16.1827 6.80604 17.2872 6.80604V8.80604ZM22.1798 8.80603L22.1798 8.80604V6.80604C23.2844 6.80604 24.1798 7.70147 24.1798 8.80603H22.1798ZM17.2872 11.457C16.1827 11.457 15.2872 10.5616 15.2872 9.45703H17.2872H17.2872V11.457ZM22.1798 9.45703V9.45703H24.1798C24.1798 10.5616 23.2844 11.457 22.1798 11.457V9.45703Z" fill="#403F4C" mask="url(#path-3-inside-2_171_10328)"/>
-                    <rect x="28.0849" y="32.8582" width="16.1711" height="0.795298" rx="0.397649" transform="rotate(-180 28.0849 32.8582)" fill="#403F4C" stroke="#403F4C" stroke-width="0.795298"/>
-                    <rect x="22.2516" y="7.93829" width="5.03689" height="0.795299" rx="0.397649" transform="rotate(-180 22.2516 7.93829)" fill="#403F4C" stroke="#403F4C" stroke-width="0.795299"/>
-                    </svg>                    
-                    
-                    <span class=" text-sm">برد هوشمند</span> 
-                </div>
-              </div>  
-            </div>
-
-            <div class="flex-col-center ">
-              <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="7.37778" y="27.2636" width="5.62464" height="0.937439" rx="0.46872" fill="#403F4C" stroke="#403F4C" stroke-width="0.937439"/>
-                <mask id="path-2-inside-1_171_11250" fill="white">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.50098 20.4844C5.50098 18.2752 7.29184 16.4844 9.50098 16.4844H31.499C33.7082 16.4844 35.499 18.2752 35.499 20.4844V22.3275C35.499 24.5366 33.7082 26.3275 31.499 26.3275H9.50098C7.29184 26.3275 5.50098 24.5366 5.50098 22.3275V20.4844ZM9.2507 19.7654C9.2507 19.2477 9.67041 18.828 10.1881 18.828H14.8753C15.3931 18.828 15.8128 19.2477 15.8128 19.7654C15.8128 20.2831 15.3931 20.7028 14.8753 20.7028H10.1881C9.67041 20.7028 9.2507 20.2831 9.2507 19.7654ZM10.1881 21.6402C9.67041 21.6402 9.2507 22.06 9.2507 22.5777C9.2507 23.0954 9.67041 23.5151 10.1881 23.5151H14.8753C15.3931 23.5151 15.8128 23.0954 15.8128 22.5777C15.8128 22.06 15.3931 21.6402 14.8753 21.6402H10.1881Z"/>
-                </mask>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.50098 20.4844C5.50098 18.2752 7.29184 16.4844 9.50098 16.4844H31.499C33.7082 16.4844 35.499 18.2752 35.499 20.4844V22.3275C35.499 24.5366 33.7082 26.3275 31.499 26.3275H9.50098C7.29184 26.3275 5.50098 24.5366 5.50098 22.3275V20.4844ZM9.2507 19.7654C9.2507 19.2477 9.67041 18.828 10.1881 18.828H14.8753C15.3931 18.828 15.8128 19.2477 15.8128 19.7654C15.8128 20.2831 15.3931 20.7028 14.8753 20.7028H10.1881C9.67041 20.7028 9.2507 20.2831 9.2507 19.7654ZM10.1881 21.6402C9.67041 21.6402 9.2507 22.06 9.2507 22.5777C9.2507 23.0954 9.67041 23.5151 10.1881 23.5151H14.8753C15.3931 23.5151 15.8128 23.0954 15.8128 22.5777C15.8128 22.06 15.3931 21.6402 14.8753 21.6402H10.1881Z" fill="#403F4C"/>
-                <path d="M9.50098 15.4844C6.73955 15.4844 4.50098 17.723 4.50098 20.4844H6.50098C6.50098 18.8275 7.84412 17.4844 9.50098 17.4844V15.4844ZM31.499 15.4844H9.50098V17.4844H31.499V15.4844ZM36.499 20.4844C36.499 17.723 34.2605 15.4844 31.499 15.4844V17.4844C33.1559 17.4844 34.499 18.8275 34.499 20.4844H36.499ZM36.499 22.3275V20.4844H34.499V22.3275H36.499ZM31.499 27.3275C34.2605 27.3275 36.499 25.0889 36.499 22.3275H34.499C34.499 23.9843 33.1559 25.3275 31.499 25.3275V27.3275ZM9.50098 27.3275H31.499V25.3275H9.50098V27.3275ZM4.50098 22.3275C4.50098 25.0889 6.73956 27.3275 9.50098 27.3275V25.3275C7.84412 25.3275 6.50098 23.9843 6.50098 22.3275H4.50098ZM4.50098 20.4844V22.3275H6.50098V20.4844H4.50098ZM10.1881 17.828C9.11812 17.828 8.2507 18.6954 8.2507 19.7654H10.2507C10.2507 19.7999 10.2227 19.828 10.1881 19.828V17.828ZM14.8753 17.828H10.1881V19.828H14.8753V17.828ZM16.8128 19.7654C16.8128 18.6954 15.9454 17.828 14.8753 17.828V19.828C14.8408 19.828 14.8128 19.7999 14.8128 19.7654H16.8128ZM14.8753 21.7028C15.9454 21.7028 16.8128 20.8354 16.8128 19.7654H14.8128C14.8128 19.7308 14.8408 19.7028 14.8753 19.7028V21.7028ZM10.1881 21.7028H14.8753V19.7028H10.1881V21.7028ZM8.2507 19.7654C8.2507 20.8354 9.11812 21.7028 10.1881 21.7028V19.7028C10.2227 19.7028 10.2507 19.7308 10.2507 19.7654H8.2507ZM10.2507 22.5777C10.2507 22.6122 10.2227 22.6402 10.1881 22.6402V20.6402C9.11812 20.6402 8.2507 21.5077 8.2507 22.5777H10.2507ZM10.1881 22.5151C10.2227 22.5151 10.2507 22.5431 10.2507 22.5777H8.2507C8.2507 23.6477 9.11812 24.5151 10.1881 24.5151V22.5151ZM14.8753 22.5151H10.1881V24.5151H14.8753V22.5151ZM14.8128 22.5777C14.8128 22.5431 14.8408 22.5151 14.8753 22.5151V24.5151C15.9454 24.5151 16.8128 23.6477 16.8128 22.5777H14.8128ZM14.8753 22.6402C14.8408 22.6402 14.8128 22.6122 14.8128 22.5777H16.8128C16.8128 21.5077 15.9454 20.6402 14.8753 20.6402V22.6402ZM10.1881 22.6402H14.8753V20.6402H10.1881V22.6402Z" fill="#403F4C" mask="url(#path-2-inside-1_171_11250)"/>
-                <rect x="28.0012" y="27.2636" width="5.62464" height="0.937439" rx="0.46872" fill="#403F4C" stroke="#403F4C" stroke-width="0.937439"/>
-                <circle cx="26.594" cy="16.484" r="4.15592" fill="white" stroke="#403F4C" stroke-width="2"/>
-                </svg>                
-                <span class=" text-sm">ویدیو پروژکتور</span> 
-            </div>
-            
-            <div class="flex-col-center">
-              <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="9.90442" y="9.4043" width="5.5565" height="1.01739" rx="0.508693" fill="#403F4C" stroke="#403F4C"/>
-                <rect x="25.54" y="9.4043" width="5.5565" height="1.01739" rx="0.508693" fill="#403F4C" stroke="#403F4C"/>
-                <rect x="5.86963" y="29.5781" width="29.2608" height="1.01739" rx="0.508693" fill="#403F4C" stroke="#403F4C"/>
-                <rect x="5.86963" y="12.4297" width="29.2608" height="1.01739" rx="0.508693" fill="#403F4C" stroke="#403F4C"/>
-                <mask id="path-5-inside-1_171_74" fill="white">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.37781 16.9551C6.37781 15.8505 7.27324 14.9551 8.37781 14.9551H32.6212C33.7258 14.9551 34.6212 15.8505 34.6212 16.9551V26.0681C34.6212 27.1727 33.7258 28.0681 32.6212 28.0681H8.37781C7.27324 28.0681 6.37781 27.1727 6.37781 26.0681V16.9551ZM17.878 20.9012L20.0998 18.7905C20.5002 18.4101 21.1308 18.864 20.8973 19.3644L20.5803 20.0436C20.4256 20.3751 20.6676 20.755 21.0334 20.755H22.4418C22.9042 20.755 23.1188 21.3289 22.7699 21.6323L20.9483 23.2163C20.5051 23.6017 19.8803 23.0327 20.213 22.5487C20.4411 22.217 20.2048 21.7637 19.8022 21.7637H18.2224C17.7707 21.7637 17.5505 21.2123 17.878 20.9012ZM11.4223 18.4855C11.1438 18.4855 10.918 18.7113 10.918 18.9898C10.918 19.2684 11.1438 19.4942 11.4223 19.4942H12.4299V20.5029C12.4299 20.7814 12.6557 21.0072 12.9342 21.0072C13.2128 21.0072 13.4386 20.7814 13.4386 20.5029V19.4942H14.4484C14.7269 19.4942 14.9527 19.2684 14.9527 18.9898C14.9527 18.7113 14.7269 18.4855 14.4484 18.4855H13.4386V17.4768C13.4386 17.1982 13.2128 16.9724 12.9342 16.9724C12.6557 16.9724 12.4299 17.1982 12.4299 17.4768V18.4855H11.4223ZM26.0482 18.9898C26.0482 18.7113 26.274 18.4855 26.5526 18.4855H29.5787C29.8572 18.4855 30.083 18.7113 30.083 18.9898C30.083 19.2684 29.8572 19.4942 29.5787 19.4942H26.5526C26.274 19.4942 26.0482 19.2684 26.0482 18.9898Z"/>
-                </mask>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.37781 16.9551C6.37781 15.8505 7.27324 14.9551 8.37781 14.9551H32.6212C33.7258 14.9551 34.6212 15.8505 34.6212 16.9551V26.0681C34.6212 27.1727 33.7258 28.0681 32.6212 28.0681H8.37781C7.27324 28.0681 6.37781 27.1727 6.37781 26.0681V16.9551ZM17.878 20.9012L20.0998 18.7905C20.5002 18.4101 21.1308 18.864 20.8973 19.3644L20.5803 20.0436C20.4256 20.3751 20.6676 20.755 21.0334 20.755H22.4418C22.9042 20.755 23.1188 21.3289 22.7699 21.6323L20.9483 23.2163C20.5051 23.6017 19.8803 23.0327 20.213 22.5487C20.4411 22.217 20.2048 21.7637 19.8022 21.7637H18.2224C17.7707 21.7637 17.5505 21.2123 17.878 20.9012ZM11.4223 18.4855C11.1438 18.4855 10.918 18.7113 10.918 18.9898C10.918 19.2684 11.1438 19.4942 11.4223 19.4942H12.4299V20.5029C12.4299 20.7814 12.6557 21.0072 12.9342 21.0072C13.2128 21.0072 13.4386 20.7814 13.4386 20.5029V19.4942H14.4484C14.7269 19.4942 14.9527 19.2684 14.9527 18.9898C14.9527 18.7113 14.7269 18.4855 14.4484 18.4855H13.4386V17.4768C13.4386 17.1982 13.2128 16.9724 12.9342 16.9724C12.6557 16.9724 12.4299 17.1982 12.4299 17.4768V18.4855H11.4223ZM26.0482 18.9898C26.0482 18.7113 26.274 18.4855 26.5526 18.4855H29.5787C29.8572 18.4855 30.083 18.7113 30.083 18.9898C30.083 19.2684 29.8572 19.4942 29.5787 19.4942H26.5526C26.274 19.4942 26.0482 19.2684 26.0482 18.9898Z" fill="#403F4C"/>
-                <path d="M20.0998 18.7905L19.4111 18.0655V18.0655L20.0998 18.7905ZM17.878 20.9012L17.1892 20.1762L17.1892 20.1762L17.878 20.9012ZM20.8973 19.3644L19.9911 18.9415L20.8973 19.3644ZM20.5803 20.0436L19.6742 19.6207V19.6207L20.5803 20.0436ZM22.7699 21.6323L23.426 22.387L22.7699 21.6323ZM20.9483 23.2163L21.6044 23.971L21.6044 23.9709L20.9483 23.2163ZM20.213 22.5487L21.0371 23.1152L21.0371 23.1152L20.213 22.5487ZM12.4299 19.4942H13.4299V18.4942H12.4299V19.4942ZM13.4386 19.4942V18.4942H12.4386V19.4942H13.4386ZM13.4386 18.4855H12.4386V19.4855H13.4386V18.4855ZM12.4299 18.4855V19.4855H13.4299V18.4855H12.4299ZM8.37781 13.9551C6.72095 13.9551 5.37781 15.2982 5.37781 16.9551H7.37781C7.37781 16.4028 7.82552 15.9551 8.37781 15.9551V13.9551ZM32.6212 13.9551H8.37781V15.9551H32.6212V13.9551ZM35.6212 16.9551C35.6212 15.2982 34.2781 13.9551 32.6212 13.9551V15.9551C33.1735 15.9551 33.6212 16.4028 33.6212 16.9551H35.6212ZM35.6212 26.0681V16.9551H33.6212V26.0681H35.6212ZM32.6212 29.0681C34.2781 29.0681 35.6212 27.7249 35.6212 26.0681H33.6212C33.6212 26.6204 33.1735 27.0681 32.6212 27.0681V29.0681ZM8.37781 29.0681H32.6212V27.0681H8.37781V29.0681ZM5.37781 26.0681C5.37781 27.7249 6.72095 29.0681 8.37781 29.0681V27.0681C7.82552 27.0681 7.37781 26.6204 7.37781 26.0681H5.37781ZM5.37781 16.9551V26.0681H7.37781V16.9551H5.37781ZM19.4111 18.0655L17.1892 20.1762L18.5667 21.6262L20.7886 19.5155L19.4111 18.0655ZM21.8035 19.7873C22.5041 18.286 20.6122 16.9244 19.4111 18.0655L20.7886 19.5155C20.7116 19.5886 20.5914 19.6451 20.4541 19.6489C20.3293 19.6524 20.2261 19.612 20.1521 19.5588C20.0782 19.5056 20.0071 19.4205 19.9708 19.3011C19.9308 19.1696 19.9462 19.0377 19.9911 18.9415L21.8035 19.7873ZM21.4865 20.4665L21.8035 19.7873L19.9911 18.9415L19.6742 19.6207L21.4865 20.4665ZM21.0334 19.755C21.3992 19.755 21.6412 20.135 21.4865 20.4665L19.6742 19.6207C19.2101 20.6152 19.936 21.755 21.0334 21.755V19.755ZM22.4418 19.755H21.0334V21.755H22.4418V19.755ZM23.426 22.387C24.4729 21.4766 23.8291 19.755 22.4418 19.755V21.755C21.9793 21.755 21.7647 21.1812 22.1137 20.8777L23.426 22.387ZM21.6044 23.9709L23.426 22.387L22.1137 20.8777L20.2921 22.4617L21.6044 23.9709ZM19.389 21.9822C18.895 22.7007 19.138 23.5129 19.6169 23.9484C20.0986 24.3864 20.9388 24.5498 21.6044 23.971L20.2921 22.4617C20.3735 22.3909 20.5061 22.3356 20.6576 22.3443C20.7926 22.3522 20.8954 22.4077 20.9624 22.4687C21.0295 22.5297 21.0917 22.6239 21.1123 22.7514C21.1354 22.894 21.0975 23.0273 21.0371 23.1152L19.389 21.9822ZM19.8022 22.7637C19.3921 22.7637 19.1652 22.3077 19.389 21.9822L21.0371 23.1152C21.717 22.1262 21.0175 20.7637 19.8022 20.7637V22.7637ZM18.2224 22.7637H19.8022V20.7637H18.2224V22.7637ZM17.1892 20.1762C16.2069 21.1095 16.8674 22.7637 18.2224 22.7637V20.7637C18.674 20.7637 18.8942 21.3152 18.5667 21.6262L17.1892 20.1762ZM11.918 18.9898C11.918 19.2636 11.6961 19.4855 11.4223 19.4855V17.4855C10.5915 17.4855 9.91798 18.159 9.91798 18.9898H11.918ZM11.4223 18.4942C11.6961 18.4942 11.918 18.7161 11.918 18.9898H9.91798C9.91798 19.8206 10.5915 20.4942 11.4223 20.4942V18.4942ZM12.4299 18.4942H11.4223V20.4942H12.4299V18.4942ZM13.4299 20.5029V19.4942H11.4299V20.5029H13.4299ZM12.9342 20.0072C13.208 20.0072 13.4299 20.2291 13.4299 20.5029H11.4299C11.4299 21.3337 12.1034 22.0072 12.9342 22.0072V20.0072ZM12.4386 20.5029C12.4386 20.2291 12.6605 20.0072 12.9342 20.0072V22.0072C13.7651 22.0072 14.4386 21.3337 14.4386 20.5029H12.4386ZM12.4386 19.4942V20.5029H14.4386V19.4942H12.4386ZM14.4484 18.4942H13.4386V20.4942H14.4484V18.4942ZM13.9527 18.9898C13.9527 18.7161 14.1747 18.4942 14.4484 18.4942V20.4942C15.2792 20.4942 15.9527 19.8206 15.9527 18.9898H13.9527ZM14.4484 19.4855C14.1747 19.4855 13.9527 19.2636 13.9527 18.9898H15.9527C15.9527 18.159 15.2792 17.4855 14.4484 17.4855V19.4855ZM13.4386 19.4855H14.4484V17.4855H13.4386V19.4855ZM12.4386 17.4768V18.4855H14.4386V17.4768H12.4386ZM12.9342 17.9724C12.6605 17.9724 12.4386 17.7505 12.4386 17.4768H14.4386C14.4386 16.646 13.7651 15.9724 12.9342 15.9724V17.9724ZM13.4299 17.4768C13.4299 17.7505 13.208 17.9724 12.9342 17.9724V15.9724C12.1034 15.9724 11.4299 16.646 11.4299 17.4768H13.4299ZM13.4299 18.4855V17.4768H11.4299V18.4855H13.4299ZM11.4223 19.4855H12.4299V17.4855H11.4223V19.4855ZM26.5526 17.4855C25.7218 17.4855 25.0482 18.159 25.0482 18.9898H27.0482C27.0482 19.2636 26.8263 19.4855 26.5526 19.4855V17.4855ZM29.5787 17.4855H26.5526V19.4855H29.5787V17.4855ZM31.083 18.9898C31.083 18.159 30.4095 17.4855 29.5787 17.4855V19.4855C29.3049 19.4855 29.083 19.2636 29.083 18.9898H31.083ZM29.5787 20.4942C30.4095 20.4942 31.083 19.8206 31.083 18.9898H29.083C29.083 18.7161 29.3049 18.4942 29.5787 18.4942V20.4942ZM26.5526 20.4942H29.5787V18.4942H26.5526V20.4942ZM25.0482 18.9898C25.0482 19.8206 25.7218 20.4942 26.5526 20.4942V18.4942C26.8263 18.4942 27.0482 18.7161 27.0482 18.9898H25.0482Z" fill="#403F4C" mask="url(#path-5-inside-1_171_74)"/>
-                </svg>
-                
-                <span class=" text-sm">یو پی اس</span> 
-            </div>
-
-            <div class="flex-col-center ">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <mask id="path-1-inside-1_171_10313" fill="white">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.5055 9.64453H6.49353V25.6525C6.49353 26.7571 7.38896 27.6525 8.49353 27.6525H31.5055C32.6101 27.6525 33.5055 26.7571 33.5055 25.6525V9.64453ZM9.87002 11.8955C9.49707 11.8955 9.19473 12.1979 9.19473 12.5708C9.19473 12.9438 9.49707 13.2461 9.87002 13.2461H26.0772C26.4502 13.2461 26.7525 12.9438 26.7525 12.5708C26.7525 12.1979 26.4502 11.8955 26.0772 11.8955H9.87002ZM9.19473 16.1724C9.19473 15.7995 9.49707 15.4971 9.87002 15.4971H20.2246C20.5976 15.4971 20.8999 15.7995 20.8999 16.1724C20.8999 16.5454 20.5976 16.8477 20.2246 16.8477H9.87002C9.49707 16.8477 9.19473 16.5454 9.19473 16.1724ZM9.87002 18.6485C9.49707 18.6485 9.19473 18.9509 9.19473 19.3238C9.19473 19.6968 9.49707 19.9991 9.87002 19.9991H20.2246C20.5976 19.9991 20.8999 19.6968 20.8999 19.3238C20.8999 18.9509 20.5976 18.6485 20.2246 18.6485H9.87002ZM9.19473 22.9254C9.19473 22.5525 9.49707 22.2501 9.87002 22.2501H20.2246C20.5976 22.2501 20.8999 22.5525 20.8999 22.9254C20.8999 23.2984 20.5976 23.6007 20.2246 23.6007H9.87002C9.49707 23.6007 9.19473 23.2984 9.19473 22.9254ZM24.2505 15.4971C23.1459 15.4971 22.2505 16.3925 22.2505 17.4971V21.6007C22.2505 22.7053 23.1459 23.6007 24.2505 23.6007H28.3541C29.4587 23.6007 30.3541 22.7053 30.3541 21.6007V17.4971C30.3541 16.3926 29.4587 15.4971 28.3541 15.4971H24.2505Z"/>
-                </mask>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M33.5055 9.64453H6.49353V25.6525C6.49353 26.7571 7.38896 27.6525 8.49353 27.6525H31.5055C32.6101 27.6525 33.5055 26.7571 33.5055 25.6525V9.64453ZM9.87002 11.8955C9.49707 11.8955 9.19473 12.1979 9.19473 12.5708C9.19473 12.9438 9.49707 13.2461 9.87002 13.2461H26.0772C26.4502 13.2461 26.7525 12.9438 26.7525 12.5708C26.7525 12.1979 26.4502 11.8955 26.0772 11.8955H9.87002ZM9.19473 16.1724C9.19473 15.7995 9.49707 15.4971 9.87002 15.4971H20.2246C20.5976 15.4971 20.8999 15.7995 20.8999 16.1724C20.8999 16.5454 20.5976 16.8477 20.2246 16.8477H9.87002C9.49707 16.8477 9.19473 16.5454 9.19473 16.1724ZM9.87002 18.6485C9.49707 18.6485 9.19473 18.9509 9.19473 19.3238C9.19473 19.6968 9.49707 19.9991 9.87002 19.9991H20.2246C20.5976 19.9991 20.8999 19.6968 20.8999 19.3238C20.8999 18.9509 20.5976 18.6485 20.2246 18.6485H9.87002ZM9.19473 22.9254C9.19473 22.5525 9.49707 22.2501 9.87002 22.2501H20.2246C20.5976 22.2501 20.8999 22.5525 20.8999 22.9254C20.8999 23.2984 20.5976 23.6007 20.2246 23.6007H9.87002C9.49707 23.6007 9.19473 23.2984 9.19473 22.9254ZM24.2505 15.4971C23.1459 15.4971 22.2505 16.3925 22.2505 17.4971V21.6007C22.2505 22.7053 23.1459 23.6007 24.2505 23.6007H28.3541C29.4587 23.6007 30.3541 22.7053 30.3541 21.6007V17.4971C30.3541 16.3926 29.4587 15.4971 28.3541 15.4971H24.2505Z" fill="#403F4C"/>
-                <path d="M6.49353 9.64453V8.64453H5.49353V9.64453H6.49353ZM33.5055 9.64453H34.5055V8.64453H33.5055V9.64453ZM6.49353 10.6445H33.5055V8.64453H6.49353V10.6445ZM7.49353 25.6525V9.64453H5.49353V25.6525H7.49353ZM8.49353 26.6525C7.94125 26.6525 7.49353 26.2048 7.49353 25.6525H5.49353C5.49353 27.3094 6.83667 28.6525 8.49353 28.6525V26.6525ZM31.5055 26.6525H8.49353V28.6525H31.5055V26.6525ZM32.5055 25.6525C32.5055 26.2048 32.0578 26.6525 31.5055 26.6525V28.6525C33.1623 28.6525 34.5055 27.3094 34.5055 25.6525H32.5055ZM32.5055 9.64453V25.6525H34.5055V9.64453H32.5055ZM10.1947 12.5708C10.1947 12.7502 10.0494 12.8955 9.87002 12.8955V10.8955C8.94478 10.8955 8.19473 11.6456 8.19473 12.5708H10.1947ZM9.87002 12.2461C10.0494 12.2461 10.1947 12.3915 10.1947 12.5708H8.19473C8.19473 13.4961 8.94478 14.2461 9.87002 14.2461V12.2461ZM26.0772 12.2461H9.87002V14.2461H26.0772V12.2461ZM25.7525 12.5708C25.7525 12.3915 25.8979 12.2461 26.0772 12.2461V14.2461C27.0024 14.2461 27.7525 13.4961 27.7525 12.5708H25.7525ZM26.0772 12.8955C25.8979 12.8955 25.7525 12.7502 25.7525 12.5708H27.7525C27.7525 11.6456 27.0024 10.8955 26.0772 10.8955V12.8955ZM9.87002 12.8955H26.0772V10.8955H9.87002V12.8955ZM9.87002 14.4971C8.94478 14.4971 8.19473 15.2472 8.19473 16.1724H10.1947C10.1947 16.3517 10.0494 16.4971 9.87002 16.4971V14.4971ZM20.2246 14.4971H9.87002V16.4971H20.2246V14.4971ZM21.8999 16.1724C21.8999 15.2472 21.1498 14.4971 20.2246 14.4971V16.4971C20.0453 16.4971 19.8999 16.3517 19.8999 16.1724H21.8999ZM20.2246 17.8477C21.1498 17.8477 21.8999 17.0977 21.8999 16.1724H19.8999C19.8999 15.9931 20.0453 15.8477 20.2246 15.8477V17.8477ZM9.87002 17.8477H20.2246V15.8477H9.87002V17.8477ZM8.19473 16.1724C8.19473 17.0977 8.94478 17.8477 9.87002 17.8477V15.8477C10.0494 15.8477 10.1947 15.9931 10.1947 16.1724H8.19473ZM10.1947 19.3238C10.1947 19.5031 10.0494 19.6485 9.87002 19.6485V17.6485C8.94478 17.6485 8.19473 18.3986 8.19473 19.3238H10.1947ZM9.87002 18.9991C10.0494 18.9991 10.1947 19.1445 10.1947 19.3238H8.19473C8.19473 20.2491 8.94478 20.9991 9.87002 20.9991V18.9991ZM20.2246 18.9991H9.87002V20.9991H20.2246V18.9991ZM19.8999 19.3238C19.8999 19.1445 20.0453 18.9991 20.2246 18.9991V20.9991C21.1498 20.9991 21.8999 20.2491 21.8999 19.3238H19.8999ZM20.2246 19.6485C20.0453 19.6485 19.8999 19.5031 19.8999 19.3238H21.8999C21.8999 18.3986 21.1498 17.6485 20.2246 17.6485V19.6485ZM9.87002 19.6485H20.2246V17.6485H9.87002V19.6485ZM9.87002 21.2501C8.94478 21.2501 8.19473 22.0002 8.19473 22.9254H10.1947C10.1947 23.1047 10.0494 23.2501 9.87002 23.2501V21.2501ZM20.2246 21.2501H9.87002V23.2501H20.2246V21.2501ZM21.8999 22.9254C21.8999 22.0002 21.1498 21.2501 20.2246 21.2501V23.2501C20.0453 23.2501 19.8999 23.1047 19.8999 22.9254H21.8999ZM20.2246 24.6007C21.1498 24.6007 21.8999 23.8506 21.8999 22.9254H19.8999C19.8999 22.7461 20.0453 22.6007 20.2246 22.6007V24.6007ZM9.87002 24.6007H20.2246V22.6007H9.87002V24.6007ZM8.19473 22.9254C8.19473 23.8507 8.94478 24.6007 9.87002 24.6007V22.6007C10.0494 22.6007 10.1947 22.7461 10.1947 22.9254H8.19473ZM23.2505 17.4971C23.2505 16.9448 23.6982 16.4971 24.2505 16.4971V14.4971C22.5936 14.4971 21.2505 15.8403 21.2505 17.4971H23.2505ZM23.2505 21.6007V17.4971H21.2505V21.6007H23.2505ZM24.2505 22.6007C23.6982 22.6007 23.2505 22.153 23.2505 21.6007H21.2505C21.2505 23.2576 22.5936 24.6007 24.2505 24.6007V22.6007ZM28.3541 22.6007H24.2505V24.6007H28.3541V22.6007ZM29.3541 21.6007C29.3541 22.153 28.9064 22.6007 28.3541 22.6007V24.6007C30.0109 24.6007 31.3541 23.2576 31.3541 21.6007H29.3541ZM29.3541 17.4971V21.6007H31.3541V17.4971H29.3541ZM28.3541 16.4971C28.9064 16.4971 29.3541 16.9448 29.3541 17.4971H31.3541C31.3541 15.8403 30.0109 14.4971 28.3541 14.4971V16.4971ZM24.2505 16.4971H28.3541V14.4971H24.2505V16.4971Z" fill="#403F4C" mask="url(#path-1-inside-1_171_10313)"/>
-                <rect x="20.2251" y="27.4282" width="1.8008" height="0.450199" rx="0.2251" transform="rotate(90 20.2251 27.4282)" fill="#403F4C" stroke="#403F4C" stroke-width="0.450199"/>
-                <rect x="34.0687" y="9.30884" width="28.1375" height="0.675298" rx="0.337649" transform="rotate(-180 34.0687 9.30884)" fill="#403F4C" stroke="#403F4C" stroke-width="0.675298"/>
-                <rect x="23.6514" y="16.8984" width="5.30279" height="5.30279" rx="1.5" fill="#403F4C" stroke="#403F4C"/>
-                <circle cx="20" cy="30.3545" r="0.850598" fill="#403F4C" stroke="#403F4C"/>
-                </svg>
-                <span class=" text-sm">برد هوشمند</span> 
-            </div>
-
-            <div class="flex-col-center">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <mask id="path-1-inside-1_171_10298" fill="white">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.34778 8C5.24321 8 4.34778 8.89543 4.34778 10V26.8696C4.34778 27.9741 5.24321 28.8696 6.34778 28.8696H33.6521C34.7567 28.8696 35.6521 27.9741 35.6521 26.8696V10C35.6521 8.89543 34.7567 8 33.6521 8H6.34778ZM7.4349 10.087C6.88262 10.087 6.4349 10.5347 6.4349 11.087V25.7826C6.4349 26.3349 6.88262 26.7826 7.4349 26.7826H32.5653C33.1176 26.7826 33.5653 26.3349 33.5653 25.7826V11.087C33.5653 10.5347 33.1176 10.087 32.5653 10.087H7.4349Z"/>
-                </mask>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.34778 8C5.24321 8 4.34778 8.89543 4.34778 10V26.8696C4.34778 27.9741 5.24321 28.8696 6.34778 28.8696H33.6521C34.7567 28.8696 35.6521 27.9741 35.6521 26.8696V10C35.6521 8.89543 34.7567 8 33.6521 8H6.34778ZM7.4349 10.087C6.88262 10.087 6.4349 10.5347 6.4349 11.087V25.7826C6.4349 26.3349 6.88262 26.7826 7.4349 26.7826H32.5653C33.1176 26.7826 33.5653 26.3349 33.5653 25.7826V11.087C33.5653 10.5347 33.1176 10.087 32.5653 10.087H7.4349Z" fill="#403F4C"/>
-                <path d="M5.34778 10C5.34778 9.44772 5.79549 9 6.34778 9V7C4.69092 7 3.34778 8.34314 3.34778 10H5.34778ZM5.34778 26.8696V10H3.34778V26.8696H5.34778ZM6.34778 27.8696C5.79549 27.8696 5.34778 27.4219 5.34778 26.8696H3.34778C3.34778 28.5264 4.69093 29.8696 6.34778 29.8696V27.8696ZM33.6521 27.8696H6.34778V29.8696H33.6521V27.8696ZM34.6521 26.8696C34.6521 27.4219 34.2044 27.8696 33.6521 27.8696V29.8696C35.309 29.8696 36.6521 28.5264 36.6521 26.8696H34.6521ZM34.6521 10V26.8696H36.6521V10H34.6521ZM33.6521 9C34.2044 9 34.6521 9.44772 34.6521 10H36.6521C36.6521 8.34314 35.309 7 33.6521 7V9ZM6.34778 9H33.6521V7H6.34778V9ZM7.4349 11.087V11.087V9.08696C6.33034 9.08696 5.4349 9.98239 5.4349 11.087H7.4349ZM7.4349 25.7826V11.087H5.4349V25.7826H7.4349ZM7.4349 25.7826H5.4349C5.4349 26.8872 6.33033 27.7826 7.4349 27.7826V25.7826ZM32.5653 25.7826H7.4349V27.7826H32.5653V25.7826ZM32.5653 25.7826V27.7826C33.6699 27.7826 34.5653 26.8872 34.5653 25.7826H32.5653ZM32.5653 11.087V25.7826H34.5653V11.087H32.5653ZM32.5653 11.087H34.5653C34.5653 9.98239 33.6699 9.08696 32.5653 9.08696V11.087ZM7.4349 11.087H32.5653V9.08696H7.4349V11.087Z" fill="#403F4C" mask="url(#path-1-inside-1_171_10298)"/>
-                <rect x="13.8697" y="30.5657" width="4.95652" height="0.782609" rx="0.391304" transform="rotate(-180 13.8697 30.5657)" fill="#403F4C" stroke="#403F4C" stroke-width="0.782609"/>
-                <rect x="31.0871" y="30.5657" width="4.95652" height="0.782609" rx="0.391304" transform="rotate(-180 31.0871 30.5657)" fill="#403F4C" stroke="#403F4C" stroke-width="0.782609"/>
-                <path d="M19.797 18.1523C19.8819 18.1523 19.9658 18.178 20.0372 18.2266L20.1036 18.2832C20.1869 18.3681 20.2355 18.4852 20.2355 18.6094V23.333L20.6808 23.3818L21.7365 23.4971L26.3009 25.5596C26.6043 25.7014 26.8048 26.0203 26.8048 26.3955V30.5479C26.7858 31.0785 26.3777 31.4823 25.8781 31.501H19.797C19.577 31.5009 19.3749 31.4134 19.2286 31.2529L19.2091 31.2314L19.1876 31.2129L14.9806 27.5371L15.3195 27.1787L15.3292 27.167C15.4064 27.0802 15.5202 27.0293 15.6495 27.0293H15.7286L18.6183 28.6133L19.3585 29.0186V18.6094C19.3585 18.5164 19.386 18.4271 19.4347 18.3525L19.4904 18.2832C19.5733 18.1987 19.684 18.1524 19.797 18.1523Z" fill="#403F4C" stroke="#403F4C"/>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="path-1-inside-1_171_10328" fill="white">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.09399 9.92773C4.98942 9.92773 4.09399 10.8232 4.09399 11.9277V29.1357C4.09399 30.2403 4.98942 31.1357 6.09399 31.1357H33.9059C35.0105 31.1357 35.9059 30.2403 35.9059 29.1357V11.9277C35.9059 10.8232 35.0105 9.92773 33.9059 9.92773H6.09399ZM8.21477 12.0485C7.1102 12.0485 6.21477 12.9439 6.21477 14.0485V27.0149C6.21477 28.1195 7.1102 29.0149 8.21477 29.0149H31.7851C32.8897 29.0149 33.7851 28.1195 33.7851 27.0149V14.0485C33.7851 12.9439 32.8897 12.0485 31.7851 12.0485H8.21477Z" />
+                  </mask>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.09399 9.92773C4.98942 9.92773 4.09399 10.8232 4.09399 11.9277V29.1357C4.09399 30.2403 4.98942 31.1357 6.09399 31.1357H33.9059C35.0105 31.1357 35.9059 30.2403 35.9059 29.1357V11.9277C35.9059 10.8232 35.0105 9.92773 33.9059 9.92773H6.09399ZM8.21477 12.0485C7.1102 12.0485 6.21477 12.9439 6.21477 14.0485V27.0149C6.21477 28.1195 7.1102 29.0149 8.21477 29.0149H31.7851C32.8897 29.0149 33.7851 28.1195 33.7851 27.0149V14.0485C33.7851 12.9439 32.8897 12.0485 31.7851 12.0485H8.21477Z"
+                    fill="#403F4C" />
+                  <path
+                    d="M5.09399 11.9277C5.09399 11.3755 5.54171 10.9277 6.09399 10.9277V8.92773C4.43714 8.92773 3.09399 10.2709 3.09399 11.9277H5.09399ZM5.09399 29.1357V11.9277H3.09399V29.1357H5.09399ZM6.09399 30.1357C5.54171 30.1357 5.09399 29.688 5.09399 29.1357H3.09399C3.09399 30.7926 4.43714 32.1357 6.09399 32.1357V30.1357ZM33.9059 30.1357H6.09399V32.1357H33.9059V30.1357ZM34.9059 29.1357C34.9059 29.688 34.4582 30.1357 33.9059 30.1357V32.1357C35.5628 32.1357 36.9059 30.7926 36.9059 29.1357H34.9059ZM34.9059 11.9277V29.1357H36.9059V11.9277H34.9059ZM33.9059 10.9277C34.4582 10.9277 34.9059 11.3754 34.9059 11.9277H36.9059C36.9059 10.2709 35.5628 8.92773 33.9059 8.92773V10.9277ZM6.09399 10.9277H33.9059V8.92773H6.09399V10.9277ZM7.21477 14.0485C7.21477 13.4962 7.66249 13.0485 8.21477 13.0485V11.0485C6.55792 11.0485 5.21477 12.3917 5.21477 14.0485H7.21477ZM7.21477 27.0149V14.0485H5.21477V27.0149H7.21477ZM8.21477 28.0149C7.66249 28.0149 7.21477 27.5672 7.21477 27.0149H5.21477C5.21477 28.6717 6.55792 30.0149 8.21477 30.0149V28.0149ZM31.7851 28.0149H8.21477V30.0149H31.7851V28.0149ZM32.7851 27.0149C32.7851 27.5672 32.3374 28.0149 31.7851 28.0149V30.0149C33.442 30.0149 34.7851 28.6717 34.7851 27.0149H32.7851ZM32.7851 14.0485V27.0149H34.7851V14.0485H32.7851ZM31.7851 13.0485C32.3374 13.0485 32.7851 13.4962 32.7851 14.0485H34.7851C34.7851 12.3917 33.442 11.0485 31.7851 11.0485V13.0485ZM8.21477 13.0485H31.7851V11.0485H8.21477V13.0485Z"
+                    fill="#403F4C" mask="url(#path-1-inside-1_171_10328)" />
+                  <mask id="path-3-inside-2_171_10328" fill="white">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M16.2872 9.45703C16.2872 10.0093 16.7349 10.457 17.2872 10.457H22.1798C22.7321 10.457 23.1798 10.0093 23.1798 9.45703V8.80603C23.1798 8.25375 22.7321 7.80604 22.1798 7.80604H17.2872C16.7349 7.80604 16.2872 8.25375 16.2872 8.80604V9.45703ZM17.0837 9.39664C16.9373 9.39664 16.8186 9.27795 16.8186 9.13154C16.8186 8.98513 16.9373 8.86644 17.0837 8.86644H22.3857C22.5321 8.86644 22.6508 8.98513 22.6508 9.13154C22.6508 9.27795 22.5321 9.39664 22.3857 9.39664H17.0837Z" />
+                  </mask>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.2872 9.45703C16.2872 10.0093 16.7349 10.457 17.2872 10.457H22.1798C22.7321 10.457 23.1798 10.0093 23.1798 9.45703V8.80603C23.1798 8.25375 22.7321 7.80604 22.1798 7.80604H17.2872C16.7349 7.80604 16.2872 8.25375 16.2872 8.80604V9.45703ZM17.0837 9.39664C16.9373 9.39664 16.8186 9.27795 16.8186 9.13154C16.8186 8.98513 16.9373 8.86644 17.0837 8.86644H22.3857C22.5321 8.86644 22.6508 8.98513 22.6508 9.13154C22.6508 9.27795 22.5321 9.39664 22.3857 9.39664H17.0837Z"
+                    fill="#403F4C" />
+                  <path
+                    d="M17.1761 9.6258H21.4575V10.6258H17.1761V9.6258ZM17.1761 10.6258C16.7902 10.6258 16.4773 10.3129 16.4773 9.92698H17.4773C17.4773 9.76064 17.3424 9.6258 17.1761 9.6258V10.6258ZM22.1798 11.457H17.2872V9.45703H22.1798V11.457ZM24.1798 8.80603V9.45703H22.1798V8.80603H24.1798ZM17.2872 6.80604H22.1798V8.80604H17.2872V6.80604ZM15.2872 9.45703V8.80604H17.2872V9.45703H15.2872ZM17.8186 9.13154C17.8186 8.72567 17.4896 8.39664 17.0837 8.39664V10.3966C16.385 10.3966 15.8186 9.83024 15.8186 9.13154H17.8186ZM17.0837 9.86644C17.4895 9.86644 17.8186 9.53742 17.8186 9.13154H15.8186C15.8186 8.43285 16.385 7.86644 17.0837 7.86644V9.86644ZM22.3857 9.86644H17.0837V7.86644H22.3857V9.86644ZM21.6508 9.13154C21.6508 9.53742 21.9798 9.86644 22.3857 9.86644V7.86644C23.0844 7.86644 23.6508 8.43285 23.6508 9.13154H21.6508ZM22.3857 8.39664C21.9798 8.39664 21.6508 8.72567 21.6508 9.13154H23.6508C23.6508 9.83024 23.0844 10.3966 22.3857 10.3966V8.39664ZM17.0837 8.39664H22.3857V10.3966H17.0837V8.39664ZM17.2872 8.80604V8.80604H15.2872C15.2872 7.70147 16.1827 6.80604 17.2872 6.80604V8.80604ZM22.1798 8.80603L22.1798 8.80604V6.80604C23.2844 6.80604 24.1798 7.70147 24.1798 8.80603H22.1798ZM17.2872 11.457C16.1827 11.457 15.2872 10.5616 15.2872 9.45703H17.2872H17.2872V11.457ZM22.1798 9.45703V9.45703H24.1798C24.1798 10.5616 23.2844 11.457 22.1798 11.457V9.45703Z"
+                    fill="#403F4C" mask="url(#path-3-inside-2_171_10328)" />
+                  <rect x="28.0849" y="32.8582" width="16.1711" height="0.795298" rx="0.397649"
+                    transform="rotate(-180 28.0849 32.8582)" fill="#403F4C" stroke="#403F4C" stroke-width="0.795298" />
+                  <rect x="22.2516" y="7.93829" width="5.03689" height="0.795299" rx="0.397649"
+                    transform="rotate(-180 22.2516 7.93829)" fill="#403F4C" stroke="#403F4C" stroke-width="0.795299" />
                 </svg>
 
-                <span class=" text-sm">نمایشگر لمسی</span> 
+                <span class=" text-sm">برد هوشمند</span>
+              </div>
             </div>
-
-            <div class="flex-col-center ">
-              <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <mask id="path-1-inside-1_171_11303" fill="white">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.7561 9C2.7561 8.44772 3.20382 8 3.7561 8H14.6342C15.1864 8 15.6342 8.44772 15.6342 9V31C15.6342 31.5523 15.1864 32 14.6342 32H3.7561C3.20382 32 2.7561 31.5523 2.7561 31V9ZM4.5122 27C4.5122 26.4477 4.95992 26 5.5122 26H7.60976C8.16205 26 8.60976 26.4477 8.60976 27V28.8182C8.60976 29.3705 8.16205 29.8182 7.60976 29.8182H5.5122C4.95992 29.8182 4.5122 29.3705 4.5122 28.8182V27ZM18.7561 15C17.6515 15 16.7561 15.8954 16.7561 17V27.9399C16.7561 29.0444 17.6515 29.9399 18.7561 29.9399H24.1798V30.6259H23.1262C22.8467 30.6259 22.5787 30.6983 22.3811 30.8271C22.1835 30.9559 22.0725 31.1306 22.0725 31.3128C22.0725 31.495 22.1835 31.6697 22.3811 31.7985C22.5787 31.9273 22.8467 31.9997 23.1262 31.9997H31.5554C31.8349 31.9997 32.1029 31.9273 32.3005 31.7985C32.4981 31.6697 32.6091 31.495 32.6091 31.3128C32.6091 31.1306 32.4981 30.9559 32.3005 30.8271C32.1029 30.6983 31.8349 30.6259 31.5554 30.6259H30.5018V29.9399H36.2439C37.3485 29.9399 38.2439 29.0444 38.2439 27.9399V17C38.2439 15.8954 37.3485 15 36.2439 15H18.7561ZM26.2871 30.6259V29.9399H28.3945V30.6259H26.2871ZM19.1897 16.4946C18.6374 16.4946 18.1897 16.9423 18.1897 17.4946V27.4465C18.1897 27.9988 18.6374 28.4465 19.1897 28.4465H35.8125C36.3647 28.4465 36.8125 27.9988 36.8125 27.4465V17.4946C36.8125 16.9423 36.3647 16.4946 35.8125 16.4946H19.1897Z"/>
-                </mask>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.7561 9C2.7561 8.44772 3.20382 8 3.7561 8H14.6342C15.1864 8 15.6342 8.44772 15.6342 9V31C15.6342 31.5523 15.1864 32 14.6342 32H3.7561C3.20382 32 2.7561 31.5523 2.7561 31V9ZM4.5122 27C4.5122 26.4477 4.95992 26 5.5122 26H7.60976C8.16205 26 8.60976 26.4477 8.60976 27V28.8182C8.60976 29.3705 8.16205 29.8182 7.60976 29.8182H5.5122C4.95992 29.8182 4.5122 29.3705 4.5122 28.8182V27ZM18.7561 15C17.6515 15 16.7561 15.8954 16.7561 17V27.9399C16.7561 29.0444 17.6515 29.9399 18.7561 29.9399H24.1798V30.6259H23.1262C22.8467 30.6259 22.5787 30.6983 22.3811 30.8271C22.1835 30.9559 22.0725 31.1306 22.0725 31.3128C22.0725 31.495 22.1835 31.6697 22.3811 31.7985C22.5787 31.9273 22.8467 31.9997 23.1262 31.9997H31.5554C31.8349 31.9997 32.1029 31.9273 32.3005 31.7985C32.4981 31.6697 32.6091 31.495 32.6091 31.3128C32.6091 31.1306 32.4981 30.9559 32.3005 30.8271C32.1029 30.6983 31.8349 30.6259 31.5554 30.6259H30.5018V29.9399H36.2439C37.3485 29.9399 38.2439 29.0444 38.2439 27.9399V17C38.2439 15.8954 37.3485 15 36.2439 15H18.7561ZM26.2871 30.6259V29.9399H28.3945V30.6259H26.2871ZM19.1897 16.4946C18.6374 16.4946 18.1897 16.9423 18.1897 17.4946V27.4465C18.1897 27.9988 18.6374 28.4465 19.1897 28.4465H35.8125C36.3647 28.4465 36.8125 27.9988 36.8125 27.4465V17.4946C36.8125 16.9423 36.3647 16.4946 35.8125 16.4946H19.1897Z" fill="#403F4C"/>
-                <path d="M24.1798 29.9399H25.1798V28.9399H24.1798V29.9399ZM24.1798 30.6259V31.6259H25.1798V30.6259H24.1798ZM22.3811 30.8271L22.9272 31.6648L22.9272 31.6648L22.3811 30.8271ZM22.3811 31.7985L21.835 32.6362L21.835 32.6362L22.3811 31.7985ZM32.3005 30.8271L31.7544 31.6648L31.7544 31.6648L32.3005 30.8271ZM30.5018 30.6259H29.5018V31.6259H30.5018V30.6259ZM30.5018 29.9399V28.9399H29.5018V29.9399H30.5018ZM26.2871 29.9399V28.9399H25.2871V29.9399H26.2871ZM26.2871 30.6259H25.2871V31.6259H26.2871V30.6259ZM28.3945 29.9399H29.3945V28.9399H28.3945V29.9399ZM28.3945 30.6259V31.6259H29.3945V30.6259H28.3945ZM3.7561 7C2.65153 7 1.7561 7.89543 1.7561 9H3.7561V9V7ZM14.6342 7H3.7561V9H14.6342V7ZM16.6342 9C16.6342 7.89543 15.7387 7 14.6342 7V9H16.6342ZM16.6342 31V9H14.6342V31H16.6342ZM14.6342 33C15.7387 33 16.6342 32.1046 16.6342 31H14.6342V33ZM3.7561 33H14.6342V31H3.7561V33ZM1.7561 31C1.7561 32.1046 2.65153 33 3.7561 33V31H3.7561H1.7561ZM1.7561 9V31H3.7561V9H1.7561ZM5.5122 25C4.40763 25 3.5122 25.8954 3.5122 27H5.5122V25ZM7.60976 25H5.5122V27H7.60976V25ZM9.60976 27C9.60976 25.8954 8.71433 25 7.60976 25V27H7.60976H9.60976ZM9.60976 28.8182V27H7.60976V28.8182H9.60976ZM7.60976 30.8182C8.71433 30.8182 9.60976 29.9228 9.60976 28.8182H7.60976H7.60976V30.8182ZM5.5122 30.8182H7.60976V28.8182H5.5122V30.8182ZM3.5122 28.8182C3.5122 29.9227 4.40763 30.8182 5.5122 30.8182V28.8182H5.5122H3.5122ZM3.5122 27V28.8182H5.5122V27H3.5122ZM17.7561 17C17.7561 16.4477 18.2038 16 18.7561 16V14C17.0992 14 15.7561 15.3431 15.7561 17H17.7561ZM17.7561 27.9399V17H15.7561V27.9399H17.7561ZM18.7561 28.9399C18.2038 28.9399 17.7561 28.4922 17.7561 27.9399H15.7561C15.7561 29.5967 17.0993 30.9399 18.7561 30.9399V28.9399ZM24.1798 28.9399H18.7561V30.9399H24.1798V28.9399ZM25.1798 30.6259V29.9399H23.1798V30.6259H25.1798ZM23.1262 31.6259H24.1798V29.6259H23.1262V31.6259ZM22.9272 31.6648C22.9265 31.6652 22.9439 31.6543 22.9836 31.6436C23.0223 31.6331 23.0714 31.6259 23.1262 31.6259V29.6259C22.6892 29.6259 22.2231 29.7364 21.835 29.9894L22.9272 31.6648ZM23.0725 31.3128C23.0725 31.4313 23.0351 31.5259 22.9967 31.5862C22.9605 31.6432 22.9278 31.6644 22.9272 31.6648L21.835 29.9894C21.4481 30.2416 21.0725 30.6941 21.0725 31.3128H23.0725ZM22.9272 30.9608C22.9278 30.9611 22.9605 30.9823 22.9967 31.0394C23.0351 31.0997 23.0725 31.1943 23.0725 31.3128H21.0725C21.0725 31.9315 21.4481 32.384 21.835 32.6362L22.9272 30.9608ZM23.1262 30.9997C23.0714 30.9997 23.0223 30.9924 22.9836 30.982C22.9439 30.9712 22.9265 30.9603 22.9272 30.9608L21.835 32.6362C22.2231 32.8892 22.6892 32.9997 23.1262 32.9997V30.9997ZM31.5554 30.9997H23.1262V32.9997H31.5554V30.9997ZM31.7544 30.9608C31.7551 30.9603 31.7377 30.9712 31.698 30.982C31.6593 30.9924 31.6102 30.9997 31.5554 30.9997V32.9997C31.9924 32.9997 32.4585 32.8892 32.8466 32.6362L31.7544 30.9608ZM31.6091 31.3128C31.6091 31.1943 31.6465 31.0997 31.6849 31.0393C31.7211 30.9823 31.7538 30.9611 31.7544 30.9608L32.8466 32.6362C33.2335 32.384 33.6091 31.9315 33.6091 31.3128H31.6091ZM31.7544 31.6648C31.7538 31.6644 31.7211 31.6432 31.6849 31.5862C31.6465 31.5259 31.6091 31.4313 31.6091 31.3128H33.6091C33.6091 30.6941 33.2335 30.2416 32.8466 29.9894L31.7544 31.6648ZM31.5554 31.6259C31.6102 31.6259 31.6593 31.6331 31.698 31.6436C31.7377 31.6543 31.7551 31.6652 31.7544 31.6648L32.8466 29.9894C32.4585 29.7364 31.9924 29.6259 31.5554 29.6259V31.6259ZM30.5018 31.6259H31.5554V29.6259H30.5018V31.6259ZM29.5018 29.9399V30.6259H31.5018V29.9399H29.5018ZM36.2439 28.9399H30.5018V30.9399H36.2439V28.9399ZM37.2439 27.9399C37.2439 28.4922 36.7962 28.9399 36.2439 28.9399V30.9399C37.9008 30.9399 39.2439 29.5967 39.2439 27.9399H37.2439ZM37.2439 17V27.9399H39.2439V17H37.2439ZM36.2439 16C36.7962 16 37.2439 16.4477 37.2439 17H39.2439C39.2439 15.3431 37.9008 14 36.2439 14V16ZM18.7561 16H36.2439V14H18.7561V16ZM25.2871 29.9399V30.6259H27.2871V29.9399H25.2871ZM28.3945 28.9399H26.2871V30.9399H28.3945V28.9399ZM29.3945 30.6259V29.9399H27.3945V30.6259H29.3945ZM26.2871 31.6259H28.3945V29.6259H26.2871V31.6259ZM19.1897 17.4946V17.4946V15.4946C18.0851 15.4946 17.1897 16.39 17.1897 17.4946H19.1897ZM19.1897 27.4465V17.4946H17.1897V27.4465H19.1897ZM19.1897 27.4465H17.1897C17.1897 28.5511 18.0851 29.4465 19.1897 29.4465V27.4465ZM35.8125 27.4465H19.1897V29.4465H35.8125V27.4465ZM35.8125 27.4465V29.4465C36.917 29.4465 37.8125 28.5511 37.8125 27.4465H35.8125ZM35.8125 17.4946V27.4465H37.8125V17.4946H35.8125ZM35.8125 17.4946H37.8125C37.8125 16.39 36.917 15.4946 35.8125 15.4946V17.4946ZM19.1897 17.4946H35.8125V15.4946H19.1897V17.4946Z" fill="#403F4C" mask="url(#path-1-inside-1_171_11303)"/>
-                </svg>
-                <span class=" text-sm">کامپیوتر و تجهیزات</span> 
-            </div>
-        
           </div>
-        </div>
-      </section>
 
-     <section class="col-span-full flex flex-col space-y-8">
-       <!-- Buying guide -->
-       <section class=" col-span-full">
+          <div class="flex-col-center ">
+            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="7.37778" y="27.2636" width="5.62464" height="0.937439" rx="0.46872" fill="#403F4C"
+                stroke="#403F4C" stroke-width="0.937439" />
+              <mask id="path-2-inside-1_171_11250" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.50098 20.4844C5.50098 18.2752 7.29184 16.4844 9.50098 16.4844H31.499C33.7082 16.4844 35.499 18.2752 35.499 20.4844V22.3275C35.499 24.5366 33.7082 26.3275 31.499 26.3275H9.50098C7.29184 26.3275 5.50098 24.5366 5.50098 22.3275V20.4844ZM9.2507 19.7654C9.2507 19.2477 9.67041 18.828 10.1881 18.828H14.8753C15.3931 18.828 15.8128 19.2477 15.8128 19.7654C15.8128 20.2831 15.3931 20.7028 14.8753 20.7028H10.1881C9.67041 20.7028 9.2507 20.2831 9.2507 19.7654ZM10.1881 21.6402C9.67041 21.6402 9.2507 22.06 9.2507 22.5777C9.2507 23.0954 9.67041 23.5151 10.1881 23.5151H14.8753C15.3931 23.5151 15.8128 23.0954 15.8128 22.5777C15.8128 22.06 15.3931 21.6402 14.8753 21.6402H10.1881Z" />
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.50098 20.4844C5.50098 18.2752 7.29184 16.4844 9.50098 16.4844H31.499C33.7082 16.4844 35.499 18.2752 35.499 20.4844V22.3275C35.499 24.5366 33.7082 26.3275 31.499 26.3275H9.50098C7.29184 26.3275 5.50098 24.5366 5.50098 22.3275V20.4844ZM9.2507 19.7654C9.2507 19.2477 9.67041 18.828 10.1881 18.828H14.8753C15.3931 18.828 15.8128 19.2477 15.8128 19.7654C15.8128 20.2831 15.3931 20.7028 14.8753 20.7028H10.1881C9.67041 20.7028 9.2507 20.2831 9.2507 19.7654ZM10.1881 21.6402C9.67041 21.6402 9.2507 22.06 9.2507 22.5777C9.2507 23.0954 9.67041 23.5151 10.1881 23.5151H14.8753C15.3931 23.5151 15.8128 23.0954 15.8128 22.5777C15.8128 22.06 15.3931 21.6402 14.8753 21.6402H10.1881Z"
+                fill="#403F4C" />
+              <path
+                d="M9.50098 15.4844C6.73955 15.4844 4.50098 17.723 4.50098 20.4844H6.50098C6.50098 18.8275 7.84412 17.4844 9.50098 17.4844V15.4844ZM31.499 15.4844H9.50098V17.4844H31.499V15.4844ZM36.499 20.4844C36.499 17.723 34.2605 15.4844 31.499 15.4844V17.4844C33.1559 17.4844 34.499 18.8275 34.499 20.4844H36.499ZM36.499 22.3275V20.4844H34.499V22.3275H36.499ZM31.499 27.3275C34.2605 27.3275 36.499 25.0889 36.499 22.3275H34.499C34.499 23.9843 33.1559 25.3275 31.499 25.3275V27.3275ZM9.50098 27.3275H31.499V25.3275H9.50098V27.3275ZM4.50098 22.3275C4.50098 25.0889 6.73956 27.3275 9.50098 27.3275V25.3275C7.84412 25.3275 6.50098 23.9843 6.50098 22.3275H4.50098ZM4.50098 20.4844V22.3275H6.50098V20.4844H4.50098ZM10.1881 17.828C9.11812 17.828 8.2507 18.6954 8.2507 19.7654H10.2507C10.2507 19.7999 10.2227 19.828 10.1881 19.828V17.828ZM14.8753 17.828H10.1881V19.828H14.8753V17.828ZM16.8128 19.7654C16.8128 18.6954 15.9454 17.828 14.8753 17.828V19.828C14.8408 19.828 14.8128 19.7999 14.8128 19.7654H16.8128ZM14.8753 21.7028C15.9454 21.7028 16.8128 20.8354 16.8128 19.7654H14.8128C14.8128 19.7308 14.8408 19.7028 14.8753 19.7028V21.7028ZM10.1881 21.7028H14.8753V19.7028H10.1881V21.7028ZM8.2507 19.7654C8.2507 20.8354 9.11812 21.7028 10.1881 21.7028V19.7028C10.2227 19.7028 10.2507 19.7308 10.2507 19.7654H8.2507ZM10.2507 22.5777C10.2507 22.6122 10.2227 22.6402 10.1881 22.6402V20.6402C9.11812 20.6402 8.2507 21.5077 8.2507 22.5777H10.2507ZM10.1881 22.5151C10.2227 22.5151 10.2507 22.5431 10.2507 22.5777H8.2507C8.2507 23.6477 9.11812 24.5151 10.1881 24.5151V22.5151ZM14.8753 22.5151H10.1881V24.5151H14.8753V22.5151ZM14.8128 22.5777C14.8128 22.5431 14.8408 22.5151 14.8753 22.5151V24.5151C15.9454 24.5151 16.8128 23.6477 16.8128 22.5777H14.8128ZM14.8753 22.6402C14.8408 22.6402 14.8128 22.6122 14.8128 22.5777H16.8128C16.8128 21.5077 15.9454 20.6402 14.8753 20.6402V22.6402ZM10.1881 22.6402H14.8753V20.6402H10.1881V22.6402Z"
+                fill="#403F4C" mask="url(#path-2-inside-1_171_11250)" />
+              <rect x="28.0012" y="27.2636" width="5.62464" height="0.937439" rx="0.46872" fill="#403F4C"
+                stroke="#403F4C" stroke-width="0.937439" />
+              <circle cx="26.594" cy="16.484" r="4.15592" fill="white" stroke="#403F4C" stroke-width="2" />
+            </svg>
+            <span class=" text-sm">ویدیو پروژکتور</span>
+          </div>
+
+          <div class="flex-col-center">
+            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="9.90442" y="9.4043" width="5.5565" height="1.01739" rx="0.508693" fill="#403F4C"
+                stroke="#403F4C" />
+              <rect x="25.54" y="9.4043" width="5.5565" height="1.01739" rx="0.508693" fill="#403F4C"
+                stroke="#403F4C" />
+              <rect x="5.86963" y="29.5781" width="29.2608" height="1.01739" rx="0.508693" fill="#403F4C"
+                stroke="#403F4C" />
+              <rect x="5.86963" y="12.4297" width="29.2608" height="1.01739" rx="0.508693" fill="#403F4C"
+                stroke="#403F4C" />
+              <mask id="path-5-inside-1_171_74" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.37781 16.9551C6.37781 15.8505 7.27324 14.9551 8.37781 14.9551H32.6212C33.7258 14.9551 34.6212 15.8505 34.6212 16.9551V26.0681C34.6212 27.1727 33.7258 28.0681 32.6212 28.0681H8.37781C7.27324 28.0681 6.37781 27.1727 6.37781 26.0681V16.9551ZM17.878 20.9012L20.0998 18.7905C20.5002 18.4101 21.1308 18.864 20.8973 19.3644L20.5803 20.0436C20.4256 20.3751 20.6676 20.755 21.0334 20.755H22.4418C22.9042 20.755 23.1188 21.3289 22.7699 21.6323L20.9483 23.2163C20.5051 23.6017 19.8803 23.0327 20.213 22.5487C20.4411 22.217 20.2048 21.7637 19.8022 21.7637H18.2224C17.7707 21.7637 17.5505 21.2123 17.878 20.9012ZM11.4223 18.4855C11.1438 18.4855 10.918 18.7113 10.918 18.9898C10.918 19.2684 11.1438 19.4942 11.4223 19.4942H12.4299V20.5029C12.4299 20.7814 12.6557 21.0072 12.9342 21.0072C13.2128 21.0072 13.4386 20.7814 13.4386 20.5029V19.4942H14.4484C14.7269 19.4942 14.9527 19.2684 14.9527 18.9898C14.9527 18.7113 14.7269 18.4855 14.4484 18.4855H13.4386V17.4768C13.4386 17.1982 13.2128 16.9724 12.9342 16.9724C12.6557 16.9724 12.4299 17.1982 12.4299 17.4768V18.4855H11.4223ZM26.0482 18.9898C26.0482 18.7113 26.274 18.4855 26.5526 18.4855H29.5787C29.8572 18.4855 30.083 18.7113 30.083 18.9898C30.083 19.2684 29.8572 19.4942 29.5787 19.4942H26.5526C26.274 19.4942 26.0482 19.2684 26.0482 18.9898Z" />
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.37781 16.9551C6.37781 15.8505 7.27324 14.9551 8.37781 14.9551H32.6212C33.7258 14.9551 34.6212 15.8505 34.6212 16.9551V26.0681C34.6212 27.1727 33.7258 28.0681 32.6212 28.0681H8.37781C7.27324 28.0681 6.37781 27.1727 6.37781 26.0681V16.9551ZM17.878 20.9012L20.0998 18.7905C20.5002 18.4101 21.1308 18.864 20.8973 19.3644L20.5803 20.0436C20.4256 20.3751 20.6676 20.755 21.0334 20.755H22.4418C22.9042 20.755 23.1188 21.3289 22.7699 21.6323L20.9483 23.2163C20.5051 23.6017 19.8803 23.0327 20.213 22.5487C20.4411 22.217 20.2048 21.7637 19.8022 21.7637H18.2224C17.7707 21.7637 17.5505 21.2123 17.878 20.9012ZM11.4223 18.4855C11.1438 18.4855 10.918 18.7113 10.918 18.9898C10.918 19.2684 11.1438 19.4942 11.4223 19.4942H12.4299V20.5029C12.4299 20.7814 12.6557 21.0072 12.9342 21.0072C13.2128 21.0072 13.4386 20.7814 13.4386 20.5029V19.4942H14.4484C14.7269 19.4942 14.9527 19.2684 14.9527 18.9898C14.9527 18.7113 14.7269 18.4855 14.4484 18.4855H13.4386V17.4768C13.4386 17.1982 13.2128 16.9724 12.9342 16.9724C12.6557 16.9724 12.4299 17.1982 12.4299 17.4768V18.4855H11.4223ZM26.0482 18.9898C26.0482 18.7113 26.274 18.4855 26.5526 18.4855H29.5787C29.8572 18.4855 30.083 18.7113 30.083 18.9898C30.083 19.2684 29.8572 19.4942 29.5787 19.4942H26.5526C26.274 19.4942 26.0482 19.2684 26.0482 18.9898Z"
+                fill="#403F4C" />
+              <path
+                d="M20.0998 18.7905L19.4111 18.0655V18.0655L20.0998 18.7905ZM17.878 20.9012L17.1892 20.1762L17.1892 20.1762L17.878 20.9012ZM20.8973 19.3644L19.9911 18.9415L20.8973 19.3644ZM20.5803 20.0436L19.6742 19.6207V19.6207L20.5803 20.0436ZM22.7699 21.6323L23.426 22.387L22.7699 21.6323ZM20.9483 23.2163L21.6044 23.971L21.6044 23.9709L20.9483 23.2163ZM20.213 22.5487L21.0371 23.1152L21.0371 23.1152L20.213 22.5487ZM12.4299 19.4942H13.4299V18.4942H12.4299V19.4942ZM13.4386 19.4942V18.4942H12.4386V19.4942H13.4386ZM13.4386 18.4855H12.4386V19.4855H13.4386V18.4855ZM12.4299 18.4855V19.4855H13.4299V18.4855H12.4299ZM8.37781 13.9551C6.72095 13.9551 5.37781 15.2982 5.37781 16.9551H7.37781C7.37781 16.4028 7.82552 15.9551 8.37781 15.9551V13.9551ZM32.6212 13.9551H8.37781V15.9551H32.6212V13.9551ZM35.6212 16.9551C35.6212 15.2982 34.2781 13.9551 32.6212 13.9551V15.9551C33.1735 15.9551 33.6212 16.4028 33.6212 16.9551H35.6212ZM35.6212 26.0681V16.9551H33.6212V26.0681H35.6212ZM32.6212 29.0681C34.2781 29.0681 35.6212 27.7249 35.6212 26.0681H33.6212C33.6212 26.6204 33.1735 27.0681 32.6212 27.0681V29.0681ZM8.37781 29.0681H32.6212V27.0681H8.37781V29.0681ZM5.37781 26.0681C5.37781 27.7249 6.72095 29.0681 8.37781 29.0681V27.0681C7.82552 27.0681 7.37781 26.6204 7.37781 26.0681H5.37781ZM5.37781 16.9551V26.0681H7.37781V16.9551H5.37781ZM19.4111 18.0655L17.1892 20.1762L18.5667 21.6262L20.7886 19.5155L19.4111 18.0655ZM21.8035 19.7873C22.5041 18.286 20.6122 16.9244 19.4111 18.0655L20.7886 19.5155C20.7116 19.5886 20.5914 19.6451 20.4541 19.6489C20.3293 19.6524 20.2261 19.612 20.1521 19.5588C20.0782 19.5056 20.0071 19.4205 19.9708 19.3011C19.9308 19.1696 19.9462 19.0377 19.9911 18.9415L21.8035 19.7873ZM21.4865 20.4665L21.8035 19.7873L19.9911 18.9415L19.6742 19.6207L21.4865 20.4665ZM21.0334 19.755C21.3992 19.755 21.6412 20.135 21.4865 20.4665L19.6742 19.6207C19.2101 20.6152 19.936 21.755 21.0334 21.755V19.755ZM22.4418 19.755H21.0334V21.755H22.4418V19.755ZM23.426 22.387C24.4729 21.4766 23.8291 19.755 22.4418 19.755V21.755C21.9793 21.755 21.7647 21.1812 22.1137 20.8777L23.426 22.387ZM21.6044 23.9709L23.426 22.387L22.1137 20.8777L20.2921 22.4617L21.6044 23.9709ZM19.389 21.9822C18.895 22.7007 19.138 23.5129 19.6169 23.9484C20.0986 24.3864 20.9388 24.5498 21.6044 23.971L20.2921 22.4617C20.3735 22.3909 20.5061 22.3356 20.6576 22.3443C20.7926 22.3522 20.8954 22.4077 20.9624 22.4687C21.0295 22.5297 21.0917 22.6239 21.1123 22.7514C21.1354 22.894 21.0975 23.0273 21.0371 23.1152L19.389 21.9822ZM19.8022 22.7637C19.3921 22.7637 19.1652 22.3077 19.389 21.9822L21.0371 23.1152C21.717 22.1262 21.0175 20.7637 19.8022 20.7637V22.7637ZM18.2224 22.7637H19.8022V20.7637H18.2224V22.7637ZM17.1892 20.1762C16.2069 21.1095 16.8674 22.7637 18.2224 22.7637V20.7637C18.674 20.7637 18.8942 21.3152 18.5667 21.6262L17.1892 20.1762ZM11.918 18.9898C11.918 19.2636 11.6961 19.4855 11.4223 19.4855V17.4855C10.5915 17.4855 9.91798 18.159 9.91798 18.9898H11.918ZM11.4223 18.4942C11.6961 18.4942 11.918 18.7161 11.918 18.9898H9.91798C9.91798 19.8206 10.5915 20.4942 11.4223 20.4942V18.4942ZM12.4299 18.4942H11.4223V20.4942H12.4299V18.4942ZM13.4299 20.5029V19.4942H11.4299V20.5029H13.4299ZM12.9342 20.0072C13.208 20.0072 13.4299 20.2291 13.4299 20.5029H11.4299C11.4299 21.3337 12.1034 22.0072 12.9342 22.0072V20.0072ZM12.4386 20.5029C12.4386 20.2291 12.6605 20.0072 12.9342 20.0072V22.0072C13.7651 22.0072 14.4386 21.3337 14.4386 20.5029H12.4386ZM12.4386 19.4942V20.5029H14.4386V19.4942H12.4386ZM14.4484 18.4942H13.4386V20.4942H14.4484V18.4942ZM13.9527 18.9898C13.9527 18.7161 14.1747 18.4942 14.4484 18.4942V20.4942C15.2792 20.4942 15.9527 19.8206 15.9527 18.9898H13.9527ZM14.4484 19.4855C14.1747 19.4855 13.9527 19.2636 13.9527 18.9898H15.9527C15.9527 18.159 15.2792 17.4855 14.4484 17.4855V19.4855ZM13.4386 19.4855H14.4484V17.4855H13.4386V19.4855ZM12.4386 17.4768V18.4855H14.4386V17.4768H12.4386ZM12.9342 17.9724C12.6605 17.9724 12.4386 17.7505 12.4386 17.4768H14.4386C14.4386 16.646 13.7651 15.9724 12.9342 15.9724V17.9724ZM13.4299 17.4768C13.4299 17.7505 13.208 17.9724 12.9342 17.9724V15.9724C12.1034 15.9724 11.4299 16.646 11.4299 17.4768H13.4299ZM13.4299 18.4855V17.4768H11.4299V18.4855H13.4299ZM11.4223 19.4855H12.4299V17.4855H11.4223V19.4855ZM26.5526 17.4855C25.7218 17.4855 25.0482 18.159 25.0482 18.9898H27.0482C27.0482 19.2636 26.8263 19.4855 26.5526 19.4855V17.4855ZM29.5787 17.4855H26.5526V19.4855H29.5787V17.4855ZM31.083 18.9898C31.083 18.159 30.4095 17.4855 29.5787 17.4855V19.4855C29.3049 19.4855 29.083 19.2636 29.083 18.9898H31.083ZM29.5787 20.4942C30.4095 20.4942 31.083 19.8206 31.083 18.9898H29.083C29.083 18.7161 29.3049 18.4942 29.5787 18.4942V20.4942ZM26.5526 20.4942H29.5787V18.4942H26.5526V20.4942ZM25.0482 18.9898C25.0482 19.8206 25.7218 20.4942 26.5526 20.4942V18.4942C26.8263 18.4942 27.0482 18.7161 27.0482 18.9898H25.0482Z"
+                fill="#403F4C" mask="url(#path-5-inside-1_171_74)" />
+            </svg>
+
+            <span class=" text-sm">یو پی اس</span>
+          </div>
+
+          <div class="flex-col-center ">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="path-1-inside-1_171_10313" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M33.5055 9.64453H6.49353V25.6525C6.49353 26.7571 7.38896 27.6525 8.49353 27.6525H31.5055C32.6101 27.6525 33.5055 26.7571 33.5055 25.6525V9.64453ZM9.87002 11.8955C9.49707 11.8955 9.19473 12.1979 9.19473 12.5708C9.19473 12.9438 9.49707 13.2461 9.87002 13.2461H26.0772C26.4502 13.2461 26.7525 12.9438 26.7525 12.5708C26.7525 12.1979 26.4502 11.8955 26.0772 11.8955H9.87002ZM9.19473 16.1724C9.19473 15.7995 9.49707 15.4971 9.87002 15.4971H20.2246C20.5976 15.4971 20.8999 15.7995 20.8999 16.1724C20.8999 16.5454 20.5976 16.8477 20.2246 16.8477H9.87002C9.49707 16.8477 9.19473 16.5454 9.19473 16.1724ZM9.87002 18.6485C9.49707 18.6485 9.19473 18.9509 9.19473 19.3238C9.19473 19.6968 9.49707 19.9991 9.87002 19.9991H20.2246C20.5976 19.9991 20.8999 19.6968 20.8999 19.3238C20.8999 18.9509 20.5976 18.6485 20.2246 18.6485H9.87002ZM9.19473 22.9254C9.19473 22.5525 9.49707 22.2501 9.87002 22.2501H20.2246C20.5976 22.2501 20.8999 22.5525 20.8999 22.9254C20.8999 23.2984 20.5976 23.6007 20.2246 23.6007H9.87002C9.49707 23.6007 9.19473 23.2984 9.19473 22.9254ZM24.2505 15.4971C23.1459 15.4971 22.2505 16.3925 22.2505 17.4971V21.6007C22.2505 22.7053 23.1459 23.6007 24.2505 23.6007H28.3541C29.4587 23.6007 30.3541 22.7053 30.3541 21.6007V17.4971C30.3541 16.3926 29.4587 15.4971 28.3541 15.4971H24.2505Z" />
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M33.5055 9.64453H6.49353V25.6525C6.49353 26.7571 7.38896 27.6525 8.49353 27.6525H31.5055C32.6101 27.6525 33.5055 26.7571 33.5055 25.6525V9.64453ZM9.87002 11.8955C9.49707 11.8955 9.19473 12.1979 9.19473 12.5708C9.19473 12.9438 9.49707 13.2461 9.87002 13.2461H26.0772C26.4502 13.2461 26.7525 12.9438 26.7525 12.5708C26.7525 12.1979 26.4502 11.8955 26.0772 11.8955H9.87002ZM9.19473 16.1724C9.19473 15.7995 9.49707 15.4971 9.87002 15.4971H20.2246C20.5976 15.4971 20.8999 15.7995 20.8999 16.1724C20.8999 16.5454 20.5976 16.8477 20.2246 16.8477H9.87002C9.49707 16.8477 9.19473 16.5454 9.19473 16.1724ZM9.87002 18.6485C9.49707 18.6485 9.19473 18.9509 9.19473 19.3238C9.19473 19.6968 9.49707 19.9991 9.87002 19.9991H20.2246C20.5976 19.9991 20.8999 19.6968 20.8999 19.3238C20.8999 18.9509 20.5976 18.6485 20.2246 18.6485H9.87002ZM9.19473 22.9254C9.19473 22.5525 9.49707 22.2501 9.87002 22.2501H20.2246C20.5976 22.2501 20.8999 22.5525 20.8999 22.9254C20.8999 23.2984 20.5976 23.6007 20.2246 23.6007H9.87002C9.49707 23.6007 9.19473 23.2984 9.19473 22.9254ZM24.2505 15.4971C23.1459 15.4971 22.2505 16.3925 22.2505 17.4971V21.6007C22.2505 22.7053 23.1459 23.6007 24.2505 23.6007H28.3541C29.4587 23.6007 30.3541 22.7053 30.3541 21.6007V17.4971C30.3541 16.3926 29.4587 15.4971 28.3541 15.4971H24.2505Z"
+                fill="#403F4C" />
+              <path
+                d="M6.49353 9.64453V8.64453H5.49353V9.64453H6.49353ZM33.5055 9.64453H34.5055V8.64453H33.5055V9.64453ZM6.49353 10.6445H33.5055V8.64453H6.49353V10.6445ZM7.49353 25.6525V9.64453H5.49353V25.6525H7.49353ZM8.49353 26.6525C7.94125 26.6525 7.49353 26.2048 7.49353 25.6525H5.49353C5.49353 27.3094 6.83667 28.6525 8.49353 28.6525V26.6525ZM31.5055 26.6525H8.49353V28.6525H31.5055V26.6525ZM32.5055 25.6525C32.5055 26.2048 32.0578 26.6525 31.5055 26.6525V28.6525C33.1623 28.6525 34.5055 27.3094 34.5055 25.6525H32.5055ZM32.5055 9.64453V25.6525H34.5055V9.64453H32.5055ZM10.1947 12.5708C10.1947 12.7502 10.0494 12.8955 9.87002 12.8955V10.8955C8.94478 10.8955 8.19473 11.6456 8.19473 12.5708H10.1947ZM9.87002 12.2461C10.0494 12.2461 10.1947 12.3915 10.1947 12.5708H8.19473C8.19473 13.4961 8.94478 14.2461 9.87002 14.2461V12.2461ZM26.0772 12.2461H9.87002V14.2461H26.0772V12.2461ZM25.7525 12.5708C25.7525 12.3915 25.8979 12.2461 26.0772 12.2461V14.2461C27.0024 14.2461 27.7525 13.4961 27.7525 12.5708H25.7525ZM26.0772 12.8955C25.8979 12.8955 25.7525 12.7502 25.7525 12.5708H27.7525C27.7525 11.6456 27.0024 10.8955 26.0772 10.8955V12.8955ZM9.87002 12.8955H26.0772V10.8955H9.87002V12.8955ZM9.87002 14.4971C8.94478 14.4971 8.19473 15.2472 8.19473 16.1724H10.1947C10.1947 16.3517 10.0494 16.4971 9.87002 16.4971V14.4971ZM20.2246 14.4971H9.87002V16.4971H20.2246V14.4971ZM21.8999 16.1724C21.8999 15.2472 21.1498 14.4971 20.2246 14.4971V16.4971C20.0453 16.4971 19.8999 16.3517 19.8999 16.1724H21.8999ZM20.2246 17.8477C21.1498 17.8477 21.8999 17.0977 21.8999 16.1724H19.8999C19.8999 15.9931 20.0453 15.8477 20.2246 15.8477V17.8477ZM9.87002 17.8477H20.2246V15.8477H9.87002V17.8477ZM8.19473 16.1724C8.19473 17.0977 8.94478 17.8477 9.87002 17.8477V15.8477C10.0494 15.8477 10.1947 15.9931 10.1947 16.1724H8.19473ZM10.1947 19.3238C10.1947 19.5031 10.0494 19.6485 9.87002 19.6485V17.6485C8.94478 17.6485 8.19473 18.3986 8.19473 19.3238H10.1947ZM9.87002 18.9991C10.0494 18.9991 10.1947 19.1445 10.1947 19.3238H8.19473C8.19473 20.2491 8.94478 20.9991 9.87002 20.9991V18.9991ZM20.2246 18.9991H9.87002V20.9991H20.2246V18.9991ZM19.8999 19.3238C19.8999 19.1445 20.0453 18.9991 20.2246 18.9991V20.9991C21.1498 20.9991 21.8999 20.2491 21.8999 19.3238H19.8999ZM20.2246 19.6485C20.0453 19.6485 19.8999 19.5031 19.8999 19.3238H21.8999C21.8999 18.3986 21.1498 17.6485 20.2246 17.6485V19.6485ZM9.87002 19.6485H20.2246V17.6485H9.87002V19.6485ZM9.87002 21.2501C8.94478 21.2501 8.19473 22.0002 8.19473 22.9254H10.1947C10.1947 23.1047 10.0494 23.2501 9.87002 23.2501V21.2501ZM20.2246 21.2501H9.87002V23.2501H20.2246V21.2501ZM21.8999 22.9254C21.8999 22.0002 21.1498 21.2501 20.2246 21.2501V23.2501C20.0453 23.2501 19.8999 23.1047 19.8999 22.9254H21.8999ZM20.2246 24.6007C21.1498 24.6007 21.8999 23.8506 21.8999 22.9254H19.8999C19.8999 22.7461 20.0453 22.6007 20.2246 22.6007V24.6007ZM9.87002 24.6007H20.2246V22.6007H9.87002V24.6007ZM8.19473 22.9254C8.19473 23.8507 8.94478 24.6007 9.87002 24.6007V22.6007C10.0494 22.6007 10.1947 22.7461 10.1947 22.9254H8.19473ZM23.2505 17.4971C23.2505 16.9448 23.6982 16.4971 24.2505 16.4971V14.4971C22.5936 14.4971 21.2505 15.8403 21.2505 17.4971H23.2505ZM23.2505 21.6007V17.4971H21.2505V21.6007H23.2505ZM24.2505 22.6007C23.6982 22.6007 23.2505 22.153 23.2505 21.6007H21.2505C21.2505 23.2576 22.5936 24.6007 24.2505 24.6007V22.6007ZM28.3541 22.6007H24.2505V24.6007H28.3541V22.6007ZM29.3541 21.6007C29.3541 22.153 28.9064 22.6007 28.3541 22.6007V24.6007C30.0109 24.6007 31.3541 23.2576 31.3541 21.6007H29.3541ZM29.3541 17.4971V21.6007H31.3541V17.4971H29.3541ZM28.3541 16.4971C28.9064 16.4971 29.3541 16.9448 29.3541 17.4971H31.3541C31.3541 15.8403 30.0109 14.4971 28.3541 14.4971V16.4971ZM24.2505 16.4971H28.3541V14.4971H24.2505V16.4971Z"
+                fill="#403F4C" mask="url(#path-1-inside-1_171_10313)" />
+              <rect x="20.2251" y="27.4282" width="1.8008" height="0.450199" rx="0.2251"
+                transform="rotate(90 20.2251 27.4282)" fill="#403F4C" stroke="#403F4C" stroke-width="0.450199" />
+              <rect x="34.0687" y="9.30884" width="28.1375" height="0.675298" rx="0.337649"
+                transform="rotate(-180 34.0687 9.30884)" fill="#403F4C" stroke="#403F4C" stroke-width="0.675298" />
+              <rect x="23.6514" y="16.8984" width="5.30279" height="5.30279" rx="1.5" fill="#403F4C" stroke="#403F4C" />
+              <circle cx="20" cy="30.3545" r="0.850598" fill="#403F4C" stroke="#403F4C" />
+            </svg>
+            <span class=" text-sm">برد هوشمند</span>
+          </div>
+
+          <div class="flex-col-center">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="path-1-inside-1_171_10298" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.34778 8C5.24321 8 4.34778 8.89543 4.34778 10V26.8696C4.34778 27.9741 5.24321 28.8696 6.34778 28.8696H33.6521C34.7567 28.8696 35.6521 27.9741 35.6521 26.8696V10C35.6521 8.89543 34.7567 8 33.6521 8H6.34778ZM7.4349 10.087C6.88262 10.087 6.4349 10.5347 6.4349 11.087V25.7826C6.4349 26.3349 6.88262 26.7826 7.4349 26.7826H32.5653C33.1176 26.7826 33.5653 26.3349 33.5653 25.7826V11.087C33.5653 10.5347 33.1176 10.087 32.5653 10.087H7.4349Z" />
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.34778 8C5.24321 8 4.34778 8.89543 4.34778 10V26.8696C4.34778 27.9741 5.24321 28.8696 6.34778 28.8696H33.6521C34.7567 28.8696 35.6521 27.9741 35.6521 26.8696V10C35.6521 8.89543 34.7567 8 33.6521 8H6.34778ZM7.4349 10.087C6.88262 10.087 6.4349 10.5347 6.4349 11.087V25.7826C6.4349 26.3349 6.88262 26.7826 7.4349 26.7826H32.5653C33.1176 26.7826 33.5653 26.3349 33.5653 25.7826V11.087C33.5653 10.5347 33.1176 10.087 32.5653 10.087H7.4349Z"
+                fill="#403F4C" />
+              <path
+                d="M5.34778 10C5.34778 9.44772 5.79549 9 6.34778 9V7C4.69092 7 3.34778 8.34314 3.34778 10H5.34778ZM5.34778 26.8696V10H3.34778V26.8696H5.34778ZM6.34778 27.8696C5.79549 27.8696 5.34778 27.4219 5.34778 26.8696H3.34778C3.34778 28.5264 4.69093 29.8696 6.34778 29.8696V27.8696ZM33.6521 27.8696H6.34778V29.8696H33.6521V27.8696ZM34.6521 26.8696C34.6521 27.4219 34.2044 27.8696 33.6521 27.8696V29.8696C35.309 29.8696 36.6521 28.5264 36.6521 26.8696H34.6521ZM34.6521 10V26.8696H36.6521V10H34.6521ZM33.6521 9C34.2044 9 34.6521 9.44772 34.6521 10H36.6521C36.6521 8.34314 35.309 7 33.6521 7V9ZM6.34778 9H33.6521V7H6.34778V9ZM7.4349 11.087V11.087V9.08696C6.33034 9.08696 5.4349 9.98239 5.4349 11.087H7.4349ZM7.4349 25.7826V11.087H5.4349V25.7826H7.4349ZM7.4349 25.7826H5.4349C5.4349 26.8872 6.33033 27.7826 7.4349 27.7826V25.7826ZM32.5653 25.7826H7.4349V27.7826H32.5653V25.7826ZM32.5653 25.7826V27.7826C33.6699 27.7826 34.5653 26.8872 34.5653 25.7826H32.5653ZM32.5653 11.087V25.7826H34.5653V11.087H32.5653ZM32.5653 11.087H34.5653C34.5653 9.98239 33.6699 9.08696 32.5653 9.08696V11.087ZM7.4349 11.087H32.5653V9.08696H7.4349V11.087Z"
+                fill="#403F4C" mask="url(#path-1-inside-1_171_10298)" />
+              <rect x="13.8697" y="30.5657" width="4.95652" height="0.782609" rx="0.391304"
+                transform="rotate(-180 13.8697 30.5657)" fill="#403F4C" stroke="#403F4C" stroke-width="0.782609" />
+              <rect x="31.0871" y="30.5657" width="4.95652" height="0.782609" rx="0.391304"
+                transform="rotate(-180 31.0871 30.5657)" fill="#403F4C" stroke="#403F4C" stroke-width="0.782609" />
+              <path
+                d="M19.797 18.1523C19.8819 18.1523 19.9658 18.178 20.0372 18.2266L20.1036 18.2832C20.1869 18.3681 20.2355 18.4852 20.2355 18.6094V23.333L20.6808 23.3818L21.7365 23.4971L26.3009 25.5596C26.6043 25.7014 26.8048 26.0203 26.8048 26.3955V30.5479C26.7858 31.0785 26.3777 31.4823 25.8781 31.501H19.797C19.577 31.5009 19.3749 31.4134 19.2286 31.2529L19.2091 31.2314L19.1876 31.2129L14.9806 27.5371L15.3195 27.1787L15.3292 27.167C15.4064 27.0802 15.5202 27.0293 15.6495 27.0293H15.7286L18.6183 28.6133L19.3585 29.0186V18.6094C19.3585 18.5164 19.386 18.4271 19.4347 18.3525L19.4904 18.2832C19.5733 18.1987 19.684 18.1524 19.797 18.1523Z"
+                fill="#403F4C" stroke="#403F4C" />
+            </svg>
+
+            <span class=" text-sm">نمایشگر لمسی</span>
+          </div>
+
+          <div class="flex-col-center ">
+            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="path-1-inside-1_171_11303" fill="white">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M2.7561 9C2.7561 8.44772 3.20382 8 3.7561 8H14.6342C15.1864 8 15.6342 8.44772 15.6342 9V31C15.6342 31.5523 15.1864 32 14.6342 32H3.7561C3.20382 32 2.7561 31.5523 2.7561 31V9ZM4.5122 27C4.5122 26.4477 4.95992 26 5.5122 26H7.60976C8.16205 26 8.60976 26.4477 8.60976 27V28.8182C8.60976 29.3705 8.16205 29.8182 7.60976 29.8182H5.5122C4.95992 29.8182 4.5122 29.3705 4.5122 28.8182V27ZM18.7561 15C17.6515 15 16.7561 15.8954 16.7561 17V27.9399C16.7561 29.0444 17.6515 29.9399 18.7561 29.9399H24.1798V30.6259H23.1262C22.8467 30.6259 22.5787 30.6983 22.3811 30.8271C22.1835 30.9559 22.0725 31.1306 22.0725 31.3128C22.0725 31.495 22.1835 31.6697 22.3811 31.7985C22.5787 31.9273 22.8467 31.9997 23.1262 31.9997H31.5554C31.8349 31.9997 32.1029 31.9273 32.3005 31.7985C32.4981 31.6697 32.6091 31.495 32.6091 31.3128C32.6091 31.1306 32.4981 30.9559 32.3005 30.8271C32.1029 30.6983 31.8349 30.6259 31.5554 30.6259H30.5018V29.9399H36.2439C37.3485 29.9399 38.2439 29.0444 38.2439 27.9399V17C38.2439 15.8954 37.3485 15 36.2439 15H18.7561ZM26.2871 30.6259V29.9399H28.3945V30.6259H26.2871ZM19.1897 16.4946C18.6374 16.4946 18.1897 16.9423 18.1897 17.4946V27.4465C18.1897 27.9988 18.6374 28.4465 19.1897 28.4465H35.8125C36.3647 28.4465 36.8125 27.9988 36.8125 27.4465V17.4946C36.8125 16.9423 36.3647 16.4946 35.8125 16.4946H19.1897Z" />
+              </mask>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.7561 9C2.7561 8.44772 3.20382 8 3.7561 8H14.6342C15.1864 8 15.6342 8.44772 15.6342 9V31C15.6342 31.5523 15.1864 32 14.6342 32H3.7561C3.20382 32 2.7561 31.5523 2.7561 31V9ZM4.5122 27C4.5122 26.4477 4.95992 26 5.5122 26H7.60976C8.16205 26 8.60976 26.4477 8.60976 27V28.8182C8.60976 29.3705 8.16205 29.8182 7.60976 29.8182H5.5122C4.95992 29.8182 4.5122 29.3705 4.5122 28.8182V27ZM18.7561 15C17.6515 15 16.7561 15.8954 16.7561 17V27.9399C16.7561 29.0444 17.6515 29.9399 18.7561 29.9399H24.1798V30.6259H23.1262C22.8467 30.6259 22.5787 30.6983 22.3811 30.8271C22.1835 30.9559 22.0725 31.1306 22.0725 31.3128C22.0725 31.495 22.1835 31.6697 22.3811 31.7985C22.5787 31.9273 22.8467 31.9997 23.1262 31.9997H31.5554C31.8349 31.9997 32.1029 31.9273 32.3005 31.7985C32.4981 31.6697 32.6091 31.495 32.6091 31.3128C32.6091 31.1306 32.4981 30.9559 32.3005 30.8271C32.1029 30.6983 31.8349 30.6259 31.5554 30.6259H30.5018V29.9399H36.2439C37.3485 29.9399 38.2439 29.0444 38.2439 27.9399V17C38.2439 15.8954 37.3485 15 36.2439 15H18.7561ZM26.2871 30.6259V29.9399H28.3945V30.6259H26.2871ZM19.1897 16.4946C18.6374 16.4946 18.1897 16.9423 18.1897 17.4946V27.4465C18.1897 27.9988 18.6374 28.4465 19.1897 28.4465H35.8125C36.3647 28.4465 36.8125 27.9988 36.8125 27.4465V17.4946C36.8125 16.9423 36.3647 16.4946 35.8125 16.4946H19.1897Z"
+                fill="#403F4C" />
+              <path
+                d="M24.1798 29.9399H25.1798V28.9399H24.1798V29.9399ZM24.1798 30.6259V31.6259H25.1798V30.6259H24.1798ZM22.3811 30.8271L22.9272 31.6648L22.9272 31.6648L22.3811 30.8271ZM22.3811 31.7985L21.835 32.6362L21.835 32.6362L22.3811 31.7985ZM32.3005 30.8271L31.7544 31.6648L31.7544 31.6648L32.3005 30.8271ZM30.5018 30.6259H29.5018V31.6259H30.5018V30.6259ZM30.5018 29.9399V28.9399H29.5018V29.9399H30.5018ZM26.2871 29.9399V28.9399H25.2871V29.9399H26.2871ZM26.2871 30.6259H25.2871V31.6259H26.2871V30.6259ZM28.3945 29.9399H29.3945V28.9399H28.3945V29.9399ZM28.3945 30.6259V31.6259H29.3945V30.6259H28.3945ZM3.7561 7C2.65153 7 1.7561 7.89543 1.7561 9H3.7561V9V7ZM14.6342 7H3.7561V9H14.6342V7ZM16.6342 9C16.6342 7.89543 15.7387 7 14.6342 7V9H16.6342ZM16.6342 31V9H14.6342V31H16.6342ZM14.6342 33C15.7387 33 16.6342 32.1046 16.6342 31H14.6342V33ZM3.7561 33H14.6342V31H3.7561V33ZM1.7561 31C1.7561 32.1046 2.65153 33 3.7561 33V31H3.7561H1.7561ZM1.7561 9V31H3.7561V9H1.7561ZM5.5122 25C4.40763 25 3.5122 25.8954 3.5122 27H5.5122V25ZM7.60976 25H5.5122V27H7.60976V25ZM9.60976 27C9.60976 25.8954 8.71433 25 7.60976 25V27H7.60976H9.60976ZM9.60976 28.8182V27H7.60976V28.8182H9.60976ZM7.60976 30.8182C8.71433 30.8182 9.60976 29.9228 9.60976 28.8182H7.60976H7.60976V30.8182ZM5.5122 30.8182H7.60976V28.8182H5.5122V30.8182ZM3.5122 28.8182C3.5122 29.9227 4.40763 30.8182 5.5122 30.8182V28.8182H5.5122H3.5122ZM3.5122 27V28.8182H5.5122V27H3.5122ZM17.7561 17C17.7561 16.4477 18.2038 16 18.7561 16V14C17.0992 14 15.7561 15.3431 15.7561 17H17.7561ZM17.7561 27.9399V17H15.7561V27.9399H17.7561ZM18.7561 28.9399C18.2038 28.9399 17.7561 28.4922 17.7561 27.9399H15.7561C15.7561 29.5967 17.0993 30.9399 18.7561 30.9399V28.9399ZM24.1798 28.9399H18.7561V30.9399H24.1798V28.9399ZM25.1798 30.6259V29.9399H23.1798V30.6259H25.1798ZM23.1262 31.6259H24.1798V29.6259H23.1262V31.6259ZM22.9272 31.6648C22.9265 31.6652 22.9439 31.6543 22.9836 31.6436C23.0223 31.6331 23.0714 31.6259 23.1262 31.6259V29.6259C22.6892 29.6259 22.2231 29.7364 21.835 29.9894L22.9272 31.6648ZM23.0725 31.3128C23.0725 31.4313 23.0351 31.5259 22.9967 31.5862C22.9605 31.6432 22.9278 31.6644 22.9272 31.6648L21.835 29.9894C21.4481 30.2416 21.0725 30.6941 21.0725 31.3128H23.0725ZM22.9272 30.9608C22.9278 30.9611 22.9605 30.9823 22.9967 31.0394C23.0351 31.0997 23.0725 31.1943 23.0725 31.3128H21.0725C21.0725 31.9315 21.4481 32.384 21.835 32.6362L22.9272 30.9608ZM23.1262 30.9997C23.0714 30.9997 23.0223 30.9924 22.9836 30.982C22.9439 30.9712 22.9265 30.9603 22.9272 30.9608L21.835 32.6362C22.2231 32.8892 22.6892 32.9997 23.1262 32.9997V30.9997ZM31.5554 30.9997H23.1262V32.9997H31.5554V30.9997ZM31.7544 30.9608C31.7551 30.9603 31.7377 30.9712 31.698 30.982C31.6593 30.9924 31.6102 30.9997 31.5554 30.9997V32.9997C31.9924 32.9997 32.4585 32.8892 32.8466 32.6362L31.7544 30.9608ZM31.6091 31.3128C31.6091 31.1943 31.6465 31.0997 31.6849 31.0393C31.7211 30.9823 31.7538 30.9611 31.7544 30.9608L32.8466 32.6362C33.2335 32.384 33.6091 31.9315 33.6091 31.3128H31.6091ZM31.7544 31.6648C31.7538 31.6644 31.7211 31.6432 31.6849 31.5862C31.6465 31.5259 31.6091 31.4313 31.6091 31.3128H33.6091C33.6091 30.6941 33.2335 30.2416 32.8466 29.9894L31.7544 31.6648ZM31.5554 31.6259C31.6102 31.6259 31.6593 31.6331 31.698 31.6436C31.7377 31.6543 31.7551 31.6652 31.7544 31.6648L32.8466 29.9894C32.4585 29.7364 31.9924 29.6259 31.5554 29.6259V31.6259ZM30.5018 31.6259H31.5554V29.6259H30.5018V31.6259ZM29.5018 29.9399V30.6259H31.5018V29.9399H29.5018ZM36.2439 28.9399H30.5018V30.9399H36.2439V28.9399ZM37.2439 27.9399C37.2439 28.4922 36.7962 28.9399 36.2439 28.9399V30.9399C37.9008 30.9399 39.2439 29.5967 39.2439 27.9399H37.2439ZM37.2439 17V27.9399H39.2439V17H37.2439ZM36.2439 16C36.7962 16 37.2439 16.4477 37.2439 17H39.2439C39.2439 15.3431 37.9008 14 36.2439 14V16ZM18.7561 16H36.2439V14H18.7561V16ZM25.2871 29.9399V30.6259H27.2871V29.9399H25.2871ZM28.3945 28.9399H26.2871V30.9399H28.3945V28.9399ZM29.3945 30.6259V29.9399H27.3945V30.6259H29.3945ZM26.2871 31.6259H28.3945V29.6259H26.2871V31.6259ZM19.1897 17.4946V17.4946V15.4946C18.0851 15.4946 17.1897 16.39 17.1897 17.4946H19.1897ZM19.1897 27.4465V17.4946H17.1897V27.4465H19.1897ZM19.1897 27.4465H17.1897C17.1897 28.5511 18.0851 29.4465 19.1897 29.4465V27.4465ZM35.8125 27.4465H19.1897V29.4465H35.8125V27.4465ZM35.8125 27.4465V29.4465C36.917 29.4465 37.8125 28.5511 37.8125 27.4465H35.8125ZM35.8125 17.4946V27.4465H37.8125V17.4946H35.8125ZM35.8125 17.4946H37.8125C37.8125 16.39 36.917 15.4946 35.8125 15.4946V17.4946ZM19.1897 17.4946H35.8125V15.4946H19.1897V17.4946Z"
+                fill="#403F4C" mask="url(#path-1-inside-1_171_11303)" />
+            </svg>
+            <span class=" text-sm">کامپیوتر و تجهیزات</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="col-span-full flex flex-col space-y-8">
+      <!-- Buying guide -->
+      <section class=" col-span-full">
         <h3 class=" font-semibold text-red text-sm px-6">راهنمای خرید</h3>
         <section class="my-8 grid grid-cols-12 gap-y-8 gap-x-6  ">
           <div class="col-span-4 bg-white drop-shadow-xl rounded-b-3xl">
             <div class="buy-guide-card ">
               <div class="bg-[url('/images/ad1.jpg')] rounded-t-[20px] h-[155px]  bg-cover"></div>
               <div class="buy-guide-card-content">
-                <h4 class=" text-sm font-semibold">مانیتور گیمینگ ایسوس ASUS ROG Strix راهنمای خرید ویدئو پروژکتور تیر 1402</h4>
-                <p class=" text-[12px] text-gray">قیمت ویدئو پروژکتور لیزری تیر ماه 1402 خرید دیتاییشش پروژکتور برند اپسون مشخصات پروژکتور اداری کلاسssssw optoma projector بهترین قیمت ویدیو پروژکتور سززز...</p>
+                <h4 class=" text-sm font-semibold">مانیتور گیمینگ ایسوس ASUS ROG Strix راهنمای خرید ویدئو پروژکتور تیر
+                  1402</h4>
+                <p class=" text-[12px] text-gray">قیمت ویدئو پروژکتور لیزری تیر ماه 1402 خرید دیتاییشش پروژکتور برند
+                  اپسون مشخصات پروژکتور اداری کلاسssssw optoma projector بهترین قیمت ویدیو پروژکتور سززز...</p>
                 <div class="flex justify-between items-center mb-2">
                   <span class="text-small text-gray">06 تیر 1402</span>
                   <a href="#" class="text-small text-blue">
@@ -344,8 +399,10 @@
             <div class="buy-guide-card ">
               <div class="bg-[url('/images/ad1.jpg')] rounded-t-[20px] h-[155px]  bg-cover"></div>
               <div class="buy-guide-card-content">
-                <h4 class=" text-sm font-semibold">مانیتور گیمینگ ایسوس ASUS ROG Strix راهنمای خرید ویدئو پروژکتور تیر 1402</h4>
-                <p class=" text-[12px] text-gray">قیمت ویدئو پروژکتور لیزری تیر ماه 1402 خرید دیتاییشش پروژکتور برند اپسون مشخصات پروژکتور اداری کلاسssssw optoma projector بهترین قیمت ویدیو پروژکتور سززز...</p>
+                <h4 class=" text-sm font-semibold">مانیتور گیمینگ ایسوس ASUS ROG Strix راهنمای خرید ویدئو پروژکتور تیر
+                  1402</h4>
+                <p class=" text-[12px] text-gray">قیمت ویدئو پروژکتور لیزری تیر ماه 1402 خرید دیتاییشش پروژکتور برند
+                  اپسون مشخصات پروژکتور اداری کلاسssssw optoma projector بهترین قیمت ویدیو پروژکتور سززز...</p>
                 <div class="flex justify-between items-center mb-2">
                   <span class="text-small text-gray">06 تیر 1402</span>
                   <a href="#" class="text-small text-blue">
@@ -359,8 +416,10 @@
             <div class="buy-guide-card">
               <div class="bg-[url('/images/ad1.jpg')] rounded-t-[20px] h-[155px]  bg-cover"></div>
               <div class="buy-guide-card-content">
-                <h4 class=" text-sm font-semibold">مانیتور گیمینگ ایسوس ASUS ROG Strix راهنمای خرید ویدئو پروژکتور تیر 1402</h4>
-                <p class=" text-[12px] text-gray">قیمت ویدئو پروژکتور لیزری تیر ماه 1402 خرید دیتاییشش پروژکتور برند اپسون مشخصات پروژکتور اداری کلاسssssw optoma projector بهترین قیمت ویدیو پروژکتور سززز...</p>
+                <h4 class=" text-sm font-semibold">مانیتور گیمینگ ایسوس ASUS ROG Strix راهنمای خرید ویدئو پروژکتور تیر
+                  1402</h4>
+                <p class=" text-[12px] text-gray">قیمت ویدئو پروژکتور لیزری تیر ماه 1402 خرید دیتاییشش پروژکتور برند
+                  اپسون مشخصات پروژکتور اداری کلاسssssw optoma projector بهترین قیمت ویدیو پروژکتور سززز...</p>
                 <div class="flex justify-between items-center mb-2">
                   <span class="text-small text-gray">06 تیر 1402</span>
                   <a href="#" class="text-small text-blue">
@@ -371,9 +430,9 @@
             </div>
           </div>
         </section>
-       </section>
-       <!-- video projector -->
-       <section class="col-span-full space-y-8">
+      </section>
+      <!-- video projector -->
+      <section class="col-span-full space-y-8">
         <div class="flex justify-between items-center px-4 border-b border-neutral pb-4">
           <h3 class="text-red text-sm font-semibold">ویدئو پروژکتور</h3>
           <a href="#" class="text-gray-light text-sm font-semibold">
@@ -395,22 +454,27 @@
                   <span>
                     <svg width="43" height="40" viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g filter="url(#filter0_d_177_4846)">
-                      <rect x="4.91992" y="3" width="33.58" height="32" rx="8" fill="white" shape-rendering="crispEdges"/>
-                      <path d="M16.7099 13.9997H26.7099V15.7897C26.7099 16.2397 27.2499 16.4597 27.5599 16.1397L30.3499 13.3497C30.5499 13.1497 30.5499 12.8397 30.3499 12.6397L27.5599 9.8497C27.2499 9.5397 26.7099 9.7597 26.7099 10.2097V11.9997H15.7099C15.1599 11.9997 14.7099 12.4497 14.7099 12.9997V16.9997C14.7099 17.5497 15.1599 17.9997 15.7099 17.9997C16.2599 17.9997 16.7099 17.5497 16.7099 16.9997V13.9997ZM26.7099 23.9997H16.7099V22.2097C16.7099 21.7597 16.1699 21.5397 15.8599 21.8597L13.0699 24.6497C12.8699 24.8497 12.8699 25.1597 13.0699 25.3597L15.8599 28.1497C16.1699 28.4597 16.7099 28.2397 16.7099 27.7897V25.9997H27.7099C28.2599 25.9997 28.7099 25.5497 28.7099 24.9997V20.9997C28.7099 20.4497 28.2599 19.9997 27.7099 19.9997C27.1599 19.9997 26.7099 20.4497 26.7099 20.9997V23.9997Z" fill="black"/>
+                        <rect x="4.91992" y="3" width="33.58" height="32" rx="8" fill="white"
+                          shape-rendering="crispEdges" />
+                        <path
+                          d="M16.7099 13.9997H26.7099V15.7897C26.7099 16.2397 27.2499 16.4597 27.5599 16.1397L30.3499 13.3497C30.5499 13.1497 30.5499 12.8397 30.3499 12.6397L27.5599 9.8497C27.2499 9.5397 26.7099 9.7597 26.7099 10.2097V11.9997H15.7099C15.1599 11.9997 14.7099 12.4497 14.7099 12.9997V16.9997C14.7099 17.5497 15.1599 17.9997 15.7099 17.9997C16.2599 17.9997 16.7099 17.5497 16.7099 16.9997V13.9997ZM26.7099 23.9997H16.7099V22.2097C16.7099 21.7597 16.1699 21.5397 15.8599 21.8597L13.0699 24.6497C12.8699 24.8497 12.8699 25.1597 13.0699 25.3597L15.8599 28.1497C16.1699 28.4597 16.7099 28.2397 16.7099 27.7897V25.9997H27.7099C28.2599 25.9997 28.7099 25.5497 28.7099 24.9997V20.9997C28.7099 20.4497 28.2599 19.9997 27.7099 19.9997C27.1599 19.9997 26.7099 20.4497 26.7099 20.9997V23.9997Z"
+                          fill="black" />
                       </g>
                       <defs>
-                      <filter id="filter0_d_177_4846" x="0.919922" y="0" width="41.5801" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                      <feOffset dy="1"/>
-                      <feGaussianBlur stdDeviation="2"/>
-                      <feComposite in2="hardAlpha" operator="out"/>
-                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
-                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_4846"/>
-                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_4846" result="shape"/>
-                      </filter>
+                        <filter id="filter0_d_177_4846" x="0.919922" y="0" width="41.5801" height="40"
+                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset dy="1" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_4846" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_4846" result="shape" />
+                        </filter>
                       </defs>
-                      </svg>
+                    </svg>
                   </span>
                   <div class="flex items-center gap-x-1">
                     <span class="text-small">21,500,000 </span>
@@ -434,22 +498,27 @@
                   <span>
                     <svg width="43" height="40" viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g filter="url(#filter0_d_177_4846)">
-                      <rect x="4.91992" y="3" width="33.58" height="32" rx="8" fill="white" shape-rendering="crispEdges"/>
-                      <path d="M16.7099 13.9997H26.7099V15.7897C26.7099 16.2397 27.2499 16.4597 27.5599 16.1397L30.3499 13.3497C30.5499 13.1497 30.5499 12.8397 30.3499 12.6397L27.5599 9.8497C27.2499 9.5397 26.7099 9.7597 26.7099 10.2097V11.9997H15.7099C15.1599 11.9997 14.7099 12.4497 14.7099 12.9997V16.9997C14.7099 17.5497 15.1599 17.9997 15.7099 17.9997C16.2599 17.9997 16.7099 17.5497 16.7099 16.9997V13.9997ZM26.7099 23.9997H16.7099V22.2097C16.7099 21.7597 16.1699 21.5397 15.8599 21.8597L13.0699 24.6497C12.8699 24.8497 12.8699 25.1597 13.0699 25.3597L15.8599 28.1497C16.1699 28.4597 16.7099 28.2397 16.7099 27.7897V25.9997H27.7099C28.2599 25.9997 28.7099 25.5497 28.7099 24.9997V20.9997C28.7099 20.4497 28.2599 19.9997 27.7099 19.9997C27.1599 19.9997 26.7099 20.4497 26.7099 20.9997V23.9997Z" fill="black"/>
+                        <rect x="4.91992" y="3" width="33.58" height="32" rx="8" fill="white"
+                          shape-rendering="crispEdges" />
+                        <path
+                          d="M16.7099 13.9997H26.7099V15.7897C26.7099 16.2397 27.2499 16.4597 27.5599 16.1397L30.3499 13.3497C30.5499 13.1497 30.5499 12.8397 30.3499 12.6397L27.5599 9.8497C27.2499 9.5397 26.7099 9.7597 26.7099 10.2097V11.9997H15.7099C15.1599 11.9997 14.7099 12.4497 14.7099 12.9997V16.9997C14.7099 17.5497 15.1599 17.9997 15.7099 17.9997C16.2599 17.9997 16.7099 17.5497 16.7099 16.9997V13.9997ZM26.7099 23.9997H16.7099V22.2097C16.7099 21.7597 16.1699 21.5397 15.8599 21.8597L13.0699 24.6497C12.8699 24.8497 12.8699 25.1597 13.0699 25.3597L15.8599 28.1497C16.1699 28.4597 16.7099 28.2397 16.7099 27.7897V25.9997H27.7099C28.2599 25.9997 28.7099 25.5497 28.7099 24.9997V20.9997C28.7099 20.4497 28.2599 19.9997 27.7099 19.9997C27.1599 19.9997 26.7099 20.4497 26.7099 20.9997V23.9997Z"
+                          fill="black" />
                       </g>
                       <defs>
-                      <filter id="filter0_d_177_4846" x="0.919922" y="0" width="41.5801" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                      <feOffset dy="1"/>
-                      <feGaussianBlur stdDeviation="2"/>
-                      <feComposite in2="hardAlpha" operator="out"/>
-                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
-                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_4846"/>
-                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_4846" result="shape"/>
-                      </filter>
+                        <filter id="filter0_d_177_4846" x="0.919922" y="0" width="41.5801" height="40"
+                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset dy="1" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_4846" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_4846" result="shape" />
+                        </filter>
                       </defs>
-                      </svg>
+                    </svg>
                   </span>
                   <div class="flex items-center gap-x-1">
                     <span class="text-small">21,500,000 </span>
@@ -473,22 +542,27 @@
                   <span>
                     <svg width="43" height="40" viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g filter="url(#filter0_d_177_4846)">
-                      <rect x="4.91992" y="3" width="33.58" height="32" rx="8" fill="white" shape-rendering="crispEdges"/>
-                      <path d="M16.7099 13.9997H26.7099V15.7897C26.7099 16.2397 27.2499 16.4597 27.5599 16.1397L30.3499 13.3497C30.5499 13.1497 30.5499 12.8397 30.3499 12.6397L27.5599 9.8497C27.2499 9.5397 26.7099 9.7597 26.7099 10.2097V11.9997H15.7099C15.1599 11.9997 14.7099 12.4497 14.7099 12.9997V16.9997C14.7099 17.5497 15.1599 17.9997 15.7099 17.9997C16.2599 17.9997 16.7099 17.5497 16.7099 16.9997V13.9997ZM26.7099 23.9997H16.7099V22.2097C16.7099 21.7597 16.1699 21.5397 15.8599 21.8597L13.0699 24.6497C12.8699 24.8497 12.8699 25.1597 13.0699 25.3597L15.8599 28.1497C16.1699 28.4597 16.7099 28.2397 16.7099 27.7897V25.9997H27.7099C28.2599 25.9997 28.7099 25.5497 28.7099 24.9997V20.9997C28.7099 20.4497 28.2599 19.9997 27.7099 19.9997C27.1599 19.9997 26.7099 20.4497 26.7099 20.9997V23.9997Z" fill="black"/>
+                        <rect x="4.91992" y="3" width="33.58" height="32" rx="8" fill="white"
+                          shape-rendering="crispEdges" />
+                        <path
+                          d="M16.7099 13.9997H26.7099V15.7897C26.7099 16.2397 27.2499 16.4597 27.5599 16.1397L30.3499 13.3497C30.5499 13.1497 30.5499 12.8397 30.3499 12.6397L27.5599 9.8497C27.2499 9.5397 26.7099 9.7597 26.7099 10.2097V11.9997H15.7099C15.1599 11.9997 14.7099 12.4497 14.7099 12.9997V16.9997C14.7099 17.5497 15.1599 17.9997 15.7099 17.9997C16.2599 17.9997 16.7099 17.5497 16.7099 16.9997V13.9997ZM26.7099 23.9997H16.7099V22.2097C16.7099 21.7597 16.1699 21.5397 15.8599 21.8597L13.0699 24.6497C12.8699 24.8497 12.8699 25.1597 13.0699 25.3597L15.8599 28.1497C16.1699 28.4597 16.7099 28.2397 16.7099 27.7897V25.9997H27.7099C28.2599 25.9997 28.7099 25.5497 28.7099 24.9997V20.9997C28.7099 20.4497 28.2599 19.9997 27.7099 19.9997C27.1599 19.9997 26.7099 20.4497 26.7099 20.9997V23.9997Z"
+                          fill="black" />
                       </g>
                       <defs>
-                      <filter id="filter0_d_177_4846" x="0.919922" y="0" width="41.5801" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                      <feOffset dy="1"/>
-                      <feGaussianBlur stdDeviation="2"/>
-                      <feComposite in2="hardAlpha" operator="out"/>
-                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
-                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_4846"/>
-                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_4846" result="shape"/>
-                      </filter>
+                        <filter id="filter0_d_177_4846" x="0.919922" y="0" width="41.5801" height="40"
+                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset dy="1" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_4846" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_4846" result="shape" />
+                        </filter>
                       </defs>
-                      </svg>
+                    </svg>
                   </span>
                   <div class="flex items-center gap-x-1">
                     <span class="text-small">21,500,000 </span>
@@ -512,22 +586,27 @@
                   <span>
                     <svg width="43" height="40" viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g filter="url(#filter0_d_177_4846)">
-                      <rect x="4.91992" y="3" width="33.58" height="32" rx="8" fill="white" shape-rendering="crispEdges"/>
-                      <path d="M16.7099 13.9997H26.7099V15.7897C26.7099 16.2397 27.2499 16.4597 27.5599 16.1397L30.3499 13.3497C30.5499 13.1497 30.5499 12.8397 30.3499 12.6397L27.5599 9.8497C27.2499 9.5397 26.7099 9.7597 26.7099 10.2097V11.9997H15.7099C15.1599 11.9997 14.7099 12.4497 14.7099 12.9997V16.9997C14.7099 17.5497 15.1599 17.9997 15.7099 17.9997C16.2599 17.9997 16.7099 17.5497 16.7099 16.9997V13.9997ZM26.7099 23.9997H16.7099V22.2097C16.7099 21.7597 16.1699 21.5397 15.8599 21.8597L13.0699 24.6497C12.8699 24.8497 12.8699 25.1597 13.0699 25.3597L15.8599 28.1497C16.1699 28.4597 16.7099 28.2397 16.7099 27.7897V25.9997H27.7099C28.2599 25.9997 28.7099 25.5497 28.7099 24.9997V20.9997C28.7099 20.4497 28.2599 19.9997 27.7099 19.9997C27.1599 19.9997 26.7099 20.4497 26.7099 20.9997V23.9997Z" fill="black"/>
+                        <rect x="4.91992" y="3" width="33.58" height="32" rx="8" fill="white"
+                          shape-rendering="crispEdges" />
+                        <path
+                          d="M16.7099 13.9997H26.7099V15.7897C26.7099 16.2397 27.2499 16.4597 27.5599 16.1397L30.3499 13.3497C30.5499 13.1497 30.5499 12.8397 30.3499 12.6397L27.5599 9.8497C27.2499 9.5397 26.7099 9.7597 26.7099 10.2097V11.9997H15.7099C15.1599 11.9997 14.7099 12.4497 14.7099 12.9997V16.9997C14.7099 17.5497 15.1599 17.9997 15.7099 17.9997C16.2599 17.9997 16.7099 17.5497 16.7099 16.9997V13.9997ZM26.7099 23.9997H16.7099V22.2097C16.7099 21.7597 16.1699 21.5397 15.8599 21.8597L13.0699 24.6497C12.8699 24.8497 12.8699 25.1597 13.0699 25.3597L15.8599 28.1497C16.1699 28.4597 16.7099 28.2397 16.7099 27.7897V25.9997H27.7099C28.2599 25.9997 28.7099 25.5497 28.7099 24.9997V20.9997C28.7099 20.4497 28.2599 19.9997 27.7099 19.9997C27.1599 19.9997 26.7099 20.4497 26.7099 20.9997V23.9997Z"
+                          fill="black" />
                       </g>
                       <defs>
-                      <filter id="filter0_d_177_4846" x="0.919922" y="0" width="41.5801" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                      <feOffset dy="1"/>
-                      <feGaussianBlur stdDeviation="2"/>
-                      <feComposite in2="hardAlpha" operator="out"/>
-                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
-                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_4846"/>
-                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_4846" result="shape"/>
-                      </filter>
+                        <filter id="filter0_d_177_4846" x="0.919922" y="0" width="41.5801" height="40"
+                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset dy="1" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_4846" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_4846" result="shape" />
+                        </filter>
                       </defs>
-                      </svg>
+                    </svg>
                   </span>
                   <div class="flex items-center gap-x-1">
                     <span class="text-small">21,500,000 </span>
@@ -538,12 +617,12 @@
             </div>
           </div>
         </div>
-       </section>
+      </section>
 
 
 
-       <!-- video motion -->
-       <section class="col-span-full space-y-8">
+      <!-- video motion -->
+      <section class="col-span-full space-y-8">
         <div class="flex justify-between items-center px-4 border-b border-neutral pb-4">
           <h3 class="text-red text-sm font-semibold">ویدیو نمایشگر لمسی</h3>
           <a href="#" class="text-gray-light text-sm font-semibold">
@@ -555,7 +634,8 @@
           <div class="col-span-6">
 
             <div class="flex flex-col">
-              <div class="p-5 relative after:w-3/5 after:h-[5px] after:bg-red after:absolute after:-top-2.5 after:rounded-tr-full after:right-0">
+              <div
+                class="clock-top">
                 <span class="soon">به زودی</span>
                 <span class="absolute top-0 right-2 text-red text-sm">37 : 12 : 24</span>
                 <div class="flex flex-col justify-center items-center">
@@ -564,61 +644,75 @@
               </div>
               <!-- content of image -->
               <div class="flex flex-col px-2 pt-2">
-                  <h2>مانیتور گیمینگ ایسوس ASUS ROG Strix XG438QR</h2>
-                  <div class="flex justify-between items-center">
-                    <!-- Icon -->
-                    <span>
-                      <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d_177_10715)">
-                        <rect x="4.5" y="3" width="32" height="32" rx="8" fill="white" shape-rendering="crispEdges"/>
-                        <path d="M12.5 13.6777L19.5607 13.6777L28.5 13.6777L25.688 16.9998" stroke="#101013" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M28.5 24.3223L21.4393 24.3223L12.5 24.3223M12.5 24.3223L15.312 21.0002M12.5 24.3223L12.7451 24.0312" stroke="#101013" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                        <defs>
-                        <filter id="filter0_d_177_10715" x="0.5" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                        <feOffset dy="1"/>
-                        <feGaussianBlur stdDeviation="2"/>
-                        <feComposite in2="hardAlpha" operator="out"/>
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_10715"/>
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_10715" result="shape"/>
+                <h2>مانیتور گیمینگ ایسوس ASUS ROG Strix XG438QR</h2>
+                <div class="flex justify-between items-center">
+                  <!-- Icon -->
+                  <span>
+                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_d_177_10715)">
+                        <rect x="4.5" y="3" width="32" height="32" rx="8" fill="white" shape-rendering="crispEdges" />
+                        <path d="M12.5 13.6777L19.5607 13.6777L28.5 13.6777L25.688 16.9998" stroke="#101013"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M28.5 24.3223L21.4393 24.3223L12.5 24.3223M12.5 24.3223L15.312 21.0002M12.5 24.3223L12.7451 24.0312"
+                          stroke="#101013" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_177_10715" x="0.5" y="0" width="40" height="40"
+                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset dy="1" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_10715" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_10715" result="shape" />
                         </filter>
-                        </defs>
-                        </svg>
-                        
-                    </span>
-                    <!--price-->
-                    <div class="">
-                      <div class="flex justify-between items-center gap-x-2">
-                        <span class="text-small text-gray pr-10">21,500,000 </span>
-                        <div class="text-small text-red flex justify-between items-center gap-x-1">
-                          <span>20%</span>
-                          <span>تومان</span>
-                        </div>
-                      </div>
+                      </defs>
+                    </svg>
 
-                      <!-- button price -->
-                      <div class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]" >
-                        <div class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center">
-                          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 7.66952V6.69952C8 4.44952 9.81 2.23952 12.06 2.02952C14.74 1.76952 17 3.87952 17 6.50952V7.88952" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9.49995 22H15.4999C19.5199 22 20.24 20.39 20.4499 18.43L21.1999 12.43C21.4699 9.99 20.7699 8 16.4999 8H8.49995C4.22995 8 3.52995 9.99 3.79995 12.43L4.54995 18.43C4.75995 20.39 5.47995 22 9.49995 22Z" fill="white"/>
-                            <path d="M15.9955 12H16.0045" stroke="#049F57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M8.99451 12H9.00349" stroke="#049F57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040"/>
-                            <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white" stroke-width="1.66667"/>
-                            </svg>
-                            
-                        </div>
-                        <div class="">
-                          <span class="text-white text-sm ml-14">12,590,000</span>
-                        </div>
+                  </span>
+                  <!--price-->
+                  <div class="">
+                    <div class="flex justify-between items-center gap-x-2">
+                      <span class="text-small text-gray pr-10">21,500,000 </span>
+                      <div class="text-small text-red flex justify-between items-center gap-x-1">
+                        <span>20%</span>
+                        <span>تومان</span>
                       </div>
-
                     </div>
+
+                    <!-- button price -->
+                    <div class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]">
+                      <div
+                        class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M8 7.66952V6.69952C8 4.44952 9.81 2.23952 12.06 2.02952C14.74 1.76952 17 3.87952 17 6.50952V7.88952"
+                            stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path
+                            d="M9.49995 22H15.4999C19.5199 22 20.24 20.39 20.4499 18.43L21.1999 12.43C21.4699 9.99 20.7699 8 16.4999 8H8.49995C4.22995 8 3.52995 9.99 3.79995 12.43L4.54995 18.43C4.75995 20.39 5.47995 22 9.49995 22Z"
+                            fill="white" />
+                          <path d="M15.9955 12H16.0045" stroke="#049F57" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M8.99451 12H9.00349" stroke="#049F57" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040" />
+                          <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white"
+                            stroke-width="1.66667" />
+                        </svg>
+
+                      </div>
+                      <div class="">
+                        <span class="text-white text-sm ml-14">12,590,000</span>
+                      </div>
+                    </div>
+
                   </div>
+                </div>
               </div>
 
             </div>
@@ -639,22 +733,27 @@
                   <span>
                     <svg width="43" height="40" viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g filter="url(#filter0_d_177_4846)">
-                      <rect x="4.91992" y="3" width="33.58" height="32" rx="8" fill="white" shape-rendering="crispEdges"/>
-                      <path d="M16.7099 13.9997H26.7099V15.7897C26.7099 16.2397 27.2499 16.4597 27.5599 16.1397L30.3499 13.3497C30.5499 13.1497 30.5499 12.8397 30.3499 12.6397L27.5599 9.8497C27.2499 9.5397 26.7099 9.7597 26.7099 10.2097V11.9997H15.7099C15.1599 11.9997 14.7099 12.4497 14.7099 12.9997V16.9997C14.7099 17.5497 15.1599 17.9997 15.7099 17.9997C16.2599 17.9997 16.7099 17.5497 16.7099 16.9997V13.9997ZM26.7099 23.9997H16.7099V22.2097C16.7099 21.7597 16.1699 21.5397 15.8599 21.8597L13.0699 24.6497C12.8699 24.8497 12.8699 25.1597 13.0699 25.3597L15.8599 28.1497C16.1699 28.4597 16.7099 28.2397 16.7099 27.7897V25.9997H27.7099C28.2599 25.9997 28.7099 25.5497 28.7099 24.9997V20.9997C28.7099 20.4497 28.2599 19.9997 27.7099 19.9997C27.1599 19.9997 26.7099 20.4497 26.7099 20.9997V23.9997Z" fill="black"/>
+                        <rect x="4.91992" y="3" width="33.58" height="32" rx="8" fill="white"
+                          shape-rendering="crispEdges" />
+                        <path
+                          d="M16.7099 13.9997H26.7099V15.7897C26.7099 16.2397 27.2499 16.4597 27.5599 16.1397L30.3499 13.3497C30.5499 13.1497 30.5499 12.8397 30.3499 12.6397L27.5599 9.8497C27.2499 9.5397 26.7099 9.7597 26.7099 10.2097V11.9997H15.7099C15.1599 11.9997 14.7099 12.4497 14.7099 12.9997V16.9997C14.7099 17.5497 15.1599 17.9997 15.7099 17.9997C16.2599 17.9997 16.7099 17.5497 16.7099 16.9997V13.9997ZM26.7099 23.9997H16.7099V22.2097C16.7099 21.7597 16.1699 21.5397 15.8599 21.8597L13.0699 24.6497C12.8699 24.8497 12.8699 25.1597 13.0699 25.3597L15.8599 28.1497C16.1699 28.4597 16.7099 28.2397 16.7099 27.7897V25.9997H27.7099C28.2599 25.9997 28.7099 25.5497 28.7099 24.9997V20.9997C28.7099 20.4497 28.2599 19.9997 27.7099 19.9997C27.1599 19.9997 26.7099 20.4497 26.7099 20.9997V23.9997Z"
+                          fill="black" />
                       </g>
                       <defs>
-                      <filter id="filter0_d_177_4846" x="0.919922" y="0" width="41.5801" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                      <feOffset dy="1"/>
-                      <feGaussianBlur stdDeviation="2"/>
-                      <feComposite in2="hardAlpha" operator="out"/>
-                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
-                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_4846"/>
-                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_4846" result="shape"/>
-                      </filter>
+                        <filter id="filter0_d_177_4846" x="0.919922" y="0" width="41.5801" height="40"
+                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset dy="1" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_4846" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_4846" result="shape" />
+                        </filter>
                       </defs>
-                      </svg>
+                    </svg>
                   </span>
                   <div class="flex items-center gap-x-1">
                     <span class="text-small">21,500,000 </span>
@@ -679,22 +778,27 @@
                   <span>
                     <svg width="43" height="40" viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g filter="url(#filter0_d_177_4846)">
-                      <rect x="4.91992" y="3" width="33.58" height="32" rx="8" fill="white" shape-rendering="crispEdges"/>
-                      <path d="M16.7099 13.9997H26.7099V15.7897C26.7099 16.2397 27.2499 16.4597 27.5599 16.1397L30.3499 13.3497C30.5499 13.1497 30.5499 12.8397 30.3499 12.6397L27.5599 9.8497C27.2499 9.5397 26.7099 9.7597 26.7099 10.2097V11.9997H15.7099C15.1599 11.9997 14.7099 12.4497 14.7099 12.9997V16.9997C14.7099 17.5497 15.1599 17.9997 15.7099 17.9997C16.2599 17.9997 16.7099 17.5497 16.7099 16.9997V13.9997ZM26.7099 23.9997H16.7099V22.2097C16.7099 21.7597 16.1699 21.5397 15.8599 21.8597L13.0699 24.6497C12.8699 24.8497 12.8699 25.1597 13.0699 25.3597L15.8599 28.1497C16.1699 28.4597 16.7099 28.2397 16.7099 27.7897V25.9997H27.7099C28.2599 25.9997 28.7099 25.5497 28.7099 24.9997V20.9997C28.7099 20.4497 28.2599 19.9997 27.7099 19.9997C27.1599 19.9997 26.7099 20.4497 26.7099 20.9997V23.9997Z" fill="black"/>
+                        <rect x="4.91992" y="3" width="33.58" height="32" rx="8" fill="white"
+                          shape-rendering="crispEdges" />
+                        <path
+                          d="M16.7099 13.9997H26.7099V15.7897C26.7099 16.2397 27.2499 16.4597 27.5599 16.1397L30.3499 13.3497C30.5499 13.1497 30.5499 12.8397 30.3499 12.6397L27.5599 9.8497C27.2499 9.5397 26.7099 9.7597 26.7099 10.2097V11.9997H15.7099C15.1599 11.9997 14.7099 12.4497 14.7099 12.9997V16.9997C14.7099 17.5497 15.1599 17.9997 15.7099 17.9997C16.2599 17.9997 16.7099 17.5497 16.7099 16.9997V13.9997ZM26.7099 23.9997H16.7099V22.2097C16.7099 21.7597 16.1699 21.5397 15.8599 21.8597L13.0699 24.6497C12.8699 24.8497 12.8699 25.1597 13.0699 25.3597L15.8599 28.1497C16.1699 28.4597 16.7099 28.2397 16.7099 27.7897V25.9997H27.7099C28.2599 25.9997 28.7099 25.5497 28.7099 24.9997V20.9997C28.7099 20.4497 28.2599 19.9997 27.7099 19.9997C27.1599 19.9997 26.7099 20.4497 26.7099 20.9997V23.9997Z"
+                          fill="black" />
                       </g>
                       <defs>
-                      <filter id="filter0_d_177_4846" x="0.919922" y="0" width="41.5801" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                      <feOffset dy="1"/>
-                      <feGaussianBlur stdDeviation="2"/>
-                      <feComposite in2="hardAlpha" operator="out"/>
-                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
-                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_4846"/>
-                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_4846" result="shape"/>
-                      </filter>
+                        <filter id="filter0_d_177_4846" x="0.919922" y="0" width="41.5801" height="40"
+                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset dy="1" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_4846" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_4846" result="shape" />
+                        </filter>
                       </defs>
-                      </svg>
+                    </svg>
                   </span>
                   <div class="flex items-center gap-x-1">
                     <span class="text-small">21,500,000 </span>
@@ -705,9 +809,374 @@
             </div>
           </div>
         </div>
-       </section>
-     </section>
+      </section>
+
 
       
-  </body>
+      <!-- another section -->
+      <section class="col-span-full space-y-8">
+        <div class="flex justify-between items-center px-4 border-b border-neutral pb-4">
+          <h3 class="text-red text-sm font-semibold">ویدیو نمایشگر لمسی</h3>
+          <a href="#" class="text-gray-light text-sm font-semibold">
+            مشاهده همه نمایشگرهای لمسی
+          </a>
+        </div>
+        <div class="grid grid-cols-12 gap-x-8">
+          <div class="col-span-3">
+
+            <div class="flex flex-col">
+              <div
+                class="after:w-1/2 clock-top">
+                <span class="soon">به زودی</span>
+                <span class="absolute top-0 right-2 text-red text-sm">37 : 12 : 24</span>
+                <div class="flex flex-col justify-center items-center">
+                  <div class="bg-[url('/images/monitor1.jpg')] w-[192px] h-[192px] bg-cover"></div>
+                </div>
+              </div>
+              <!-- content of image -->
+              <div class="flex flex-col px-2 pt-2">
+                <h2>مانیتور گیمینگ ایسوس ASUS ROG Strix XG438QR</h2>
+                <div class="flex justify-between items-center">
+                  <!-- Icon -->
+                  <span>
+                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_d_177_10715)">
+                        <rect x="4.5" y="3" width="32" height="32" rx="8" fill="white" shape-rendering="crispEdges" />
+                        <path d="M12.5 13.6777L19.5607 13.6777L28.5 13.6777L25.688 16.9998" stroke="#101013"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M28.5 24.3223L21.4393 24.3223L12.5 24.3223M12.5 24.3223L15.312 21.0002M12.5 24.3223L12.7451 24.0312"
+                          stroke="#101013" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_177_10715" x="0.5" y="0" width="40" height="40"
+                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset dy="1" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_10715" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_10715" result="shape" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                  </span>
+                  <!--price-->
+                  <div class="">
+                    <div class="flex justify-between items-center gap-x-2">
+                      <span class="text-small text-gray pr-10">21,500,000 </span>
+                      <div class="text-small text-red flex justify-between items-center gap-x-1">
+                        <span>20%</span>
+                        <span>تومان</span>
+                      </div>
+                    </div>
+
+                    <!-- button price -->
+                    <div class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]">
+                      <div
+                        class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M8 7.66952V6.69952C8 4.44952 9.81 2.23952 12.06 2.02952C14.74 1.76952 17 3.87952 17 6.50952V7.88952"
+                            stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path
+                            d="M9.49995 22H15.4999C19.5199 22 20.24 20.39 20.4499 18.43L21.1999 12.43C21.4699 9.99 20.7699 8 16.4999 8H8.49995C4.22995 8 3.52995 9.99 3.79995 12.43L4.54995 18.43C4.75995 20.39 5.47995 22 9.49995 22Z"
+                            fill="white" />
+                          <path d="M15.9955 12H16.0045" stroke="#049F57" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M8.99451 12H9.00349" stroke="#049F57" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040" />
+                          <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white"
+                            stroke-width="1.66667" />
+                        </svg>
+
+                      </div>
+                      <div class="">
+                        <span class="text-white text-sm ml-14">12,590,000</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-3">
+
+            <div class="flex flex-col">
+              <div
+                class="after:w-1/2 clock-top">
+                <span class="soon">به زودی</span>
+                <span class="absolute top-0 right-2 text-red text-sm">37 : 12 : 24</span>
+                <div class="flex flex-col justify-center items-center">
+                  <div class="bg-[url('/images/monitor1.jpg')] w-[192px] h-[192px] bg-cover"></div>
+                </div>
+              </div>
+              <!-- content of image -->
+              <div class="flex flex-col px-2 pt-2">
+                <h2>مانیتور گیمینگ ایسوس ASUS ROG Strix XG438QR</h2>
+                <div class="flex justify-between items-center">
+                  <!-- Icon -->
+                  <span>
+                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_d_177_10715)">
+                        <rect x="4.5" y="3" width="32" height="32" rx="8" fill="white" shape-rendering="crispEdges" />
+                        <path d="M12.5 13.6777L19.5607 13.6777L28.5 13.6777L25.688 16.9998" stroke="#101013"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M28.5 24.3223L21.4393 24.3223L12.5 24.3223M12.5 24.3223L15.312 21.0002M12.5 24.3223L12.7451 24.0312"
+                          stroke="#101013" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_177_10715" x="0.5" y="0" width="40" height="40"
+                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset dy="1" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_10715" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_10715" result="shape" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                  </span>
+                  <!--price-->
+                  <div class="">
+                    <div class="flex justify-between items-center gap-x-2">
+                      <span class="text-small text-gray pr-10">21,500,000 </span>
+                      <div class="text-small text-red flex justify-between items-center gap-x-1">
+                        <span>20%</span>
+                        <span>تومان</span>
+                      </div>
+                    </div>
+
+                    <!-- button price -->
+                    <div class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]">
+                      <div
+                        class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M8 7.66952V6.69952C8 4.44952 9.81 2.23952 12.06 2.02952C14.74 1.76952 17 3.87952 17 6.50952V7.88952"
+                            stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path
+                            d="M9.49995 22H15.4999C19.5199 22 20.24 20.39 20.4499 18.43L21.1999 12.43C21.4699 9.99 20.7699 8 16.4999 8H8.49995C4.22995 8 3.52995 9.99 3.79995 12.43L4.54995 18.43C4.75995 20.39 5.47995 22 9.49995 22Z"
+                            fill="white" />
+                          <path d="M15.9955 12H16.0045" stroke="#049F57" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M8.99451 12H9.00349" stroke="#049F57" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040" />
+                          <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white"
+                            stroke-width="1.66667" />
+                        </svg>
+
+                      </div>
+                      <div class="">
+                        <span class="text-white text-sm ml-14">12,590,000</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-3">
+
+            <div class="flex flex-col">
+              <div
+                class="after:w-1/2 clock-top">
+                <span class="soon">به زودی</span>
+                <span class="absolute top-0 right-2 text-red text-sm">37 : 12 : 24</span>
+                <div class="flex flex-col justify-center items-center">
+                  <div class="bg-[url('/images/monitor1.jpg')] w-[192px] h-[192px] bg-cover"></div>
+                </div>
+              </div>
+              <!-- content of image -->
+              <div class="flex flex-col px-2 pt-2">
+                <h2>مانیتور گیمینگ ایسوس ASUS ROG Strix XG438QR</h2>
+                <div class="flex justify-between items-center">
+                  <!-- Icon -->
+                  <span>
+                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_d_177_10715)">
+                        <rect x="4.5" y="3" width="32" height="32" rx="8" fill="white" shape-rendering="crispEdges" />
+                        <path d="M12.5 13.6777L19.5607 13.6777L28.5 13.6777L25.688 16.9998" stroke="#101013"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M28.5 24.3223L21.4393 24.3223L12.5 24.3223M12.5 24.3223L15.312 21.0002M12.5 24.3223L12.7451 24.0312"
+                          stroke="#101013" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_177_10715" x="0.5" y="0" width="40" height="40"
+                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset dy="1" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_10715" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_10715" result="shape" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                  </span>
+                  <!--price-->
+                  <div class="">
+                    <div class="flex justify-between items-center gap-x-2">
+                      <span class="text-small text-gray pr-10">21,500,000 </span>
+                      <div class="text-small text-red flex justify-between items-center gap-x-1">
+                        <span>20%</span>
+                        <span>تومان</span>
+                      </div>
+                    </div>
+
+                    <!-- button price -->
+                    <div class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]">
+                      <div
+                        class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M8 7.66952V6.69952C8 4.44952 9.81 2.23952 12.06 2.02952C14.74 1.76952 17 3.87952 17 6.50952V7.88952"
+                            stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path
+                            d="M9.49995 22H15.4999C19.5199 22 20.24 20.39 20.4499 18.43L21.1999 12.43C21.4699 9.99 20.7699 8 16.4999 8H8.49995C4.22995 8 3.52995 9.99 3.79995 12.43L4.54995 18.43C4.75995 20.39 5.47995 22 9.49995 22Z"
+                            fill="white" />
+                          <path d="M15.9955 12H16.0045" stroke="#049F57" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M8.99451 12H9.00349" stroke="#049F57" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040" />
+                          <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white"
+                            stroke-width="1.66667" />
+                        </svg>
+
+                      </div>
+                      <div class="">
+                        <span class="text-white text-sm ml-14">12,590,000</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-span-3">
+
+            <div class="flex flex-col">
+              <div
+                class="after:w-1/2 clock-top">
+                <span class="soon">به زودی</span>
+                <span class="absolute top-0 right-2 text-red text-sm">37 : 12 : 24</span>
+                <div class="flex flex-col justify-center items-center">
+                  <div class="bg-[url('/images/monitor1.jpg')] w-[192px] h-[192px] bg-cover"></div>
+                </div>
+              </div>
+              <!-- content of image -->
+              <div class="flex flex-col px-2 pt-2">
+                <h2>مانیتور گیمینگ ایسوس ASUS ROG Strix XG438QR</h2>
+                <div class="flex justify-between items-center">
+                  <!-- Icon -->
+                  <span>
+                    <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_d_177_10715)">
+                        <rect x="4.5" y="3" width="32" height="32" rx="8" fill="white" shape-rendering="crispEdges" />
+                        <path d="M12.5 13.6777L19.5607 13.6777L28.5 13.6777L25.688 16.9998" stroke="#101013"
+                          stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M28.5 24.3223L21.4393 24.3223L12.5 24.3223M12.5 24.3223L15.312 21.0002M12.5 24.3223L12.7451 24.0312"
+                          stroke="#101013" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </g>
+                      <defs>
+                        <filter id="filter0_d_177_10715" x="0.5" y="0" width="40" height="40"
+                          filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feColorMatrix in="SourceAlpha" type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                          <feOffset dy="1" />
+                          <feGaussianBlur stdDeviation="2" />
+                          <feComposite in2="hardAlpha" operator="out" />
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_10715" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_10715" result="shape" />
+                        </filter>
+                      </defs>
+                    </svg>
+
+                  </span>
+                  <!--price-->
+                  <div class="">
+                    <div class="flex justify-between items-center gap-2">
+                      <span class="text-small text-gray pr-10">21,500,000 </span>
+                      <div class="text-small text-red flex justify-between items-center gap-x-1">
+                        <span>20%</span>
+                        <span>تومان</span>
+                      </div>
+                    </div>
+
+                    <!-- button price -->
+                    <div class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]">
+                      <div
+                        class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M8 7.66952V6.69952C8 4.44952 9.81 2.23952 12.06 2.02952C14.74 1.76952 17 3.87952 17 6.50952V7.88952"
+                            stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path
+                            d="M9.49995 22H15.4999C19.5199 22 20.24 20.39 20.4499 18.43L21.1999 12.43C21.4699 9.99 20.7699 8 16.4999 8H8.49995C4.22995 8 3.52995 9.99 3.79995 12.43L4.54995 18.43C4.75995 20.39 5.47995 22 9.49995 22Z"
+                            fill="white" />
+                          <path d="M15.9955 12H16.0045" stroke="#049F57" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <path d="M8.99451 12H9.00349" stroke="#049F57" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                          <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040" />
+                          <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white"
+                            stroke-width="1.66667" />
+                        </svg>
+
+                      </div>
+                      <div class="">
+                        <span class="text-white text-sm ml-14">12,590,000</span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </section>
+
+    </section>
+
+
+</body>
+
 </html>

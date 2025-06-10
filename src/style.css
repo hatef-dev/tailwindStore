@@ -47,5 +47,9 @@
   .customized{
     @apply absolute top-0 text-small left-6 py-[2px] px-4 inline-block bg-[#F1E9FC]   rounded-full text-[#9747FF];
   }
+  .clock-top{
+    @apply p-5 relative after:w-3/5 after:h-[5px] after:bg-red after:absolute after:-top-2.5 after:rounded-tr-full after:right-0;
+  }
+  
 
 }
