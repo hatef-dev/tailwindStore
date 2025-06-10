@@ -53,5 +53,8 @@
   .clock-discount{
     @apply absolute top-0 right-2 text-red text-sm;
   }
+  .footer-nav-item{
+    @apply text-small  px-4 border-l-[1px] border-[#B4B3C0];
+  }
 
 }
