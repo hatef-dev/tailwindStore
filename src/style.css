@@ -30,28 +30,28 @@
     @apply flex flex-col items-center justify-center;
   }
   .buy-guide-card {
-    @apply flex flex-col px-6 rounded-[20px] gap-y-4;
+    @apply flex flex-col justify-end px-6 rounded-[20px] gap-y-4;
   }
   .buy-guide-card-content {
     @apply flex flex-col gap-y-4;
   }
   .soon{
-    @apply absolute top-0 text-small left-6 py-[2px] px-4 inline-block bg-[#BEE5FB4D]   rounded-full text-[#52B9F3];
+    @apply absolute top-3 text-small left-6 py-[2px] px-4 inline-block bg-[#BEE5FB4D]   rounded-full text-[#52B9F3];
   }
   .non-existent{
-    @apply absolute top-0 text-small left-6 py-[2px] px-4 inline-block bg-[#FFE0E099]   rounded-full text-[#B3261E];
+    @apply absolute top-3 text-small left-6 py-[2px] px-4 inline-block bg-[#FFE0E099]   rounded-full text-[#B3261E];
   }
   .existing{
-    @apply absolute top-0 text-small left-6 py-[2px] px-4 inline-block bg-[#05C26A1A]   rounded-full text-[#05C56C];
+    @apply absolute top-3 text-small left-6 py-[2px] px-4 inline-block bg-[#05C26A1A]   rounded-full text-[#05C56C];
   }
   .customized{
-    @apply absolute top-0 text-small left-6 py-[2px] px-4 inline-block bg-[#F1E9FC]   rounded-full text-[#9747FF];
+    @apply absolute top-3 text-small left-6 py-[2px] px-4 inline-block bg-[#F1E9FC]   rounded-full text-[#9747FF];
   }
   .clock-top{
-    @apply p-5 relative after:w-3/5 after:h-[5px] after:bg-red after:absolute after:-top-2.5 after:rounded-l-full after:rounded-tr-full after:right-0;
+    @apply bg-white rounded-3xl p-5 relative after:w-3/5 after:h-[5px] after:bg-red after:absolute after:top-0 after:rounded-l-full after:rounded-tr-full after:right-0;
   }
   .clock-discount{
-    @apply absolute top-0 right-2 text-red text-sm;
+    @apply absolute top-2 right-2 text-red text-sm;
   }
   .footer-nav-item{
     @apply text-small  px-4 border-l-[1px] border-[#B4B3C0];
