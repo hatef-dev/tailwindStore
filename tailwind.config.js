@@ -14,7 +14,7 @@ module.exports = {
           '2xl': '12.5rem',
         },
         screens: {
-          sm: '600px',
+          sm: '300px',
           md: '768px',
           lg: '992px',
           xl: '1200px',
