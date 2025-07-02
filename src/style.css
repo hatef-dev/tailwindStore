@@ -30,7 +30,7 @@
     @apply flex flex-col items-center justify-center;
   }
   .buy-guide-card {
-    @apply flex flex-col justify-end px-6 rounded-[20px] gap-y-4;
+    @apply flex flex-col justify-end px-6 rounded-[20px] gap-y-5;
   }
   .buy-guide-card-content {
     @apply flex flex-col gap-y-4;
