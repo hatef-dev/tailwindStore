@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap");
 @import "tailwindcss";
 @config "../tailwind.config.js";
 @theme {
-  --font-display: 'Vazirmatn', sans-serif;
-  --color-red: #FF4040;
-  --color-gray: #6B697F;
-  --color-blue: #52B9F3;
-  
-  --color-bg-clock: #E8EBED;
-  --color-gray-light: #9B9AAB;
-  --color-neutral: #E8EBED;
+  --font-display: "Vazirmatn", sans-serif;
+  --color-red: #ff4040;
+  --color-gray: #6b697f;
+  --color-blue: #52b9f3;
 
-  --text-small : 12.8px;
+  --color-bg-clock: #e8ebed;
+  --color-gray-light: #9b9aab;
+  --color-neutral: #e8ebed;
+
+  --text-small: 12.8px;
 }
 
 @layer components {
@@ -19,11 +19,11 @@
     @apply text-sm py-2.5 pt-[9px] px-3 border-b-2 border-transparent  cursor-pointer hover:border-b-2 hover:border-[#FF4040] hover:text-[#FF4040] transition-all duration-300;
   }
   .selected-items {
-    @apply flex justify-center items-center py-2 px-3 text-[10.5px] text-[#403F4C] border-b  border-b-[#EEF0F1]
+    @apply flex justify-center items-center py-2 px-3 text-[10.5px] text-[#403F4C] border-b  border-b-[#EEF0F1];
   }
 
   .image-position {
-    @apply  bg-cover rounded-xl  h-[172px]
+    @apply bg-cover rounded-xl  h-[172px];
   }
 
   .flex-col-center {
@@ -35,31 +35,34 @@
   .buy-guide-card-content {
     @apply flex flex-col gap-y-4;
   }
-  .soon{
+  .soon {
     @apply absolute top-3 text-small left-6 py-[2px] px-4 inline-block bg-[#BEE5FB4D]   rounded-full text-[#52B9F3];
   }
-  .non-existent{
+  .non-existent {
     @apply absolute top-3 text-small left-6 py-[2px] px-4 inline-block bg-[#FFE0E099]   rounded-full text-[#B3261E];
   }
-  .existing{
+  .existing {
     @apply absolute top-3 text-small left-6 py-[2px] px-4 inline-block bg-[#05C26A1A]   rounded-full text-[#05C56C];
   }
-  .customized{
+  .customized {
     @apply absolute top-3 text-small left-6 py-[2px] px-4 inline-block bg-[#F1E9FC]   rounded-full text-[#9747FF];
   }
-  .clock-top{
+  .clock-top {
     @apply bg-white rounded-3xl p-5 relative after:w-3/5 after:h-[5px] after:bg-red after:absolute after:top-0 after:rounded-l-full after:rounded-tr-full after:right-0;
   }
-  .clock-discount{
+  .clock-discount {
     @apply absolute top-2 right-2 text-red text-sm;
   }
-  .footer-nav-item{
+  .footer-nav-item {
     @apply text-small px-3  2xl:px-4 border-l-[1px] border-[#B4B3C0];
   }
-  .more{
-    @apply absolute  -top-20 2xl:-top-18 left-21 md:left-10 xl:left-7 2xl:left-8 md:bg-[url('/images/ad1.jpg')] rounded-t-[20px] w-3/4  md:w-4/5    2xl:w-4/5  md:h-[155px]  bg-cover
+  .more {
+    @apply absolute  -top-20 2xl:-top-18 left-21 md:left-10 xl:left-7 2xl:left-8 md:bg-[url('/images/ad1.jpg')] rounded-t-[20px] w-3/4  md:w-4/5    2xl:w-4/5  md:h-[155px]  bg-cover;
   }
-  .product{
-    @apply bg-[url('/images/monitor1.jpg')] w-[192px]  h-[192px] bg-cover
+  .product {
+    @apply bg-[url('/images/monitor1.jpg')] w-[192px]  h-[192px] bg-cover;
+  }
+  .border-left-and-right-product {
+    @apply after:absolute after:w-1 after:h-[95px] before:absolute before:w-1 before:h-[95px] before:bg-[#EEF0F1] before:top-[75px] before:rounded-tl-full before:rounded-bl-full before:right-0 after:bg-[#EEF0F1] after:top-[75px] after:rounded-tr-full after:rounded-br-full after:left-0;
   }
 }
