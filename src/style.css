@@ -65,4 +65,7 @@
   .border-left-and-right-product {
     @apply after:absolute after:w-1 after:h-[95px] before:absolute before:w-1 before:h-[95px] before:bg-[#EEF0F1] before:top-[75px] before:rounded-tl-full before:rounded-bl-full before:right-0 after:bg-[#EEF0F1] after:top-[75px] after:rounded-tr-full after:rounded-br-full after:left-0;
   }
+  .discount-with-box{
+    @apply text-small text-red flex justify-between items-center gap-x-1.5 py-[3px] px-[4px] bg-[#FFE0E099] rounded-full
+  }
 }
