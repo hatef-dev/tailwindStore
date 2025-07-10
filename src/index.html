@@ -17,7 +17,7 @@
   <header class="w-full grid grid-cols-12  md:flex flex-col bg-white">
     <!-- Top Header -->
     <section class="col-span-full bg-[#403F4C] ">
-      <div class="md:container text-white text-small py-2 flex justify-between items-center">
+      <div class="container text-white text-small md:gap-x-0 py-2 flex justify-between items-center">
         <div class="flex items-center gap-x-2">
           <div class="flex items-center gap-x-2">
             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,20 +25,20 @@
               </svg>
             <span>کارشناس فروش</span>
           </div> 
-          <div class="flex items-center text-small gap-x-2">
+          <div class="flex items-center text-small md:gap-x-2">
             <span>_  ۸۸ ۹۷۰ ۲۱۴ ۰۲۱</span>
             <span>۵۲ ۴۷۲ ۰۰۰ ۰۲۱</span>
           </div>           
         </div>
         <div class="flex items-center gap-x-2" >
-          <button class="bg-transparent border-[1px] py-3 px-2 md:px-6 rounded-xl"><a href="">لیست قیمت همکار</a></button>
+          <button class="bg-transparent border-[1px] py-3 px-2 md:px-6 rounded-xl hidden md:block"><a href="">لیست قیمت همکار</a></button>
           <button class="bg-[#52B9F3] py-3 px-2 md:px-6 rounded-xl"><a href="">درخواست دمو</a></button>
           
         </div>
       </div>
     </section>
     <!-- Middle Header -->
-    <section class="col-span-full md:container pt-6 pb-2">
+    <section class="col-span-full container pt-6 pb-2">
       <section class="flex items-center justify-between ">
         <div class="flex items-center md:space-x-6">
           <!-- Logo -->
@@ -91,7 +91,7 @@
       </section>
     </section>
     <!-- Bottom Header (Navbar) -->
-    <section class="md:container hidden md:block">
+    <section class="container hidden md:block">
       <nav class="grid grid-cols-12">
         <ul class="hidden md:flex items-center col-span-full md:col-span-10 2xl:col-span-6 space-x-1 w-full justify-between">
           <li class="nav-item">
@@ -118,7 +118,7 @@
 
 
   <!-- Main -->
-  <main class=" w-full md:container md:grid md:grid-cols-12 my-12 md:gap-5">
+  <main class=" w-full container md:grid md:grid-cols-12 my-12 md:gap-5">
     <!-- Product Details -->
     <section class="grid grid-cols-10 lg:col-span-8 col-span-full  bg-white rounded-3xl relative border-left-and-right-product after:top-[140px] before:top-[140px] ">
       <!-- Product Details Left Side -->
@@ -243,7 +243,7 @@
 
           
             
-              <a href="" class="flex-col-center col-span-4">
+              <a href="" class="flex-col-center col-span-6">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <mask id="path-1-inside-1_171_10328" fill="white">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -275,7 +275,7 @@
               </a>
             
 
-          <a href="" class="flex-col-center col-span-4">
+          <a href="" class="flex-col-center col-span-6">
             <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="7.37778" y="27.2636" width="5.62464" height="0.937439" rx="0.46872" fill="#403F4C"
                 stroke="#403F4C" stroke-width="0.937439" />
@@ -296,7 +296,7 @@
             <span class=" text-sm">ویدیو پروژکتور</span>
           </a>
 
-          <a href="" class="flex-col-center col-span-4">
+          <a href="" class="flex-col-center col-span-6">
             <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="9.90442" y="9.4043" width="5.5565" height="1.01739" rx="0.508693" fill="#403F4C"
                 stroke="#403F4C" />
@@ -321,7 +321,7 @@
             <span class=" text-sm">یو پی اس</span>
           </a>
 
-          <a href="" class="flex-col-center col-span-4 ">
+          <a href="" class="flex-col-center col-span-6">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="path-1-inside-1_171_10313" fill="white">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -343,7 +343,7 @@
             <span class=" text-sm">برد هوشمند</span>
           </a>
 
-          <a href="" class="flex-col-center col-span-4">
+          <a href="" class="flex-col-center col-span-6">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="path-1-inside-1_171_10298" fill="white">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -367,7 +367,7 @@
             <span class=" text-sm">نمایشگر لمسی</span>
           </a>
 
-          <a href="" class="flex-col-center col-span-4">
+          <a href="" class="flex-col-center col-span-6">
             <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <mask id="path-1-inside-1_171_11303" fill="white">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -391,7 +391,7 @@
       <!-- Buying guide -->
       <section class=" col-span-full ">
         <h3 class=" font-medium text-red text-sm px-6  border-b border-neutral pb-4">راهنمای خرید</h3>
-        <section class="my-8 grid grid-cols-12 gap-y-8 gap-x-6  px-2 ">
+        <section class="my-8 hidden md:grid grid-cols-12 gap-y-8 gap-x-6  px-2 ">
           <div class="col-span-full md:col-span-6 xl:col-span-4 drop-shadow-xl rounded-b-3xl">
             <div class="relative buy-guide-card md:mt-[72px] py-6 bg-white md:h-[280px] border-left-and-right-product ">
               <div class="more"></div>
@@ -444,6 +444,75 @@
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="block md:hidden">
+          <div class="swiper articleSecetion">
+            <div class="swiper-wrapper ">
+              <div class="swiper-slide my-8">
+                <div class="col-span-full md:col-span-6 xl:col-span-4 drop-shadow-xl rounded-b-3xl">
+                  <div class="relative buy-guide-card mt-[72px] py-6 bg-white h-[280px] border-left-and-right-product ">
+                    <div class="more"></div>
+                    
+                    <div class="buy-guide-card-content ">
+                      <a href="" class=" text-sm font-medium">مانیتور گیمینگ ایسوس ASUS ROG Strix راهنمای خرید ویدئو پروژکتور تیر
+                        ۱۴۰۲</a >
+                      <p class=" text-[12px] text-gray">قیمت ویدئو پروژکتور لیزری تیر ماه  خرید دیتاییشش پروژکتور برند
+                        اپسون مشخصات پروژکتور اداری کلاسssssw optoma projector بهترین قیمت ویدیو پروژکتور سززز...</p>
+                      <div class="flex justify-between items-center">
+                        <span class="text-small text-gray">۰۶ تیر ۱۴۰۲</span>
+                        <a href="#" class="text-small text-blue">
+                          زمان مطالعه ۱۰ دقیقه
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my-8">
+                <div class="col-span-full md:col-span-6 xl:col-span-4 drop-shadow-xl rounded-b-3xl">
+                  <div class="relative buy-guide-card mt-[72px] py-6 bg-white h-[280px] border-left-and-right-product ">
+                    <div class="more"></div>
+                    
+                    <div class="buy-guide-card-content ">
+                      <a href="" class=" text-sm font-medium">مانیتور گیمینگ ایسوس ASUS ROG Strix راهنمای خرید ویدئو پروژکتور تیر
+                        ۱۴۰۲</a >
+                      <p class=" text-[12px] text-gray">قیمت ویدئو پروژکتور لیزری تیر ماه  خرید دیتاییشش پروژکتور برند
+                        اپسون مشخصات پروژکتور اداری کلاسssssw optoma projector بهترین قیمت ویدیو پروژکتور سززز...</p>
+                      <div class="flex justify-between items-center">
+                        <span class="text-small text-gray">۰۶ تیر ۱۴۰۲</span>
+                        <a href="#" class="text-small text-blue">
+                          زمان مطالعه ۱۰ دقیقه
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide my-8">
+                <div class="col-span-full md:col-span-6 xl:col-span-4 drop-shadow-xl rounded-b-3xl">
+                  <div class="relative buy-guide-card mt-[72px] py-6 bg-white h-[280px] border-left-and-right-product ">
+                    <div class="more"></div>
+                    
+                    <div class="buy-guide-card-content ">
+                      <a href="" class=" text-sm font-medium">مانیتور گیمینگ ایسوس ASUS ROG Strix راهنمای خرید ویدئو پروژکتور تیر
+                        ۱۴۰۲</a >
+                      <p class=" text-[12px] text-gray">قیمت ویدئو پروژکتور لیزری تیر ماه  خرید دیتاییشش پروژکتور برند
+                        اپسون مشخصات پروژکتور اداری کلاسssssw optoma projector بهترین قیمت ویدیو پروژکتور سززز...</p>
+                      <div class="flex justify-between items-center">
+                        <span class="text-small text-gray">۰۶ تیر ۱۴۰۲</span>
+                        <a href="#" class="text-small text-blue">
+                          زمان مطالعه ۱۰ دقیقه
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
             </div>
           </div>
         </section>
@@ -1020,7 +1089,7 @@
          
           
         </div>
-        <div class="grid grid-cols-12 gap-x-2 md:gap-x-8 gap-y-4 md:gap-y-8">
+        <div class="hidden md:grid grid-cols-12 gap-x-2 md:gap-x-8 gap-y-4 md:gap-y-8">
           <div class="col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3 ">
 
             <div class="flex flex-col">
@@ -1359,6 +1428,345 @@
           </div>
         </div>
 
+        <div class="block md:hidden">
+          <div class=" swiper discountSecetion ">
+            <div class="swiper-wrapper md:hidden">
+              <div class="swiper-slide">
+                <div class="flex flex-col">
+                  <a href=""
+                    class="after:w-2/5 clock-top py-9 shadow-sm overflow-hidden ">
+                    <div class="border-left-and-right-product after:top-[80px] before:top-[80px]">
+                      <span class="soon">به زودی</span>
+                      <span class="clock-discount">۲۴:۱۲:۳۷</span>
+                      <div class="flex flex-col justify-center items-center">
+                        <div class="product"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- content of image -->
+                  <div class="flex flex-col px-2 pt-2 space-y-2">
+                    <a href="" class="text-sm font-medium">مانیتور گیمینگ ایسوس ASUS ROG Strix XG۴۳۸QR</a>
+                    <div class="flex justify-between items-center py-4">
+                      <!-- Icon -->
+                      <a href="" class="flex justify-center items-center">
+                        <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g filter="url(#filter0_d_177_10715)">
+                            <rect x="4.5" y="3" width="32" height="32" rx="8" fill="white" shape-rendering="crispEdges" />
+                            <path d="M12.5 13.6777L19.5607 13.6777L28.5 13.6777L25.688 16.9998" stroke="#101013"
+                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M28.5 24.3223L21.4393 24.3223L12.5 24.3223M12.5 24.3223L15.312 21.0002M12.5 24.3223L12.7451 24.0312"
+                              stroke="#101013" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <filter id="filter0_d_177_10715" x="0.5" y="0" width="40" height="40"
+                              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                              <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dy="1" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_10715" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_10715" result="shape" />
+                            </filter>
+                          </defs>
+                        </svg>
+    
+                      </a>
+                      <!--price-->
+                      <a href="" class="">
+                        <div class="flex justify-between items-center gap-2 mb-2">
+                          <span class="text-small text-gray pr-10">۲۱,۵۰۰,۰۰۰ </span>
+                          <div class="discount-with-box">
+                            <span>۲۰٪</span>
+                            <span>تومان</span>
+                          </div>
+                        </div>
+    
+                        <!-- button price -->
+                        <div class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]">
+                          <div
+                            class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center">
+                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4731 2.18833L12.4375 2.20734C12.1387 2.36481 13.2959 3.68159 12.4375 3.26348C13.258 3.68159 11.8494 3.65354 11.7095 3.90332C11.534 4.21283 10.8132 4.19745 10.7586 4.56126C10.6519 5.26988 10.8155 6.00836 10.7088 6.71698C10.6092 7.38759 10.2606 7.60208 9.63699 7.61837C6.4808 7.70525 3.32224 7.60208 0.163671 7.59393V13.7326H3.59968V10.6646L10.0306 10.6483C12.6414 10.6429 13.8579 8.72066 13.8579 5.84275C13.8579 5.53595 13.8721 5.3106 13.8579 5.04453C13.8958 4.42551 13.782 3.78748 13.5235 3.26348C13.2912 2.78835 12.9378 2.39739 12.4754 2.19105L12.4731 2.18833ZM0.109131 5.08526L2.34763 1.97656H11.0836C10.8065 2.15279 9.51794 3.26348 9.96131 5.08797H0.109131V5.08526Z" fill="white"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.398 13.8565L13.0896 13.8538L13.6242 10.9134H21.9806C22.8485 10.6989 22.692 9.20294 22.002 9.00746C19.671 9.02103 17.3708 9.00746 15.0161 9.00746C15.4358 8.21467 15.5449 7.70425 15.5971 6.6834C18.1415 6.71598 20.7452 6.65082 23.2919 6.6834C26.8963 7.59565 26.1067 13.8538 22.3932 13.8538L22.398 13.8565ZM23.6239 5.11141C24.378 3.99825 25.1676 3.01813 25.8909 2C22.4644 2.01629 18.9833 2 15.5094 2C15.1086 2 15.1957 2.00003 14.6957 2.00036C15.1953 2.38272 15.3704 2.66466 15.6004 3.13436C15.8636 3.67193 15.9695 4.52925 15.7714 5.11141H23.6215H23.6239Z" fill="white"/>
+                              <path d="M13.2043 0.231146L7.94731 9.53176C7.8462 9.7087 7.84532 9.92652 7.94499 10.1043C8.04466 10.2821 8.22999 10.3932 8.43213 10.3965H11.4266C12.0514 10.3965 12.5578 10.9084 12.5578 11.5398V15.3831C12.5585 15.6371 12.7236 15.8607 12.9643 15.9337C13.205 16.0066 13.4646 15.9118 13.6035 15.7001L18.7749 7.85035C18.891 7.67644 18.9026 7.45196 18.805 7.2668C18.7074 7.08163 18.5167 6.96608 18.3091 6.9664H15.3527C14.7226 6.9664 14.2119 6.4502 14.2119 5.81343V0.490564C14.1811 0.261693 14.0161 0.0745818 13.7946 0.0175692C13.5731 -0.0394434 13.3396 0.0450452 13.2043 0.231146Z" fill="url(#paint0_linear_324_10700)"/>
+                              <defs>
+                              <linearGradient id="paint0_linear_324_10700" x1="9.15545" y1="0" x2="9.15545" y2="15.958" gradientUnits="userSpaceOnUse">
+                              <stop offset="0.9999" stop-color="#FFE600"/>
+                              <stop offset="1" stop-color="#FFAD0D"/>
+                              </linearGradient>
+                              </defs>
+                              </svg>
+                              
+    
+                          </div>
+                          <div class="">
+                            <span class="text-white text-[16px] md:ml-14">۱۲,۵۹۰,۰۰۰</span>
+                          </div>
+                        </div>
+    
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col">
+                  <a href=""
+                    class="after:w-2/5 clock-top py-9 shadow-sm overflow-hidden ">
+                    <div class="border-left-and-right-product after:top-[80px] before:top-[80px]">
+                      <span class="soon">به زودی</span>
+                      <span class="clock-discount">۲۴:۱۲:۳۷</span>
+                      <div class="flex flex-col justify-center items-center">
+                        <div class="product"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- content of image -->
+                  <div class="flex flex-col px-2 pt-2 space-y-2">
+                    <a href="" class="text-sm font-medium">مانیتور گیمینگ ایسوس ASUS ROG Strix XG۴۳۸QR</a>
+                    <div class="flex justify-between items-center py-4">
+                      <!-- Icon -->
+                      <a href="" class="flex justify-center items-center">
+                        <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g filter="url(#filter0_d_177_10715)">
+                            <rect x="4.5" y="3" width="32" height="32" rx="8" fill="white" shape-rendering="crispEdges" />
+                            <path d="M12.5 13.6777L19.5607 13.6777L28.5 13.6777L25.688 16.9998" stroke="#101013"
+                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M28.5 24.3223L21.4393 24.3223L12.5 24.3223M12.5 24.3223L15.312 21.0002M12.5 24.3223L12.7451 24.0312"
+                              stroke="#101013" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <filter id="filter0_d_177_10715" x="0.5" y="0" width="40" height="40"
+                              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                              <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dy="1" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_10715" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_10715" result="shape" />
+                            </filter>
+                          </defs>
+                        </svg>
+    
+                      </a>
+                      <!--price-->
+                      <a href="" class="">
+                        <div class="flex justify-between items-center gap-2 mb-2">
+                          <span class="text-small text-gray pr-10">۲۱,۵۰۰,۰۰۰ </span>
+                          <div class="discount-with-box">
+                            <span>۲۰٪</span>
+                            <span>تومان</span>
+                          </div>
+                        </div>
+    
+                        <!-- button price -->
+                        <div class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]">
+                          <div
+                            class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center">
+                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4731 2.18833L12.4375 2.20734C12.1387 2.36481 13.2959 3.68159 12.4375 3.26348C13.258 3.68159 11.8494 3.65354 11.7095 3.90332C11.534 4.21283 10.8132 4.19745 10.7586 4.56126C10.6519 5.26988 10.8155 6.00836 10.7088 6.71698C10.6092 7.38759 10.2606 7.60208 9.63699 7.61837C6.4808 7.70525 3.32224 7.60208 0.163671 7.59393V13.7326H3.59968V10.6646L10.0306 10.6483C12.6414 10.6429 13.8579 8.72066 13.8579 5.84275C13.8579 5.53595 13.8721 5.3106 13.8579 5.04453C13.8958 4.42551 13.782 3.78748 13.5235 3.26348C13.2912 2.78835 12.9378 2.39739 12.4754 2.19105L12.4731 2.18833ZM0.109131 5.08526L2.34763 1.97656H11.0836C10.8065 2.15279 9.51794 3.26348 9.96131 5.08797H0.109131V5.08526Z" fill="white"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.398 13.8565L13.0896 13.8538L13.6242 10.9134H21.9806C22.8485 10.6989 22.692 9.20294 22.002 9.00746C19.671 9.02103 17.3708 9.00746 15.0161 9.00746C15.4358 8.21467 15.5449 7.70425 15.5971 6.6834C18.1415 6.71598 20.7452 6.65082 23.2919 6.6834C26.8963 7.59565 26.1067 13.8538 22.3932 13.8538L22.398 13.8565ZM23.6239 5.11141C24.378 3.99825 25.1676 3.01813 25.8909 2C22.4644 2.01629 18.9833 2 15.5094 2C15.1086 2 15.1957 2.00003 14.6957 2.00036C15.1953 2.38272 15.3704 2.66466 15.6004 3.13436C15.8636 3.67193 15.9695 4.52925 15.7714 5.11141H23.6215H23.6239Z" fill="white"/>
+                              <path d="M13.2043 0.231146L7.94731 9.53176C7.8462 9.7087 7.84532 9.92652 7.94499 10.1043C8.04466 10.2821 8.22999 10.3932 8.43213 10.3965H11.4266C12.0514 10.3965 12.5578 10.9084 12.5578 11.5398V15.3831C12.5585 15.6371 12.7236 15.8607 12.9643 15.9337C13.205 16.0066 13.4646 15.9118 13.6035 15.7001L18.7749 7.85035C18.891 7.67644 18.9026 7.45196 18.805 7.2668C18.7074 7.08163 18.5167 6.96608 18.3091 6.9664H15.3527C14.7226 6.9664 14.2119 6.4502 14.2119 5.81343V0.490564C14.1811 0.261693 14.0161 0.0745818 13.7946 0.0175692C13.5731 -0.0394434 13.3396 0.0450452 13.2043 0.231146Z" fill="url(#paint0_linear_324_10700)"/>
+                              <defs>
+                              <linearGradient id="paint0_linear_324_10700" x1="9.15545" y1="0" x2="9.15545" y2="15.958" gradientUnits="userSpaceOnUse">
+                              <stop offset="0.9999" stop-color="#FFE600"/>
+                              <stop offset="1" stop-color="#FFAD0D"/>
+                              </linearGradient>
+                              </defs>
+                              </svg>
+                              
+    
+                          </div>
+                          <div class="">
+                            <span class="text-white text-[16px] md:ml-14">۱۲,۵۹۰,۰۰۰</span>
+                          </div>
+                        </div>
+    
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col">
+                  <a href=""
+                    class="after:w-2/5 clock-top py-9 shadow-sm overflow-hidden ">
+                    <div class="border-left-and-right-product after:top-[80px] before:top-[80px]">
+                      <span class="soon">به زودی</span>
+                      <span class="clock-discount">۲۴:۱۲:۳۷</span>
+                      <div class="flex flex-col justify-center items-center">
+                        <div class="product"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- content of image -->
+                  <div class="flex flex-col px-2 pt-2 space-y-2">
+                    <a href="" class="text-sm font-medium">مانیتور گیمینگ ایسوس ASUS ROG Strix XG۴۳۸QR</a>
+                    <div class="flex justify-between items-center py-4">
+                      <!-- Icon -->
+                      <a href="" class="flex justify-center items-center">
+                        <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g filter="url(#filter0_d_177_10715)">
+                            <rect x="4.5" y="3" width="32" height="32" rx="8" fill="white" shape-rendering="crispEdges" />
+                            <path d="M12.5 13.6777L19.5607 13.6777L28.5 13.6777L25.688 16.9998" stroke="#101013"
+                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M28.5 24.3223L21.4393 24.3223L12.5 24.3223M12.5 24.3223L15.312 21.0002M12.5 24.3223L12.7451 24.0312"
+                              stroke="#101013" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <filter id="filter0_d_177_10715" x="0.5" y="0" width="40" height="40"
+                              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                              <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dy="1" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_10715" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_10715" result="shape" />
+                            </filter>
+                          </defs>
+                        </svg>
+    
+                      </a>
+                      <!--price-->
+                      <a href="" class="">
+                        <div class="flex justify-between items-center gap-2 mb-2">
+                          <span class="text-small text-gray pr-10">۲۱,۵۰۰,۰۰۰ </span>
+                          <div class="discount-with-box">
+                            <span>۲۰٪</span>
+                            <span>تومان</span>
+                          </div>
+                        </div>
+    
+                        <!-- button price -->
+                        <div class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]">
+                          <div
+                            class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center">
+                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4731 2.18833L12.4375 2.20734C12.1387 2.36481 13.2959 3.68159 12.4375 3.26348C13.258 3.68159 11.8494 3.65354 11.7095 3.90332C11.534 4.21283 10.8132 4.19745 10.7586 4.56126C10.6519 5.26988 10.8155 6.00836 10.7088 6.71698C10.6092 7.38759 10.2606 7.60208 9.63699 7.61837C6.4808 7.70525 3.32224 7.60208 0.163671 7.59393V13.7326H3.59968V10.6646L10.0306 10.6483C12.6414 10.6429 13.8579 8.72066 13.8579 5.84275C13.8579 5.53595 13.8721 5.3106 13.8579 5.04453C13.8958 4.42551 13.782 3.78748 13.5235 3.26348C13.2912 2.78835 12.9378 2.39739 12.4754 2.19105L12.4731 2.18833ZM0.109131 5.08526L2.34763 1.97656H11.0836C10.8065 2.15279 9.51794 3.26348 9.96131 5.08797H0.109131V5.08526Z" fill="white"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.398 13.8565L13.0896 13.8538L13.6242 10.9134H21.9806C22.8485 10.6989 22.692 9.20294 22.002 9.00746C19.671 9.02103 17.3708 9.00746 15.0161 9.00746C15.4358 8.21467 15.5449 7.70425 15.5971 6.6834C18.1415 6.71598 20.7452 6.65082 23.2919 6.6834C26.8963 7.59565 26.1067 13.8538 22.3932 13.8538L22.398 13.8565ZM23.6239 5.11141C24.378 3.99825 25.1676 3.01813 25.8909 2C22.4644 2.01629 18.9833 2 15.5094 2C15.1086 2 15.1957 2.00003 14.6957 2.00036C15.1953 2.38272 15.3704 2.66466 15.6004 3.13436C15.8636 3.67193 15.9695 4.52925 15.7714 5.11141H23.6215H23.6239Z" fill="white"/>
+                              <path d="M13.2043 0.231146L7.94731 9.53176C7.8462 9.7087 7.84532 9.92652 7.94499 10.1043C8.04466 10.2821 8.22999 10.3932 8.43213 10.3965H11.4266C12.0514 10.3965 12.5578 10.9084 12.5578 11.5398V15.3831C12.5585 15.6371 12.7236 15.8607 12.9643 15.9337C13.205 16.0066 13.4646 15.9118 13.6035 15.7001L18.7749 7.85035C18.891 7.67644 18.9026 7.45196 18.805 7.2668C18.7074 7.08163 18.5167 6.96608 18.3091 6.9664H15.3527C14.7226 6.9664 14.2119 6.4502 14.2119 5.81343V0.490564C14.1811 0.261693 14.0161 0.0745818 13.7946 0.0175692C13.5731 -0.0394434 13.3396 0.0450452 13.2043 0.231146Z" fill="url(#paint0_linear_324_10700)"/>
+                              <defs>
+                              <linearGradient id="paint0_linear_324_10700" x1="9.15545" y1="0" x2="9.15545" y2="15.958" gradientUnits="userSpaceOnUse">
+                              <stop offset="0.9999" stop-color="#FFE600"/>
+                              <stop offset="1" stop-color="#FFAD0D"/>
+                              </linearGradient>
+                              </defs>
+                              </svg>
+                              
+    
+                          </div>
+                          <div class="">
+                            <span class="text-white text-[16px] md:ml-14">۱۲,۵۹۰,۰۰۰</span>
+                          </div>
+                        </div>
+    
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col">
+                  <a href=""
+                    class="after:w-2/5 clock-top py-9 shadow-sm overflow-hidden ">
+                    <div class="border-left-and-right-product after:top-[80px] before:top-[80px]">
+                      <span class="soon">به زودی</span>
+                      <span class="clock-discount">۲۴:۱۲:۳۷</span>
+                      <div class="flex flex-col justify-center items-center">
+                        <div class="product"></div>
+                      </div>
+                    </div>
+                  </a>
+                  <!-- content of image -->
+                  <div class="flex flex-col px-2 pt-2 space-y-2">
+                    <a href="" class="text-sm font-medium">مانیتور گیمینگ ایسوس ASUS ROG Strix XG۴۳۸QR</a>
+                    <div class="flex justify-between items-center py-4">
+                      <!-- Icon -->
+                      <a href="" class="flex justify-center items-center">
+                        <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g filter="url(#filter0_d_177_10715)">
+                            <rect x="4.5" y="3" width="32" height="32" rx="8" fill="white" shape-rendering="crispEdges" />
+                            <path d="M12.5 13.6777L19.5607 13.6777L28.5 13.6777L25.688 16.9998" stroke="#101013"
+                              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                              d="M28.5 24.3223L21.4393 24.3223L12.5 24.3223M12.5 24.3223L15.312 21.0002M12.5 24.3223L12.7451 24.0312"
+                              stroke="#101013" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </g>
+                          <defs>
+                            <filter id="filter0_d_177_10715" x="0.5" y="0" width="40" height="40"
+                              filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                              <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                              <feOffset dy="1" />
+                              <feGaussianBlur stdDeviation="2" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_177_10715" />
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_177_10715" result="shape" />
+                            </filter>
+                          </defs>
+                        </svg>
+    
+                      </a>
+                      <!--price-->
+                      <a href="" class="">
+                        <div class="flex justify-between items-center gap-2 mb-2">
+                          <span class="text-small text-gray pr-10">۲۱,۵۰۰,۰۰۰ </span>
+                          <div class="discount-with-box">
+                            <span>۲۰٪</span>
+                            <span>تومان</span>
+                          </div>
+                        </div>
+    
+                        <!-- button price -->
+                        <div class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]">
+                          <div
+                            class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center">
+                            <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4731 2.18833L12.4375 2.20734C12.1387 2.36481 13.2959 3.68159 12.4375 3.26348C13.258 3.68159 11.8494 3.65354 11.7095 3.90332C11.534 4.21283 10.8132 4.19745 10.7586 4.56126C10.6519 5.26988 10.8155 6.00836 10.7088 6.71698C10.6092 7.38759 10.2606 7.60208 9.63699 7.61837C6.4808 7.70525 3.32224 7.60208 0.163671 7.59393V13.7326H3.59968V10.6646L10.0306 10.6483C12.6414 10.6429 13.8579 8.72066 13.8579 5.84275C13.8579 5.53595 13.8721 5.3106 13.8579 5.04453C13.8958 4.42551 13.782 3.78748 13.5235 3.26348C13.2912 2.78835 12.9378 2.39739 12.4754 2.19105L12.4731 2.18833ZM0.109131 5.08526L2.34763 1.97656H11.0836C10.8065 2.15279 9.51794 3.26348 9.96131 5.08797H0.109131V5.08526Z" fill="white"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.398 13.8565L13.0896 13.8538L13.6242 10.9134H21.9806C22.8485 10.6989 22.692 9.20294 22.002 9.00746C19.671 9.02103 17.3708 9.00746 15.0161 9.00746C15.4358 8.21467 15.5449 7.70425 15.5971 6.6834C18.1415 6.71598 20.7452 6.65082 23.2919 6.6834C26.8963 7.59565 26.1067 13.8538 22.3932 13.8538L22.398 13.8565ZM23.6239 5.11141C24.378 3.99825 25.1676 3.01813 25.8909 2C22.4644 2.01629 18.9833 2 15.5094 2C15.1086 2 15.1957 2.00003 14.6957 2.00036C15.1953 2.38272 15.3704 2.66466 15.6004 3.13436C15.8636 3.67193 15.9695 4.52925 15.7714 5.11141H23.6215H23.6239Z" fill="white"/>
+                              <path d="M13.2043 0.231146L7.94731 9.53176C7.8462 9.7087 7.84532 9.92652 7.94499 10.1043C8.04466 10.2821 8.22999 10.3932 8.43213 10.3965H11.4266C12.0514 10.3965 12.5578 10.9084 12.5578 11.5398V15.3831C12.5585 15.6371 12.7236 15.8607 12.9643 15.9337C13.205 16.0066 13.4646 15.9118 13.6035 15.7001L18.7749 7.85035C18.891 7.67644 18.9026 7.45196 18.805 7.2668C18.7074 7.08163 18.5167 6.96608 18.3091 6.9664H15.3527C14.7226 6.9664 14.2119 6.4502 14.2119 5.81343V0.490564C14.1811 0.261693 14.0161 0.0745818 13.7946 0.0175692C13.5731 -0.0394434 13.3396 0.0450452 13.2043 0.231146Z" fill="url(#paint0_linear_324_10700)"/>
+                              <defs>
+                              <linearGradient id="paint0_linear_324_10700" x1="9.15545" y1="0" x2="9.15545" y2="15.958" gradientUnits="userSpaceOnUse">
+                              <stop offset="0.9999" stop-color="#FFE600"/>
+                              <stop offset="1" stop-color="#FFAD0D"/>
+                              </linearGradient>
+                              </defs>
+                              </svg>
+                              
+    
+                          </div>
+                          <div class="">
+                            <span class="text-white text-[16px] md:ml-14">۱۲,۵۹۰,۰۰۰</span>
+                          </div>
+                        </div>
+    
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+              
+            </div>
+          </div>
+        </div>
+
 
 
 
@@ -1551,7 +1959,7 @@
           <div class="col-span-full lg:col-span-6 space-y-6">
             <div class="grid grid-cols-6 col-span-6 py-4 px-6 gap-4 bg-white rounded-2xl shadow-sm">
               <div class="col-span-2">
-                <div class="col-span-2 bg-[url(./images/ad1.jpg)] bg-cover w-full rounded-r-2xl h-[105px]"></div>
+                <div class="col-span-2 bg-[url(./images/ad1.jpg)] bg-cover w-full rounded-r-2xl h-full md:h-[105px]"></div>
               </div>
               <div class="flex flex-col col-span-4 space-y-2">
                   <a href="" class="font-medium">همکاری با شرکت نوآوران تیر ۱۴۰۲</a>
@@ -1559,15 +1967,15 @@
                   <div class="flex justify-between items-center">
                     <span class="text-[10.24px]">۰۶ تیر ۱۴۰۲</span>
                     <div class="flex space-x-1 text-[#B4B3C0]">
-                      <a href="" class="py-1 px-2 text-[10.24px]  rounded-full bg-[#EEF0F1]">دسته بندی</a>
-                      <a href="" class="py-1 px-2 text-[10.24px] rounded-full bg-[#EEF0F1]">دسته بندی</a>
+                      <a href="" class="py-1 px-1 md:px-2 text-[10.24px]  rounded-full bg-[#EEF0F1]">دسته بندی</a>
+                      <a href="" class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]">دسته بندی</a>
                     </div>
                   </div>
               </div>
             </div>
             <div class="grid grid-cols-6 col-span-6 py-4 px-6 gap-4 bg-white rounded-2xl shadow-sm">
               <div class="col-span-2">
-                <div class="col-span-2 bg-[url(./images/ad1.jpg)] bg-cover w-full rounded-r-2xl h-[105px]"></div>
+                <div class="col-span-2 bg-[url(./images/ad1.jpg)] bg-cover w-full rounded-r-2xl h-full md:h-[105px]"></div>
               </div>
               <div class="flex flex-col col-span-4 space-y-2">
                   <a href="" class="font-medium">همکاری با شرکت نوآوران تیر ۱۴۰۲</a>
@@ -1575,8 +1983,8 @@
                   <div class="flex justify-between items-center">
                     <span class="text-[10.24px]">۰۶ تیر ۱۴۰۲</span>
                     <div class="flex space-x-1 text-[#B4B3C0]">
-                      <a href="" class="py-1 px-2 text-[10.24px]  rounded-full bg-[#EEF0F1]">دسته بندی</a>
-                      <a href="" class="py-1 px-2 text-[10.24px] rounded-full bg-[#EEF0F1]">دسته بندی</a>
+                      <a href="" class="py-1 px-1 md:px-2 text-[10.24px]  rounded-full bg-[#EEF0F1]">دسته بندی</a>
+                      <a href="" class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]">دسته بندی</a>
                     </div>
                   </div>
               </div>
@@ -1619,8 +2027,8 @@
   </main>
 
   <footer class="flex flex-col ">
-      <div class="md:container flex justify-center items-center gap-x-4 lg:space-x-20 2xl:space-x-24 mb-12">
-        <div class="flex flex-col space-y-2 justify-center items-center ">
+      <div class="container grid grid-cols-2 gap-y-2 md:gap-y-0 md:flex justify-center items-center gap-x-4 text-center lg:space-x-20 2xl:space-x-24 mb-12">
+        <div class="flex flex-col space-y-2 justify-center items-center  ">
           <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.7">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.38132 17.7637C8.87244 15.9243 9.75275 13.7041 11.2629 11.8283C13.0885 9.56054 15.8541 7.76367 20.1215 7.76367C25.5092 7.76367 28.7221 10.1991 30.6214 12.8466C31.5823 14.186 32.2121 15.59 32.6007 16.7777C32.7171 17.1336 32.8102 17.4646 32.8835 17.7637H32.1215C31.0169 17.7637 30.1215 18.6591 30.1215 19.7637V26.7637C30.1215 27.6954 30.7585 28.4783 31.6208 28.7005C31.6157 30.013 31.5702 31.2312 31.1709 32.453C31.0451 32.838 30.7607 33.3197 30.3643 33.6939C29.9714 34.0649 29.5438 34.2637 29.1215 34.2637H29.1004H29.0793H29.0583H29.0372H29.0162H28.9952H28.9742H28.9532H28.9323H28.9113H28.8904H28.8695H28.8486H28.8278H28.8069H28.7861H28.7652H28.7444H28.7237H28.7029H28.6821H28.6614H28.6407H28.62H28.5993H28.5787H28.558H28.5374H28.5168H28.4962H28.4756H28.4551H28.4345H28.414H28.3935H28.3731H28.3526H28.3322H28.3117H28.2913H28.271H28.2506H28.2302H28.2099H28.1896H28.1693H28.1491H28.1288H28.1086H28.0884H28.0682H28.048H28.0279H28.0078H27.9876H27.9676H27.9475H27.9274H27.9074H27.8874H27.8674H27.8475H27.8275H27.8076H27.7877H27.7678H27.7479H27.7281H27.7083H27.6885H27.6687H27.649H27.6292H27.6095H27.5898H27.5702H27.5505H27.5309H27.5113H27.4917H27.4722H27.4526H27.4331H27.4136H27.3941H27.3747H27.3553H27.3359H27.3165H27.2971H27.2778H27.2585H27.2392H27.22H27.2007H27.1815H27.1623H27.1431H27.124H27.1049H27.0858H27.0667H27.0476H27.0286H27.0096H26.9906H26.9717H26.9527H26.9338H26.9149H26.8961H26.8772H26.8584H26.8396H26.8209H26.8021H26.7834H26.7648H26.7461H26.7275H26.7088H26.6903H26.6717H26.6532H26.6346H26.6162H26.5977H26.5793H26.5609H26.5425H26.5241H26.5058H26.4875H26.4692H26.451H26.4327H26.4145H26.3964H26.3782H26.3601H26.342H26.3239H26.3059H26.2879H26.2699H26.252H26.234H26.2161H26.1982H26.1804H26.1626H26.1448H26.127H26.1093H26.0916H26.0739H26.0562H26.0386H26.021H26.0034H25.9859H25.9684H25.9509H25.9334H25.916H25.8986H25.8812H25.8639H25.8465H25.8293H25.812H25.7948H25.7776H25.7604H25.7433H25.7262H25.7091H25.692H25.675H25.658H25.641H25.6241H25.6072H25.5903H25.5735H25.5567H25.5399H25.5231H25.5064H25.4897H25.4731H25.4564H25.4398H25.4232H25.4067H25.3902H25.3737H25.3573H25.3409H25.3245H25.3081H25.2918H25.2755H25.2592H25.243H25.2268H25.2107H25.1945H25.1784H25.1624H25.1463H25.1303H25.1143H25.0984H25.0825H25.0666H25.0508H25.035H25.0192H25.0034H24.9877H24.972H24.9564H24.9408H24.9252H24.9096H24.8941H24.8786H24.8632H24.8478H24.8324H24.817H24.8017H24.7865H24.7712H24.756H24.7408H24.7257H24.7106H24.6955H24.6804H24.6654H24.6505H24.6355H24.6206H24.6057H24.5909H24.5761H24.5613H24.5466H24.5319H24.5173H24.5026H24.488H24.4735H24.459H24.4445H24.4384C24.4384 33.1591 23.5429 32.2637 22.4384 32.2637H19.4384C18.3338 32.2637 17.4384 33.1591 17.4384 34.2637C17.4384 35.3682 18.3338 36.2637 19.4384 36.2637H22.1215H22.1244H22.1274H22.1305H22.1336H22.1368H22.14H22.1433H22.1466H22.15H22.1535H22.157H22.1605H22.1642H22.1678H22.1715H22.1753H22.1791H22.183H22.187H22.1909H22.195H22.1991H22.2032H22.2074H22.2117H22.216H22.2203H22.2247H22.2292H22.2337H22.2383H22.2429H22.2476H22.2523H22.2571H22.2619H22.2668H22.2718H22.2767H22.2818H22.2869H22.292H22.2972H22.3025H22.3078H22.3131H22.3185H22.324H22.3295H22.335H22.3406H22.3463H22.352H22.3578H22.3636H22.3694H22.3753H22.3813H22.3873H22.3934H22.3995H22.4057H22.4119H22.4181H22.4245H22.4308H22.4372H22.4384H22.4437H22.4502H22.4568H22.4634H22.4701H22.4768H22.4835H22.4903H22.4972H22.5041H22.5111H22.5181H22.5251H22.5322H22.5394H22.5466H22.5538H22.5611H22.5685H22.5759H22.5833H22.5908H22.5984H22.606H22.6136H22.6213H22.629H22.6368H22.6446H22.6525H22.6604H22.6684H22.6764H22.6845H22.6926H22.7008H22.709H22.7172H22.7255H22.7339H22.7423H22.7507H22.7592H22.7677H22.7763H22.785H22.7936H22.8023H22.8111H22.8199H22.8288H22.8377H22.8466H22.8556H22.8647H22.8738H22.8829H22.8921H22.9013H22.9106H22.9199H22.9293H22.9387H22.9481H22.9576H22.9672H22.9767H22.9864H22.996H23.0058H23.0155H23.0253H23.0352H23.0451H23.055H23.065H23.075H23.0851H23.0952H23.1054H23.1156H23.1259H23.1361H23.1465H23.1569H23.1673H23.1778H23.1883H23.1988H23.2094H23.22H23.2307H23.2415H23.2522H23.263H23.2739H23.2848H23.2957H23.3067H23.3177H23.3288H23.3399H23.351H23.3622H23.3735H23.3847H23.3961H23.4074H23.4188H23.4303H23.4417H23.4533H23.4648H23.4764H23.4881H23.4998H23.5115H23.5233H23.5351H23.5469H23.5588H23.5708H23.5827H23.5948H23.6068H23.6189H23.631H23.6432H23.6554H23.6677H23.68H23.6923H23.7047H23.7171H23.7296H23.7421H23.7546H23.7672H23.7798H23.7924H23.8051H23.8179H23.8306H23.8434H23.8563H23.8692H23.8821H23.8951H23.9081H23.9211H23.9342H23.9473H23.9605H23.9737H23.9869H24.0002H24.0135H24.0268H24.0402H24.0536H24.0671H24.0806H24.0941H24.1077H24.1213H24.135H24.1486H24.1624H24.1761H24.1899H24.2037H24.2176H24.2315H24.2455H24.2594H24.2735H24.2875H24.3016H24.3157H24.3299H24.3441H24.3583H24.3726H24.3869H24.4012H24.4156H24.43H24.4445H24.459H24.4735H24.488H24.5026H24.5173H24.5319H24.5466H24.5613H24.5761H24.5909H24.6057H24.6206H24.6355H24.6505H24.6654H24.6804H24.6955H24.7106H24.7257H24.7408H24.756H24.7712H24.7865H24.8017H24.817H24.8324H24.8478H24.8632H24.8786H24.8941H24.9096H24.9252H24.9408H24.9564H24.972H24.9877H25.0034H25.0192H25.035H25.0508H25.0666H25.0825H25.0984H25.1143H25.1303H25.1463H25.1624H25.1784H25.1945H25.2107H25.2268H25.243H25.2592H25.2755H25.2918H25.3081H25.3245H25.3409H25.3573H25.3737H25.3902H25.4067H25.4232H25.4398H25.4564H25.4731H25.4897H25.5064H25.5231H25.5399H25.5567H25.5735H25.5903H25.6072H25.6241H25.641H25.658H25.675H25.692H25.7091H25.7262H25.7433H25.7604H25.7776H25.7948H25.812H25.8293H25.8465H25.8639H25.8812H25.8986H25.916H25.9334H25.9509H25.9684H25.9859H26.0034H26.021H26.0386H26.0562H26.0739H26.0916H26.1093H26.127H26.1448H26.1626H26.1804H26.1982H26.2161H26.234H26.252H26.2699H26.2879H26.3059H26.3239H26.342H26.3601H26.3782H26.3964H26.4145H26.4327H26.451H26.4692H26.4875H26.5058H26.5241H26.5425H26.5609H26.5793H26.5977H26.6162H26.6346H26.6532H26.6717H26.6903H26.7088H26.7275H26.7461H26.7648H26.7834H26.8021H26.8209H26.8396H26.8584H26.8772H26.8961H26.9149H26.9338H26.9527H26.9717H26.9906H27.0096H27.0286H27.0476H27.0667H27.0858H27.1049H27.124H27.1431H27.1623H27.1815H27.2007H27.22H27.2392H27.2585H27.2778H27.2971H27.3165H27.3359H27.3553H27.3747H27.3941H27.4136H27.4331H27.4526H27.4722H27.4917H27.5113H27.5309H27.5505H27.5702H27.5898H27.6095H27.6292H27.649H27.6687H27.6885H27.7083H27.7281H27.7479H27.7678H27.7877H27.8076H27.8275H27.8475H27.8674H27.8874H27.9074H27.9274H27.9475H27.9676H27.9876H28.0078H28.0279H28.048H28.0682H28.0884H28.1086H28.1288H28.1491H28.1693H28.1896H28.2099H28.2302H28.2506H28.271H28.2913H28.3117H28.3322H28.3526H28.3731H28.3935H28.414H28.4345H28.4551H28.4756H28.4962H28.5168H28.5374H28.558H28.5787H28.5993H28.62H28.6407H28.6614H28.6821H28.7029H28.7237H28.7444H28.7652H28.7861H28.8069H28.8278H28.8486H28.8695H28.8904H28.9113H28.9323H28.9532H28.9742H28.9952H29.0162H29.0372H29.0583H29.0793H29.1004H29.1215C30.1992 36.2637 31.094 35.7556 31.7374 35.1481C32.3772 34.5439 32.8428 33.7756 33.072 33.0743C33.5655 31.5641 33.6158 30.085 33.6209 28.7637H34.1215C35.226 28.7637 36.1215 27.8682 36.1215 26.7637V19.7637C36.1215 18.9631 35.6511 18.2723 34.9715 17.9528C34.8707 17.4246 34.7165 16.8128 34.5016 16.1559C34.062 14.8124 33.3481 13.2164 32.2465 11.6808C30.0208 8.57828 26.2337 5.76367 20.1215 5.76367C15.1888 5.76367 11.8711 7.88347 9.70501 10.5741C7.76409 12.985 6.765 15.8269 6.27368 17.9517C5.59294 18.2708 5.12146 18.9622 5.12146 19.7637V26.7637C5.12146 27.8682 6.01689 28.7637 7.12146 28.7637H9.12146C10.226 28.7637 11.1215 27.8682 11.1215 26.7637V19.7637C11.1215 18.6591 10.226 17.7637 9.12146 17.7637H8.38132Z" fill="#52B9F3"/>
@@ -1668,7 +2076,7 @@
       </div>
       <div class="bg-[#EEF0F1]">
         <nav class="  md:p-4">
-          <div class="md:container  flex justify-center gap-x-2 md:gap-x-6 items-center">
+          <div class="container  flex justify-center gap-x-2 md:gap-x-6 items-center">
             <h3>گروه محصولات</h3>
             <ul class="items-center hidden md:flex">
               <li class="pr-0 footer-nav-item"><a href="">ویدیو پروژکتور</a></li>
@@ -1686,7 +2094,7 @@
         </nav>
       </div>
       <div class="bg-[#E8EBED] ">
-        <div class="md:container ">
+        <div class="container ">
           <div class="border-b-[1px] grid grid-cols-12 pt-6 pb-4  ">
             <div class="px-3 col-span-full md:col-span-4 flex flex-col gap-x-2 ">
               <ul class="flex flex-col gap-y-2 text-small text-[#273A54]">
@@ -1739,7 +2147,7 @@
                   </svg>
               </div>
                 
-              <div class=" grid grid-cols-2 w-full justify-center items-start   md:flex md:justify-between md:items-center">
+              <div class=" w-full flex justify-between items-center">
                 <a href="">
                   <svg width="51" height="54" viewBox="0 0 51 54" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect x="-0.000244141" y="0.763672" width="51" height="53" fill="url(#pattern0_253_11022)"/>
@@ -1799,7 +2207,7 @@
             </ul>
           </div>
         </div>
-        <div class="bg-[#403F4C] flex justify-center items-center text-white text-small py-2 lg:px-6 gap-x-1">
+        <div class="bg-[#403F4C]  px-2 space-y-2 text-center  md:flex justify-center items-center text-white text-small py-2 lg:px-6 gap-x-1">
           <p>استفاده از محتوا ، طرح و هرگونه الگو‌برداری از فروشگاه اینترنتی پروژکتور استور در هر صورت حتی با ذکر منبع پیگرد قانونی دارد. کلیه حقوق این سایت متعلق به پروژکتور استور می‌باشد.</p>
           <a  class="text-[#52B9F3] underline" href="">کدیکو بهینه سازی و پشتیبانی</a>
         </div>
