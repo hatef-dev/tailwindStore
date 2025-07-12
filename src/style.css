@@ -19,7 +19,7 @@
     @apply text-sm py-2.5 pt-[9px] px-3 border-b-2 border-transparent  cursor-pointer hover:border-b-2 hover:border-[#FF4040] hover:text-[#FF4040] transition-all duration-300;
   }
   .selected-items {
-    @apply flex justify-center items-center py-2 px-3 text-[10.5px] text-[#403F4C] border-b  border-b-[#EEF0F1];
+    @apply focus:bg-[#FF4040] focus:text-white rounded-full md:rounded-r-none md:rounded-l-full w-full flex justify-center items-center py-2 px-3 text-[10.5px] text-[#403F4C] border-b  border-b-[#EEF0F1];
   }
 
   .image-position {
