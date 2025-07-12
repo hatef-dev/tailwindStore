@@ -14,84 +14,96 @@
 
 
   <!-- Header -->
-  <header class="w-full grid grid-cols-12  md:flex flex-col bg-white">
-    <!-- Top Header -->
-    <section class="col-span-full bg-[#403F4C] ">
-      <div class="px-2 md:container text-white text-small md:gap-x-0 py-2 flex justify-between items-center">
-        <div class="flex items-center md:gap-x-2">
+  <header class=" ">
+    <section class=" w-full grid grid-cols-12  md:flex flex-col bg-white">
+      <!-- Top Header -->
+    <section class="bg-[#403F4C] col-span-full ">
+      <section  class="px-4 md:px-0">
+        <div class="   md:container text-white text-small md:gap-x-0 py-2 flex justify-between items-center">
           <div class="flex items-center md:gap-x-2">
-            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15.2751 2.19232C15.5751 2.19232 15.8834 2.25898 16.1834 2.40065C16.4834 2.54232 16.7667 2.72565 17.0334 2.96732C17.4834 3.37565 17.8084 3.82565 18.0168 4.33398C18.2251 4.83398 18.3334 5.37565 18.3334 5.95898C18.3334 6.80898 18.1334 7.71732 17.7251 8.67565C17.3167 9.63398 16.7667 10.5923 16.0751 11.5423C15.3751 12.5007 14.6001 13.409 13.7417 14.2757C12.8751 15.134 11.9667 15.909 11.0167 16.6007C10.0667 17.284 9.11675 17.834 8.17508 18.234C7.22508 18.634 6.31675 18.834 5.45008 18.834C4.88341 18.834 4.34175 18.734 3.84175 18.534C3.33341 18.334 2.86675 18.0173 2.45008 17.5757C1.92508 17.0423 1.66675 16.459 1.66675 15.8423C1.66675 15.609 1.71675 15.3757 1.81675 15.1673C1.91675 14.9507 2.06675 14.759 2.28341 14.609L5.00841 12.6757C5.21675 12.5257 5.40841 12.4173 5.59175 12.3423C5.76675 12.2673 5.94175 12.2257 6.10008 12.2257C6.30008 12.2257 6.50008 12.284 6.69175 12.4007C6.88341 12.509 7.08341 12.6673 7.28341 12.8673L7.94175 13.5007C8.03341 13.5923 8.14175 13.634 8.27508 13.634C8.34175 13.634 8.40008 13.6257 8.46675 13.609C8.53341 13.584 8.58341 13.559 8.63341 13.5423C8.90841 13.3923 9.26675 13.134 9.70008 12.7673C10.1334 12.3923 10.5751 11.9923 11.0167 11.559C11.4584 11.109 11.8667 10.6757 12.2417 10.234C12.6084 9.80065 12.8584 9.44232 13.0084 9.15898C13.0251 9.11732 13.0501 9.06732 13.0751 9.00898C13.1001 8.94232 13.1084 8.87565 13.1084 8.80065C13.1084 8.65898 13.0584 8.55065 12.9667 8.45898L12.3417 7.82565C12.1334 7.61732 11.9751 7.41732 11.8751 7.22565C11.7584 7.03398 11.7001 6.84232 11.7001 6.63398C11.7001 6.47565 11.7334 6.30898 11.8084 6.12565C11.8834 5.94232 11.9917 5.75065 12.1334 5.54232L14.0917 2.78398C14.2417 2.56732 14.4167 2.41732 14.6251 2.32565C14.8334 2.24232 15.0417 2.19232 15.2751 2.19232Z" fill="white" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
-              </svg>
-            <span>کارشناس فروش</span>
-          </div> 
-          <div class="flex items-center text-small md:gap-x-2">
-            <span>_  ۸۸ ۹۷۰ ۲۱۴ ۰۲۱</span>
-            <span>۵۲ ۴۷۲ ۰۰۰ ۰۲۱</span>
-          </div>           
-        </div>
-        <div class="flex items-center md:gap-x-2" >
-          <button class="bg-transparent border-[1px] py-3 px-2 md:px-6 rounded-xl hidden md:block"><a href="">لیست قیمت همکار</a></button>
-          <button class="bg-[#52B9F3] py-3 px-2 md:px-6 rounded-xl"><a href="">درخواست دمو</a></button>
-          
-        </div>
-      </div>
-    </section>
-    <!-- Middle Header -->
-    <section class="col-span-full container pt-6 pb-2">
-      <section class="flex items-center justify-between ">
-        <div class="flex items-center md:space-x-6">
-          <!-- Logo -->
-          <img src="./images/logo.png" alt="logo" class="w-[242px] px-2 pt-2" />
-          <!-- Search -->
-          <div class=" relative">
-            <input type="text" placeholder="جستجو کن" class="hidden md:block bg-[#F9FAFA] placeholder:text-small py-[17px] px-4 xl:w-[420px] 2xl:w-[522px]  outline-0 pr-10 text-small rounded-xl" />
-            <div class="hidden md:block absolute right-3 top-3">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                  stroke="#403F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M21 21.0004L16.65 16.6504" stroke="#403F4C" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </div>
+            <div class="flex items-center md:gap-x-2">
+              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.2751 2.19232C15.5751 2.19232 15.8834 2.25898 16.1834 2.40065C16.4834 2.54232 16.7667 2.72565 17.0334 2.96732C17.4834 3.37565 17.8084 3.82565 18.0168 4.33398C18.2251 4.83398 18.3334 5.37565 18.3334 5.95898C18.3334 6.80898 18.1334 7.71732 17.7251 8.67565C17.3167 9.63398 16.7667 10.5923 16.0751 11.5423C15.3751 12.5007 14.6001 13.409 13.7417 14.2757C12.8751 15.134 11.9667 15.909 11.0167 16.6007C10.0667 17.284 9.11675 17.834 8.17508 18.234C7.22508 18.634 6.31675 18.834 5.45008 18.834C4.88341 18.834 4.34175 18.734 3.84175 18.534C3.33341 18.334 2.86675 18.0173 2.45008 17.5757C1.92508 17.0423 1.66675 16.459 1.66675 15.8423C1.66675 15.609 1.71675 15.3757 1.81675 15.1673C1.91675 14.9507 2.06675 14.759 2.28341 14.609L5.00841 12.6757C5.21675 12.5257 5.40841 12.4173 5.59175 12.3423C5.76675 12.2673 5.94175 12.2257 6.10008 12.2257C6.30008 12.2257 6.50008 12.284 6.69175 12.4007C6.88341 12.509 7.08341 12.6673 7.28341 12.8673L7.94175 13.5007C8.03341 13.5923 8.14175 13.634 8.27508 13.634C8.34175 13.634 8.40008 13.6257 8.46675 13.609C8.53341 13.584 8.58341 13.559 8.63341 13.5423C8.90841 13.3923 9.26675 13.134 9.70008 12.7673C10.1334 12.3923 10.5751 11.9923 11.0167 11.559C11.4584 11.109 11.8667 10.6757 12.2417 10.234C12.6084 9.80065 12.8584 9.44232 13.0084 9.15898C13.0251 9.11732 13.0501 9.06732 13.0751 9.00898C13.1001 8.94232 13.1084 8.87565 13.1084 8.80065C13.1084 8.65898 13.0584 8.55065 12.9667 8.45898L12.3417 7.82565C12.1334 7.61732 11.9751 7.41732 11.8751 7.22565C11.7584 7.03398 11.7001 6.84232 11.7001 6.63398C11.7001 6.47565 11.7334 6.30898 11.8084 6.12565C11.8834 5.94232 11.9917 5.75065 12.1334 5.54232L14.0917 2.78398C14.2417 2.56732 14.4167 2.41732 14.6251 2.32565C14.8334 2.24232 15.0417 2.19232 15.2751 2.19232Z" fill="white" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
+                </svg>
+              <span>کارشناس فروش</span>
+            </div> 
+            <div class="flex items-center text-small md:gap-x-2">
+              <span>_  ۸۸ ۹۷۰ ۲۱۴ ۰۲۱</span>
+              <span>۵۲ ۴۷۲ ۰۰۰ ۰۲۱</span>
+            </div>           
           </div>
-        </div>
-        <div class="flex justify-start items-center gap-x-2 md:gap-x-6">
-          <!-- Shopping Cart Icon-->
-          <a href="" class="p-2">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M7.5 7.66952V6.69952C7.5 4.44952 9.31 2.23952 11.56 2.02952C14.24 1.76952 16.5 3.87952 16.5 6.50952V7.88952"
-                stroke="#403F4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path
-                d="M8.99995 22H14.9999C19.0199 22 19.7399 20.39 19.9499 18.43L20.6999 12.43C20.9699 9.99 20.2699 8 15.9999 8H7.99995C3.72995 8 3.02995 9.99 3.29995 12.43L4.04995 18.43C4.25995 20.39 4.97995 22 8.99995 22Z"
-                stroke="#403F4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M15.4955 12H15.5045" stroke="#403F4C" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M8.49451 12H8.50349" stroke="#403F4C" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <rect x="11.6666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040" />
-              <rect x="11.6666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white" stroke-width="1.66667" />
-            </svg>
-          </a>
-          <!-- Person Icon-->
-          <a href="" class="p-2">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M4 22C4 19.8783 4.84285 17.8434 6.34315 16.3431C7.84344 14.8429 9.87827 14 12 14C14.1217 14 16.1566 14.8429 17.6569 16.3431C19.1571 17.8434 20 19.8783 20 22H18C18 20.4087 17.3679 18.8826 16.2426 17.7574C15.1174 16.6321 13.5913 16 12 16C10.4087 16 8.88258 16.6321 7.75736 17.7574C6.63214 18.8826 6 20.4087 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z"
-                fill="#403F4C" />
-            </svg>
-
-          </a>
-
+          <div class="flex items-center md:gap-x-2" >
+            <button class="bg-transparent border-[1px] py-3 px-2 md:px-6 rounded-xl hidden md:block"><a href="">لیست قیمت همکار</a></button>
+            <button class="bg-[#52B9F3] py-3 px-2 md:px-6 rounded-xl"><a href="">درخواست دمو</a></button>
+            
+          </div>
         </div>
       </section>
     </section>
+    <!-- Middle Header -->
+    <section class="col-span-full px-4 md:px-0">
+      <section class="   md:container py-2 md:pt-6 md:pb-2">
+        <section class="flex items-center justify-between ">
+          <div class="block md:hidden w-[30px] h-[30px]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none">
+              <path d="M20 7L4 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M20 12L4 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M20 17L4 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+          </div>
+          <div class="flex items-center md:space-x-6">
+            <!-- Logo -->
+            <img src="./images/logo.png" alt="logo" class="w-[242px] px-2 pt-2" />
+            <!-- Search -->
+            <div class=" relative">
+              <input type="text" placeholder="جستجو کن" class="hidden md:block bg-[#F9FAFA] placeholder:text-small py-[17px] px-4 xl:w-[420px] 2xl:w-[522px]  outline-0 pr-10 text-small rounded-xl" />
+              <div class="hidden md:block absolute right-3 top-3">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                    stroke="#403F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M21 21.0004L16.65 16.6504" stroke="#403F4C" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-start items-center gap-x-2 md:gap-x-6">
+            <!-- Shopping Cart Icon-->
+            <a href="" class="p-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.5 7.66952V6.69952C7.5 4.44952 9.31 2.23952 11.56 2.02952C14.24 1.76952 16.5 3.87952 16.5 6.50952V7.88952"
+                  stroke="#403F4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path
+                  d="M8.99995 22H14.9999C19.0199 22 19.7399 20.39 19.9499 18.43L20.6999 12.43C20.9699 9.99 20.2699 8 15.9999 8H7.99995C3.72995 8 3.02995 9.99 3.29995 12.43L4.04995 18.43C4.25995 20.39 4.97995 22 8.99995 22Z"
+                  stroke="#403F4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15.4955 12H15.5045" stroke="#403F4C" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M8.49451 12H8.50349" stroke="#403F4C" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <rect x="11.6666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040" />
+                <rect x="11.6666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white" stroke-width="1.66667" />
+              </svg>
+            </a>
+            <!-- Person Icon-->
+            <a href="" class="p-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 22C4 19.8783 4.84285 17.8434 6.34315 16.3431C7.84344 14.8429 9.87827 14 12 14C14.1217 14 16.1566 14.8429 17.6569 16.3431C19.1571 17.8434 20 19.8783 20 22H18C18 20.4087 17.3679 18.8826 16.2426 17.7574C15.1174 16.6321 13.5913 16 12 16C10.4087 16 8.88258 16.6321 7.75736 17.7574C6.63214 18.8826 6 20.4087 6 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11Z"
+                  fill="#403F4C" />
+              </svg>
+  
+            </a>
+  
+          </div>
+        </section>
+      </section>
+    </section>
     <!-- Bottom Header (Navbar) -->
-    <section class="container hidden md:block">
+    <section class=" md:container hidden md:block">
       <nav class="grid grid-cols-12">
         <ul class="hidden md:flex items-center col-span-full md:col-span-10 2xl:col-span-6 space-x-1 w-full justify-between">
           <li class="nav-item">
@@ -112,19 +124,21 @@
         </ul>
       </nav>
     </section>
+    </section>
   </header>
 
 
 
 
   <!-- Main -->
-  <main class=" w-full container md:grid md:grid-cols-12 my-12 md:gap-5">
-    <!-- Product Details -->
+  <main class=" px-[15px] md:px-0 w-full ">
+    <section class="md:container md:grid md:grid-cols-12 my-12 md:gap-5">
+      <!-- Product Details -->
     <section class="grid grid-cols-10 lg:col-span-8 col-span-full  bg-white rounded-3xl relative border-left-and-right-product after:top-[140px] before:top-[140px] ">
       <!-- Product Details Left Side -->
       <div class="flex flex-col col-span-5  lg:col-span-4 space-y-4">
         <div
-          class="relative flex justify-start items-center 2xl:after:absolute   2xl:after:w-7 2xl:after:h-full 2xl:after:left-[19px]  2xl:after:aspect-[0.866] 2xl:after:bg-[#FF4040] 2xl:after:[clip-path:polygon(100%_0,0_50%,100%_100%)]">
+          class="relative flex justify-start items-center 2xl:after:absolute   2xl:after:w-7 2xl:after:h-full 2xl:after:left-[19.5px]  2xl:after:aspect-[0.866] 2xl:after:bg-[#FF4040] 2xl:after:[clip-path:polygon(100%_0,0_50%,100%_100%)]">
           <h3 class="bg-[#FF4040] text-[10px] md:text-[12.5px] text-white rounded-tr-4xl font-medium py-3.5 pr-5 ">مانیتور گیمینگ
             ایسوس ASUS ROG Strix </h3>
         </div>
@@ -2159,12 +2173,13 @@
 
       </section>
       </section>
+    </section>
 
       
   </main>
 
-  <footer class="flex flex-col ">
-      <div class="container grid grid-cols-2 gap-y-2 md:gap-y-0 md:flex justify-center items-center gap-x-4 text-center lg:space-x-20 2xl:space-x-24 mb-12">
+  <footer class="   flex flex-col overflow-hidden">
+      <div class="px-[15px] md:px-0 md:container grid grid-cols-2 gap-y-2 md:gap-y-0 md:flex justify-center items-center gap-x-4 text-center lg:space-x-20 2xl:space-x-24 mb-12">
         <div class="flex flex-col space-y-2 justify-center items-center  ">
           <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.7">
@@ -2211,27 +2226,29 @@
            <span class="text-[10.24px] text-gray-light">پرداخت امن از طریق شبکه شاپرک</span>
         </div>
       </div>
-      <div class="bg-[#EEF0F1]">
-        <nav class="  md:p-4">
-          <div class="container  flex flex-col gap-y-2 md:gap-y-0 md:flex-row  justify-center gap-x-2 md:gap-x-6 items-center">
-            <h3>گروه محصولات</h3>
-            <ul class=" grid grid-cols-12 gap-y-4 md:gap-y-0 justify-center items-center  md:flex">
-              <li class="col-span-6 md:pr-0 footer-nav-item"><a href="">ویدیو پروژکتور</a></li>
-              <li class="col-span-6 footer-nav-item"><a href="">کامپیوتر و تجهیزات</a></li>
-              <li class="col-span-6  footer-nav-item"><a href="">نمایشگر لمسی</a></li>
-              <li class="col-span-6 footer-nav-item"><a href="">یو پی ای</a></li>
-              <li class="col-span-6 footer-nav-item"><a href="">برد هوشمند </a></li>
-              <li class="col-span-6 footer-nav-item"><a href="">ویدیو پروژکتور</a></li>
-              <li class="col-span-6 footer-nav-item"><a href="">مقالات</a></li>
-              <li class="col-span-6 footer-nav-item"><a href="">واژه نامه</a></li>
-              <li class="col-span-6 md:border-0 footer-nav-item"><a href="">برند</a></li>
-            </ul>
+      <div class="bg-[#EEF0F1] overflow-hidden">
+        <nav class="px-[15px] md:px-0  md:p-4">
+          <div class=" md:container  flex flex-col md:flex-row md:items-center md:justify-center gap-y-2 md:gap-y-0    gap-x-8 ">
+            <h3 class="text-center md:text-start" >گروه محصولات</h3>
+            <div>
+              <ul class=" flex py-3 md:py-0 md:w-full gap-y-4 md:gap-y-0 flex-wrap md:flex-row md:gap-x-4 ">
+                <li class=" w-1/3 md:w-auto footer-nav-item" ><a href="">ویدیو پروژکتور</a></li>
+                <li class="w-1/3 md:w-auto footer-nav-item"><a href="">کامپیوتر و تجهیزات</a></li>
+                <li class="w-1/3 md:w-auto footer-nav-item"><a href="">نمایشگر لمسی</a></li>
+                <li class="w-1/3 md:w-auto  footer-nav-item"><a href="">یو پی ای</a></li>
+                <li class="w-1/3 md:w-auto footer-nav-item"><a href="">برد هوشمند</a></li>
+                <li class="w-1/3 md:w-auto footer-nav-item"><a href="">ویدیو پروژکتور</a></li>
+                <li class="w-1/3 md:w-auto footer-nav-item"><a href="">مقالات</a></li>
+                <li class="w-1/3 md:w-auto footer-nav-item"><a href="">واژه نامه</a></li>
+                <li class="w-1/3 md:w-auto footer-nav-item"><a href="">برند</a></li>
+              </ul>
+            </div>
           </div>
         
         </nav>
       </div>
-      <div class="bg-[#E8EBED] ">
-        <div class="container ">
+      <div class="bg-[#E8EBED] overflow-hidden">
+        <div class=" md:container ">
           <div class="border-b-[1px] grid grid-cols-12 pt-6 pb-4  ">
             <div class="px-3 col-span-full md:col-span-4 flex flex-col gap-x-2 ">
               <ul class="flex flex-col gap-y-2 text-small text-[#273A54]">
@@ -2275,7 +2292,7 @@
             </div>
             <div class="col-span-full md:col-span-4 md:col-start-10 flex flex-col items-start gap-y-2 ">
               <!--Footer logo-->
-              <div class="w-full  md:w-full my-5">
+              <div class="w-full my-5 overflow-hidden">
                 <svg width="100%" height="53" viewBox="0 0 283 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M61.1909 1.67047L61.0158 1.75378C59.5448 2.44404 58.1438 3.41993 56.9764 4.55054C56.0424 5.44312 55.1318 6.47852 54.443 7.57342C53.5791 8.93014 53.0187 10.4773 52.7502 12.072C52.2249 15.1782 53.0304 18.4153 52.5051 21.5215C52.0147 24.4611 50.2986 25.4013 47.2282 25.4727C31.6894 25.8535 16.139 25.4013 0.588582 25.3656V52.2739H17.5049V38.8257L49.1661 38.7543C62.0198 38.7305 68.0088 30.3045 68.0088 17.6894C68.0088 16.3445 68.0788 15.3567 68.0088 14.1904C68.1956 11.477 67.6352 8.68022 66.3627 6.38331C65.2186 4.30062 63.4791 2.58686 61.2025 1.68237L61.1909 1.67047ZM0.320068 14.3689L11.3408 0.742188H57.4317C53.1938 2.95579 50.2519 7.21638 49.5747 14.3808H0.320068V14.3689Z" fill="#6F6F6E"/>
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M103.791 52.392H50.5782L60.595 39.4912H101.736C106.009 38.551 105.238 31.9935 101.841 31.1367C90.3649 31.1962 79.0407 31.1367 67.4479 31.1367C69.5143 27.6615 70.0513 25.4241 70.3081 20.9493C82.8349 21.0921 95.6535 20.8065 108.192 20.9493C125.937 24.9481 122.049 52.3801 103.767 52.3801L103.791 52.392ZM109.826 14.0586C113.539 9.17913 117.426 4.88283 120.987 0.419922C104.117 0.491328 86.9793 0.419922 69.8762 0.419922C67.9032 0.419922 65.9769 0.741251 64.1557 1.47912C66.3505 2.44311 68.0316 4.14497 69.164 6.20386C70.4599 8.56027 71.0436 11.4046 70.8568 14.1657L109.815 14.0586H109.826Z" fill="#FF4040"/>
@@ -2284,7 +2301,7 @@
                   </svg>
               </div>
                 
-              <div class=" w-full flex justify-between items-center">
+              <div class=" w-full px-[15px] md:px-0 flex justify-between items-center ">
                 <a href="">
                   <svg width="51" height="54" viewBox="0 0 51 54" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect x="-0.000244141" y="0.763672" width="51" height="53" fill="url(#pattern0_253_11022)"/>
@@ -2344,9 +2361,9 @@
             </ul>
           </div>
         </div>
-        <div class="bg-[#403F4C]  px-2 space-y-2 text-center  md:flex justify-center items-center text-white text-small py-2 lg:px-6 gap-x-1">
-          <p>استفاده از محتوا ، طرح و هرگونه الگو‌برداری از فروشگاه اینترنتی پروژکتور استور در هر صورت حتی با ذکر منبع پیگرد قانونی دارد. کلیه حقوق این سایت متعلق به پروژکتور استور می‌باشد.</p>
-          <a  class="text-[#52B9F3] underline" href="">کدیکو بهینه سازی و پشتیبانی</a>
+        <div class=" bg-[#403F4C]  px-2 space-y-2 text-center  md:flex justify-center items-center text-white text-small py-2 lg:px-6 gap-x-1">
+          <p class="px-[15px] md:px-0">استفاده از محتوا ، طرح و هرگونه الگو‌برداری از فروشگاه اینترنتی پروژکتور استور در هر صورت حتی با ذکر منبع پیگرد قانونی دارد. کلیه حقوق این سایت متعلق به پروژکتور استور می‌باشد.</p>
+          <a  class="px-[15px] md:px-0 text-[#52B9F3] underline" href="">کدیکو بهینه سازی و پشتیبانی</a>
         </div>
       </div>
 
