@@ -54,7 +54,7 @@
     @apply absolute top-2 right-2 text-red text-sm;
   }
   .footer-nav-item {
-    @apply text-small px-2 nth-[3n]:border-none 2xl:pl-4 border-l-[1px] border-[#B4B3C0]  ;
+    @apply text-small px-2 border-l-[1px] nth-[3n]:border-l-0 2xl:pl-4 md:nth-[3n]:border-l-[1px] md:border-l-[1px] border-[#B4B3C0]  ;
   }
   .more {
     @apply absolute  -top-20 2xl:-top-18 left-10 md:left-10 xl:left-7 2xl:left-8 bg-[url('/images/ad1.jpg')] rounded-t-[20px] w-3/4  md:w-4/5    2xl:w-4/5  h-[150px] md:h-[160px]  bg-cover;
