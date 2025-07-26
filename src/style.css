@@ -16,10 +16,13 @@
 
 @layer components {
   .nav-item {
-    @apply text-sm py-2.5 pt-[9px] px-3 border-b-2 border-transparent  cursor-pointer hover:border-b-2 hover:border-[#FF4040] hover:text-[#FF4040] transition-all duration-300;
+    @apply text-sm py-2.5 pt-[9px] px-3   cursor-pointer ;
   }
   .selected-items {
     @apply focus:bg-[#FF4040] focus:text-white rounded-full md:rounded-r-none md:rounded-l-full w-full flex justify-center items-center py-2 px-3 text-[10.5px] text-[#403F4C] border-b  border-b-[#EEF0F1];
+  }
+  .nav-item-dropdown {
+    @apply py-3 px-4 text-[#6B697F] hover:text-red-500 transition-all duration-300 ease-in-out
   }
 
   .image-position {

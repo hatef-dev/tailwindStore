@@ -10,6 +10,31 @@ const menu = document.querySelector(".MobileMenu")
 const menuButton = document.querySelector(".MenuButton")
 const closeButton = document.querySelector(".CloseButton")
 const Menubackground = document.querySelector(".Menubackground")
+const dropdownMenu = document.querySelector(".dropdownMenu")
+const dropdownBackground = document.querySelector(".dropdownBackground")
+const dropdownItems = document.querySelector(".dropdownItems")
+const videoProjectorItems = document.querySelectorAll(".videoProjectorItem")
+const videoProjectNavs = document.querySelectorAll(".videoProjectNav")
+dropdownMenu.addEventListener("click",()=>{
+  dropdownItems.classList.toggle("hidden")
+  dropdownBackground.classList.toggle("hidden")
+})
+
+videoProjectorItems.forEach((item,index)=>{
+  item.addEventListener("click",(e)=>{
+    e.preventDefault()
+    videoProjectNavs.forEach(nav=>{
+      nav.classList.add("hidden")
+    })
+    videoProjectNavs[index].classList.remove("hidden")
+  })
+
+})
+
+dropdownBackground.addEventListener("click",()=>{
+  dropdownItems.classList.add("hidden")
+  dropdownBackground.classList.add("hidden")
+})
 menuButton.addEventListener("click",()=>{
   menu.classList.add("right-0")
   menu.classList.remove("right-[-100%]")
