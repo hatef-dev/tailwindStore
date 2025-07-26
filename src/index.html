@@ -34,7 +34,7 @@
           </div>
           <div class="flex items-center md:gap-x-2" >
             <button class="bg-transparent border-[1px] py-3 px-2 md:px-6 rounded-xl hidden md:block"><a href="">لیست قیمت همکار</a></button>
-            <button class="bg-[#52B9F3] py-3 px-2 md:px-6 rounded-xl"><a href="">درخواست دمو</a></button>
+            <button class="bg-[#52B9F3] py-3 px-2 md:px-6 rounded-xl hidden md:block"><a href="">درخواست دمو</a></button>
             
           </div>
         </div>
@@ -53,7 +53,7 @@
           </div>
           <div class="w-screen h-screen transition-all duration-300  right-[-100%] bg-gray/50 delay-75 fixed top-0 z-30 Menubackground block md:hidden" ></div>
           <!-- Mobile Menu -->
-          <div class="MobileMenu fixed w-2/3 transition-all duration-300  right-[-100%] top-0 z-50 h-screen bg-white ">
+          <div class="MobileMenu fixed w-[250px] transition-all duration-300  right-[-100%] top-0 z-50 h-screen bg-white ">
             <div class="flex flex-col ">
               <div class="flex justify-between items-center">
                 <div class="flex justify-start items-center p-4 CloseButton ">
@@ -132,6 +132,19 @@
         </section>
       </section>
       <div class="hidden dropdownBackground bg-black absolute w-screen h-screen z-9 top-34 opacity-50 "></div>          
+    </section>
+    <!-- Mobile Search -->
+    <section class="relative pb-2 md:hidden col-span-full block px-4 md:px-0">
+      <input type="text" placeholder="جستجو کن" class=" bg-[#F9FAFA] placeholder:text-small py-[17px] px-4 w-full outline-0 pr-10 text-small rounded-xl" />
+      <div class="md:hidden block absolute right-6 top-3">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+            stroke="#403F4C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M21 21.0004L16.65 16.6504" stroke="#403F4C" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
     </section>
     <!-- Bottom Header (Navbar) -->
     <section class=" md:container hidden md:block">
@@ -628,7 +641,7 @@
       <section class=" col-span-full ">
         <h3 class=" font-medium text-red text-sm px-6  border-b border-neutral pb-4">راهنمای خرید</h3>
         <section class="my-8 hidden md:grid grid-cols-12 gap-y-8 gap-x-6  px-2 ">
-          <div class="col-span-full md:col-span-6 xl:col-span-4 drop-shadow-xl rounded-b-3xl">
+          <div class="group/leftAndRight  col-span-full md:col-span-6 xl:col-span-4 drop-shadow-xl rounded-b-3xl">
             <div class="relative buy-guide-card md:mt-[72px] py-6 bg-white md:h-[280px] border-left-and-right-product ">
               <div class="more"></div>
               
@@ -646,7 +659,7 @@
               </div>
             </div>
           </div>
-          <div class="col-span-full md:col-span-6 xl:col-span-4 drop-shadow-xl rounded-b-3xl">
+          <div class="group/leftAndRight col-span-full md:col-span-6 xl:col-span-4 drop-shadow-xl rounded-b-3xl">
             <div class="relative buy-guide-card md:mt-[72px] py-6 bg-white md:h-[280px] border-left-and-right-product ">
               <div class="more"></div>
               
@@ -664,7 +677,7 @@
               </div>
             </div>
           </div>
-          <div class="col-span-full md:col-span-6 xl:col-span-4 drop-shadow-xl rounded-b-3xl">
+          <div class="group/leftAndRight col-span-full md:col-span-6 xl:col-span-4 drop-shadow-xl rounded-b-3xl">
             <div class="relative buy-guide-card md:mt-[72px] py-6 bg-white md:h-[280px] border-left-and-right-product ">
               <div class="more"></div>
               
@@ -945,7 +958,7 @@
         </div>
         
         <div class="hidden md:grid grid-cols-12 md:gap-x-8">
-          <div class=" col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3 cursor-pointer">
+          <div class=" group/leftAndRight col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3 cursor-pointer">
               <div class="flex flex-col ">
                 <div class="p-2 md:p-6 relative shadow bg-white rounded-3xl border-left-and-right-product">
                   
@@ -990,7 +1003,7 @@
                 </div>
               </div>
           </div>
-          <div class=" col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3 cursor-pointer">
+          <div class=" group/leftAndRight col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3 cursor-pointer">
               <div class="flex flex-col">
                 <div class="p-6 relative shadow bg-white rounded-3xl border-left-and-right-product">
                   <span class="non-existent">ناموجود</span>
@@ -1034,7 +1047,7 @@
                 </div>
               </div>
           </div>
-          <div class=" col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3 cursor-pointer">
+          <div class=" group/leftAndRight col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3 cursor-pointer">
               <div class="flex flex-col">
                 <div class="p-6 relative shadow bg-white rounded-3xl border-left-and-right-product">
                   <span class="existing">موجود</span>
@@ -1078,7 +1091,7 @@
                 </div>
               </div>
           </div>
-          <div class=" col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3 cursor-pointer">
+          <div class=" group/leftAndRight col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3 cursor-pointer">
               <div class="flex flex-col">
                 <div class="p-6 relative shadow bg-white rounded-3xl border-left-and-right-product">
                   <span class="customized">سفارشی</span>
@@ -1138,7 +1151,7 @@
         </div>
 
         <div class="hidden md:grid grid-cols-12 gap-2 md:gap-8">
-          <div class="col-span-full md:col-span-6">
+          <div class="group/leftAndRight col-span-full md:col-span-6">
 
             <div class="flex flex-col">
               <a href=""
@@ -1153,7 +1166,7 @@
                 </div>
               </a>
               <!-- content of image -->
-              <div class="flex flex-col px-2 pt-2">
+              <div class=" flex flex-col px-2 pt-2">
                 <a href="" class="text-sm font-medium">مانیتور گیمینگ ایسوس ASUS ROG Strix XG۴۳۸QR</a>
                 <div class="flex justify-between items-center py-4">
                   <!-- Icon -->
@@ -1225,7 +1238,7 @@
           </div>
 
 
-          <div class="col-span-full md:col-span-6 2xl:col-span-3 cursor-pointer">
+          <div class="group/leftAndRight col-span-full md:col-span-6 2xl:col-span-3 cursor-pointer">
             <div class="flex flex-col">
               <div class="p-5 py-8 relative bg-white rounded-3xl shadow-sm border-left-and-right-product">
                 <span class="soon">به زودی</span>
@@ -1270,7 +1283,7 @@
             </div>
           </div>
 
-          <div class="col-span-full md:col-span-6 2xl:col-span-3 cursor-pointer">
+          <div class="group/leftAndRight col-span-full md:col-span-6 2xl:col-span-3 cursor-pointer">
             <div class="flex flex-col">
               <div class="p-5 relative bg-white rounded-3xl py-8 shadow-sm border-left-and-right-product">
                 <span class="soon">به زودی</span>
@@ -1513,7 +1526,7 @@
           
         </div>
         <div class="hidden md:grid grid-cols-12 gap-x-2 md:gap-x-8 gap-y-4 md:gap-y-8">
-          <div class="col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3 ">
+          <div class="group/leftAndRight col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3 ">
 
             <div class="flex flex-col">
               <a href=""
@@ -1598,7 +1611,7 @@
             </div>
           </div>
 
-          <div class="col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3">
+          <div class="group/leftAndRight col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3">
 
             <div class="flex flex-col">
               <a href=""
@@ -1682,7 +1695,7 @@
             </div>
           </div>
 
-          <div class="col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3">
+          <div class="group/leftAndRight col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3">
 
             <div class="flex flex-col">
               <a href=""
@@ -1766,7 +1779,7 @@
             </div>
           </div>
 
-          <div class="col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3">
+          <div class="group/leftAndRight col-span-full md:col-span-6 lg:col-span-4 2xl:col-span-3">
 
             <div class="flex flex-col">
               <a href=""
