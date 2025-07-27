@@ -14,11 +14,18 @@ module.exports = {
         },
         screens: {
           sm: '300px',
-          md: '768px',
+          md: '600px',
           lg: '992px',
           xl: '1200px',
           '2xl': '1440px',
         },
+      },
+      screens: {
+        sm: '300px',
+        md: '600px',
+        lg: '992px',
+        xl: '1200px',
+        '2xl': '1440px',
       },
     },
 }

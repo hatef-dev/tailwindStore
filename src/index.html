@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl" class="overflow-x-hidden">
+<html lang="fa" dir="rtl" class="overflow-x-hidden max-w-[100vw]">
 
 <head>
   <meta charset="UTF-8" />
@@ -100,8 +100,8 @@
           </div>
           <div class="flex justify-start items-center gap-x-2 md:gap-x-6">
             <!-- Shopping Cart Icon-->
-            <a href="" class="p-2">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="" class="ShoppingCard p-2">
+              <svg class="deActiveShoppingCard" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M7.5 7.66952V6.69952C7.5 4.44952 9.31 2.23952 11.56 2.02952C14.24 1.76952 16.5 3.87952 16.5 6.50952V7.88952"
                   stroke="#403F4C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
@@ -117,6 +117,15 @@
                 <rect x="11.6666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040" />
                 <rect x="11.6666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white" stroke-width="1.66667" />
               </svg>
+              <svg class="hidden ActiveShoppingCard" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.5 7.66952V6.69952C7.5 4.44952 9.31 2.23952 11.56 2.02952C14.24 1.76952 16.5 3.87952 16.5 6.50952V7.88952" stroke="#FF4040" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.99995 22H14.9999C19.0199 22 19.7399 20.39 19.9499 18.43L20.6999 12.43C20.9699 9.99 20.2699 8 15.9999 8H7.99995C3.72995 8 3.02995 9.99 3.29995 12.43L4.04995 18.43C4.25995 20.39 4.97995 22 8.99995 22Z" stroke="#FF4040" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.4955 12H15.5045" stroke="#FF4040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.49451 12H8.50349" stroke="#FF4040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="11.6666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040"/>
+                <rect x="11.6666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white" stroke-width="1.66667"/>
+              </svg>
+                
             </a>
             <!-- Person Icon-->
             <a href="" class="p-2">
@@ -131,7 +140,7 @@
           </div>
         </section>
         <section
-      class="absolute top-30 p-6 left-50 z-10 bg-white rounded-xl w-[407px] h-[440px]"
+      class="shoppingCountainer drop-shadow-2xl hidden absolute left-2 md:left-10 top-30 p-6 lg:left-50 z-10 bg-white rounded-xl w-[307px] h-[400px]   md:w-[407px] md:h-[400px]"
     >
       <div class="flex flex-col gap-6 w-full">
         <header class="flex justify-between text-[#9B9AAB] items-center">
@@ -247,7 +256,7 @@
             </a>
           </div>
         </div>
-        <div class="flex flex-row justify-between items-center border-t-[2px] border-[#E8EBED] py-2">
+        <div class="flex flex-row justify-between items-center border-t-[2px] border-[#E8EBED] py-4">
             <div class="flex flex-col gap-y-1">
                 <span class="text-small text-[#B4B3C0]">جمع کل:</span>
                 <div class="text-[16px] font-medium text-red-500">
@@ -499,99 +508,179 @@
   <!-- Main -->
   <main class=" px-[15px] md:px-0 w-full ">
     <section class="md:container md:grid md:grid-cols-12 my-12 md:gap-5">
-      <!-- Product Details -->
-    <section class="grid grid-cols-10 lg:col-span-8 col-span-full  bg-white rounded-3xl relative border-left-and-right-product after:top-[140px] before:top-[140px] ">
-      <!-- Product Details Left Side -->
-      <div class="flex flex-col order-2 md:order-1 mb-5 md:mb-0 col-span-full md:col-span-5  lg:col-span-4 space-y-4">
-        <div
-          class="hidden relative md:flex justify-start items-center 2xl:after:absolute   2xl:after:w-7 2xl:after:h-full 2xl:after:left-[19.5px]  2xl:after:aspect-[0.866] 2xl:after:bg-[#FF4040] 2xl:after:[clip-path:polygon(100%_0,0_50%,100%_100%)]">
-          <h3 class="bg-[#FF4040] text-[10px] md:text-[12.5px] text-white rounded-tr-4xl font-medium py-3.5 pr-5 ">مانیتور گیمینگ
-            ایسوس ASUS ROG Strix </h3>
-        </div>
-        <div dir="ltr" class="w-full h-[254px] overflow-y-auto">
-          <ul dir="rtl" class="flex flex-col justify-center  lg:pl-7 items-center gap-y-1">
-            <li class="w-full " >
-              <button class="selected-items  " >مانیتور گیمینگ ایسوس ASUS ROG Strix </button>
-            </li>
+     <!-- Product Details -->
+     <section
+     class="grid grid-cols-10 lg:col-span-8 col-span-full bg-white rounded-3xl relative border-left-and-right-product after:top-[140px] before:top-[140px]"
+   >
+     <!-- Product Details Left Side -->
+     <div
+       class="flex flex-col order-2 md:order-1 mb-5 md:mb-0 col-span-full md:col-span-5 lg:col-span-4 space-y-4"
+     >
+       <div dir="ltr" class="w-full h-full overflow-y-auto overflow-x-hidden">
+         <ul
+           dir="rtl"
+           class="flex flex-col justify-start items-center gap-y-3 md:gap-y-1 "
+         >
+           <div class="relative flex items-center w-full overflow-x-hidden ">
 
-            <li class="w-full " >
-              <button class="selected-items  " >مانیتور گیمینگ ایسوس ASUS ROG Strix </button>
-            </li>
-            <li class="w-full " >
-              <button class="selected-items  " >مانیتور گیمینگ ایسوس ASUS ROG Strix </button>
-            </li>
-            <li class="w-full " >
-              <button class="selected-items  " >مانیتور گیمینگ ایسوس ASUS ROG Strix </button>
-            </li>
-            <li class="w-full " >
-              <button class="selected-items  " >مانیتور گیمینگ ایسوس ASUS ROG Strix </button>
-            </li>
-            <li class="w-full " >
-              <button class="selected-items  " >مانیتور گیمینگ ایسوس ASUS ROG Strix </button>
-            </li>
-            <li class="w-full " >
-              <button class="selected-items  " >مانیتور گیمینگ ایسوس ASUS ROG Strix </button>
-            </li>
+             <li
+               class=" flex w-full md:w-auto  pr-0 justify-center md:block bg-[#FF4040] md:text-[10px] lg:text-[8.5px] lg:py-4 xl:text-[10.5px] 2xl:text-[12.5px] text-white sm:rounded-none  md:rounded-tr-4xl font-medium py-3.5 md:pr-5"
+             >
+               <a href="">مانیتور گیمینگ ایسوس ASUS ROG Strix</a>             </li>
             
-          </ul>
-        </div>
-      </div>
-      <!-- Product Details Right Side with image-->
-      <div class="flex flex-col order-1 mb-5 md:mb-0 md:order-2 col-span-full md:col-span-5 lg:col-span-6 md:pl-8">
-        <div class="flex flex-col justify-center items-center p-4">
-          <img src="./images/manitor.jpg" alt="product-image" class="">
-          <div class="flex justify-center items-center">
-            <div class="flex justify-center items-center w-[38px] h-[38px] bg-bg-clock rounded-xl">
+             <svg
+               class="hidden md:block"
+               width="29"
+               height="48"
+               viewBox="0 0 29 48"
+               fill="none"
+               xmlns="http://www.w3.org/2000/svg"
+             >
+               <path
+                 d="M2.08541 27.1629C0.0169959 25.5615 0.0169953 22.4385 2.08541 20.8371L29 -1.35505e-06L29 48L2.08541 27.1629Z"
+                 fill="#FF4040"
+               />
+             </svg>
+           </div> 
+           
+           <li class="w-full relative">
+             <button class="selected-items">
+               مانیتور گیمینگ ایسوس ASUS ROG Strix
+             </button>
+           </li>
 
-            </div>
-            <span class="text-gray-light">:</span>
-            <div class="flex justify-center pt-1 items-center w-[38px] h-[38px] bg-bg-clock rounded-xl">
-              <span class="text-lg">۰۴</span>
-            </div>
-            <span class="text-gray-light">:</span>
-            <div class="flex justify-center items-center w-[38px] h-[38px] bg-bg-clock rounded-xl">
-
-            </div>
-          </div>
-        </div>
-        <div class="grid grid-cols-4">
-          <div class="flex flex-col space-y-1  col-span-full md:col-span-2 md:col-start-3">
-            <div class="flex flex-col items-center ">
-              <div class="flex justify-between items-center space-x-2 ">
-                <span class="text-gray-light text-[16px] line-through">۲۳,۵۰۰,۰۰۰</span>
-                <span class="text-gray-light text-sm">تومان</span>
-              </div>
-            </div>
-            <div class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]">
-              <div
-                class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center">
-                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M8 7.66952V6.69952C8 4.44952 9.81 2.23952 12.06 2.02952C14.74 1.76952 17 3.87952 17 6.50952V7.88952"
-                    stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path
-                    d="M9.49995 22H15.4999C19.5199 22 20.24 20.39 20.4499 18.43L21.1999 12.43C21.4699 9.99 20.7699 8 16.4999 8H8.49995C4.22995 8 3.52995 9.99 3.79995 12.43L4.54995 18.43C4.75995 20.39 5.47995 22 9.49995 22Z"
-                    fill="white" />
-                  <path d="M15.9955 12H16.0045" stroke="#049F57" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path d="M8.99451 12H9.00349" stroke="#049F57" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" fill="#FF4040" />
-                  <rect x="12.1666" y="0.833333" width="7.5" height="7.5" rx="3.75" stroke="white"
-                    stroke-width="1.66667" />
-                </svg>
-
-              </div>
-              <div class="">
-                <span class="text-white text-lg md:ml-14">۱۲,۵۹۰,۰۰۰</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
+           <li class="w-full relative">
+             <button class="selected-items">
+               مانیتور گیمینگ ایسوس ASUS ROG Strix
+             </button>
+           </li>
+           <li class="w-full relative">
+             <button class="selected-items">
+               مانیتور گیمینگ ایسوس ASUS ROG Strix
+             </button>
+           </li>
+           <li class="w-full relative">
+             <button class="selected-items">
+               مانیتور گیمینگ ایسوس ASUS ROG Strix
+             </button>
+           </li>
+           <li class="w-full relative">
+             <button class="selected-items">
+               مانیتور گیمینگ ایسوس ASUS ROG Strix
+             </button>
+           </li>
+           <li class="w-full relative">
+             <button class="selected-items">
+               مانیتور گیمینگ ایسوس ASUS ROG Strix
+             </button>
+           </li>
+           <li class="w-full relative">
+             <button class="selected-items">
+               مانیتور گیمینگ ایسوس ASUS ROG Strix
+             </button>
+           </li>
+         </ul>
+       </div>
+     </div>
+     <div
+       class="flex flex-col order-1 mb-5 md:mb-0 md:order-2 col-span-full md:col-span-5 lg:col-span-6 md:pl-8"
+     >
+       <div class="flex flex-col justify-center items-center p-4">
+         <img src="./images/manitor.jpg" alt="product-image" class="" />
+         <div class="flex justify-center items-center">
+           <div
+             class="flex justify-center items-center w-[38px] h-[38px] bg-bg-clock rounded-xl"
+           ></div>
+           <span class="text-gray-light">:</span>
+           <div
+             class="flex justify-center pt-1 items-center w-[38px] h-[38px] bg-bg-clock rounded-xl"
+           >
+             <span class="text-lg">۰۴</span>
+           </div>
+           <span class="text-gray-light">:</span>
+           <div
+             class="flex justify-center items-center w-[38px] h-[38px] bg-bg-clock rounded-xl"
+           ></div>
+         </div>
+       </div>
+       <div class="grid grid-cols-4">
+         <div
+           class="flex flex-col space-y-1 col-span-full md:col-span-2 md:col-start-3"
+         >
+           <div class="flex flex-col items-center">
+             <div class="flex justify-between items-center space-x-2">
+               <span class="text-gray-light text-[16px] line-through"
+                 >۲۳,۵۰۰,۰۰۰</span
+               >
+               <span class="text-gray-light text-sm">تومان</span>
+             </div>
+           </div>
+           <div
+             class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]"
+           >
+             <div
+               class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center"
+             >
+               <svg
+                 width="25"
+                 height="24"
+                 viewBox="0 0 25 24"
+                 fill="none"
+                 xmlns="http://www.w3.org/2000/svg"
+               >
+                 <path
+                   d="M8 7.66952V6.69952C8 4.44952 9.81 2.23952 12.06 2.02952C14.74 1.76952 17 3.87952 17 6.50952V7.88952"
+                   stroke="white"
+                   stroke-width="1.5"
+                   stroke-miterlimit="10"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                 />
+                 <path
+                   d="M9.49995 22H15.4999C19.5199 22 20.24 20.39 20.4499 18.43L21.1999 12.43C21.4699 9.99 20.7699 8 16.4999 8H8.49995C4.22995 8 3.52995 9.99 3.79995 12.43L4.54995 18.43C4.75995 20.39 5.47995 22 9.49995 22Z"
+                   fill="white"
+                 />
+                 <path
+                   d="M15.9955 12H16.0045"
+                   stroke="#049F57"
+                   stroke-width="2"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                 />
+                 <path
+                   d="M8.99451 12H9.00349"
+                   stroke="#049F57"
+                   stroke-width="2"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                 />
+                 <rect
+                   x="12.1666"
+                   y="0.833333"
+                   width="7.5"
+                   height="7.5"
+                   rx="3.75"
+                   fill="#FF4040"
+                 />
+                 <rect
+                   x="12.1666"
+                   y="0.833333"
+                   width="7.5"
+                   height="7.5"
+                   rx="3.75"
+                   stroke="white"
+                   stroke-width="1.66667"
+                 />
+               </svg>
+             </div>
+             <div class="">
+               <span class="text-white text-lg md:ml-14">۱۲,۵۹۰,۰۰۰</span>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
     <!-- Product images --> 
     <section class="col-span-12 md:gap-x-4 lg:col-span-4 lg:gap-x-0 ">
       <div class="flex flex-col ">
@@ -774,13 +863,13 @@
       <section class=" col-span-full ">
         <h3 class=" font-medium text-red text-sm px-6  border-b border-neutral pb-4">راهنمای خرید</h3>
         <section class="my-8 hidden md:grid grid-cols-12 gap-y-8 gap-x-6  px-2 ">
-          <div class="group/leftAndRight  col-span-full md:col-span-6 xl:col-span-4 drop-shadow-xl rounded-b-3xl">
+          <div class="group/leftAndRight col-span-full md:col-span-6 xl:col-span-4 drop-shadow-xl rounded-b-3xl">
             <div class="relative buy-guide-card md:mt-[72px] py-6 bg-white md:h-[280px] border-left-and-right-product ">
               <div class="more"></div>
               
               <div class="buy-guide-card-content ">
                 <a href="" class=" text-sm font-medium">مانیتور گیمینگ ایسوس ASUS ROG Strix راهنمای خرید ویدئو پروژکتور تیر
-                  ۱۴۰۲</a >
+                  </a>
                 <p class=" text-[12px] text-gray">قیمت ویدئو پروژکتور لیزری تیر ماه  خرید دیتاییشش پروژکتور برند
                   اپسون مشخصات پروژکتور اداری کلاسssssw optoma projector بهترین قیمت ویدیو پروژکتور سززز...</p>
                 <div class="flex justify-between items-center">

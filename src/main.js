@@ -23,9 +23,23 @@ const dropdownBackground = document.querySelector(".dropdownBackground")
 const dropdownItems = document.querySelector(".dropdownItems")
 const videoProjectorItems = document.querySelectorAll(".videoProjectorItem")
 const videoProjectNavs = document.querySelectorAll(".videoProjectNav")
+const shoppingCountainer = document.querySelector(".shoppingCountainer")
+const shoppingCard = document.querySelector(".ShoppingCard")
+const deActiveShoppingCard = document.querySelector(".deActiveShoppingCard")
+const ActiveShoppingCard = document.querySelector(".ActiveShoppingCard")
+
+
+
 dropdownMenu.addEventListener("click",()=>{
   dropdownItems.classList.toggle("hidden")
   dropdownBackground.classList.toggle("hidden")
+})
+
+shoppingCard.addEventListener("click",(e)=>{
+  e.preventDefault()
+  shoppingCountainer.classList.toggle("hidden")
+  deActiveShoppingCard.classList.toggle("hidden")
+  ActiveShoppingCard.classList.toggle("hidden")
 })
 
 videoProjectorItems.forEach((item,index)=>{
