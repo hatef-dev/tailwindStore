@@ -1,190 +1,181 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- Main -->
-    <main class="px-[15px] md:px-0 w-full">
-      <section class="md:container md:grid md:grid-cols-12 my-12 md:gap-5">
-        <!-- Product Details -->
-        <section
-          class="grid grid-cols-10 lg:col-span-8 col-span-full bg-white rounded-3xl relative border-left-and-right-product after:top-[140px] before:top-[140px]"
-        >
-          <!-- Product Details Left Side -->
-          <div
-            class="flex flex-col order-2 md:order-1 mb-5 md:mb-0 col-span-full md:col-span-5 lg:col-span-4 space-y-4"
-          >
-            <div dir="ltr" class="w-full h-full overflow-y-auto">
-              <ul
-                dir="rtl"
-                class="flex flex-col justify-start items-center gap-y-1"
-              >
-                <div class="relative flex items-center w-full ">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Toggle Button Demo</title>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+  <div class="space-y-8">
+    <!-- Toggle Button 1: Simple Toggle -->
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold mb-4 text-gray-800">Simple Toggle Button</h3>
+      <button id="toggle1" class="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" role="switch" aria-checked="false">
+        <span id="toggle1-thumb" class="inline-block h-4 w-4 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out translate-x-0.5"></span>
+      </button>
+      <p id="toggle1-status" class="mt-2 text-sm text-gray-600">Status: Off</p>
+    </div>
 
-                  <li
-                    class="inline-block bg-[#FF4040] text-[10px] md:text-[12.5px] text-white rounded-tr-4xl font-medium py-3.5 pr-5"
-                  >
-                    مانیتور گیمینگ ایسوس ASUS ROG Strix
-                  </li>
+    <!-- Toggle Button 2: Dark/Light Mode Toggle -->
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      
+      <button id="toggle2" class="relative bg-gray-200 transition-colors duration-200 ease-in-out " role="switch" aria-checked="false">
+        <span id="toggle2-thumb" >
+          <svg id="lightMode" class="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.28451 10.3333C7.10026 10.8546 7 11.4156 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C11.4156 7 10.8546 7.10026 10.3333 7.28451" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M12 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M12 20V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M4 12L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M22 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M19.7778 4.22266L17.5558 6.25424" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M4.22217 4.22266L6.44418 6.25424" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M6.44434 17.5557L4.22211 19.7779" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M19.7778 19.7773L17.5558 17.5551" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <svg id="darkMode" class="hidden w-5 h-5 text-gray-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13 6V3M18.5 12V7M14.5 4.5H11.5M21 9.5H16M15.5548 16.8151C16.7829 16.8151 17.9493 16.5506 19 16.0754C17.6867 18.9794 14.7642 21 11.3698 21C6.74731 21 3 17.2527 3 12.6302C3 9.23576 5.02061 6.31331 7.92462 5C7.44944 6.05072 7.18492 7.21708 7.18492 8.44523C7.18492 13.0678 10.9322 16.8151 15.5548 16.8151Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </button>
+      <p id="toggle2-status" class="mt-2 text-sm text-gray-600">Status: Light Mode</p>
+    </div>
 
-                  <svg
-                    class=""
-                    width="29"
-                    height="48"
-                    viewBox="0 0 29 48"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2.08541 27.1629C0.0169959 25.5615 0.0169953 22.4385 2.08541 20.8371L29 -1.35505e-06L29 48L2.08541 27.1629Z"
-                      fill="#FF4040"
-                    />
-                  </svg>
-                </div> 
-                
-                <li class="w-full relative">
-                  <button class="selected-items">
-                    مانیتور گیمینگ ایسوس ASUS ROG Strix
-                  </button>
-                </li>
 
-                <li class="w-full relative">
-                  <button class="selected-items">
-                    مانیتور گیمینگ ایسوس ASUS ROG Strix
-                  </button>
-                </li>
-                <li class="w-full relative">
-                  <button class="selected-items">
-                    مانیتور گیمینگ ایسوس ASUS ROG Strix
-                  </button>
-                </li>
-                <li class="w-full relative">
-                  <button class="selected-items">
-                    مانیتور گیمینگ ایسوس ASUS ROG Strix
-                  </button>
-                </li>
-                <li class="w-full relative">
-                  <button class="selected-items">
-                    مانیتور گیمینگ ایسوس ASUS ROG Strix
-                  </button>
-                </li>
-                <li class="w-full relative">
-                  <button class="selected-items">
-                    مانیتور گیمینگ ایسوس ASUS ROG Strix
-                  </button>
-                </li>
-                <li class="w-full relative">
-                  <button class="selected-items">
-                    مانیتور گیمینگ ایسوس ASUS ROG Strix
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="flex flex-col order-1 mb-5 md:mb-0 md:order-2 col-span-full md:col-span-5 lg:col-span-6 md:pl-8"
-          >
-            <div class="flex flex-col justify-center items-center p-4">
-              <img src="./images/manitor.jpg" alt="product-image" class="" />
-              <div class="flex justify-center items-center">
-                <div
-                  class="flex justify-center items-center w-[38px] h-[38px] bg-bg-clock rounded-xl"
-                ></div>
-                <span class="text-gray-light">:</span>
-                <div
-                  class="flex justify-center pt-1 items-center w-[38px] h-[38px] bg-bg-clock rounded-xl"
-                >
-                  <span class="text-lg">۰۴</span>
-                </div>
-                <span class="text-gray-light">:</span>
-                <div
-                  class="flex justify-center items-center w-[38px] h-[38px] bg-bg-clock rounded-xl"
-                ></div>
-              </div>
-            </div>
-            <div class="grid grid-cols-4">
-              <div
-                class="flex flex-col space-y-1 col-span-full md:col-span-2 md:col-start-3"
-              >
-                <div class="flex flex-col items-center">
-                  <div class="flex justify-between items-center space-x-2">
-                    <span class="text-gray-light text-[16px] line-through"
-                      >۲۳,۵۰۰,۰۰۰</span
-                    >
-                    <span class="text-gray-light text-sm">تومان</span>
-                  </div>
-                </div>
-                <div
-                  class="relative flex justify-center items-center bg-[#05C56C] w-full rounded-full h-[40px]"
-                >
-                  <div
-                    class="absolute bg-[#049F57] rounded-full top-0 left-0 w-[40px] h-[40px] flex justify-center items-center"
-                  >
-                    <svg
-                      width="25"
-                      height="24"
-                      viewBox="0 0 25 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M8 7.66952V6.69952C8 4.44952 9.81 2.23952 12.06 2.02952C14.74 1.76952 17 3.87952 17 6.50952V7.88952"
-                        stroke="white"
-                        stroke-width="1.5"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M9.49995 22H15.4999C19.5199 22 20.24 20.39 20.4499 18.43L21.1999 12.43C21.4699 9.99 20.7699 8 16.4999 8H8.49995C4.22995 8 3.52995 9.99 3.79995 12.43L4.54995 18.43C4.75995 20.39 5.47995 22 9.49995 22Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M15.9955 12H16.0045"
-                        stroke="#049F57"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M8.99451 12H9.00349"
-                        stroke="#049F57"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <rect
-                        x="12.1666"
-                        y="0.833333"
-                        width="7.5"
-                        height="7.5"
-                        rx="3.75"
-                        fill="#FF4040"
-                      />
-                      <rect
-                        x="12.1666"
-                        y="0.833333"
-                        width="7.5"
-                        height="7.5"
-                        rx="3.75"
-                        stroke="white"
-                        stroke-width="1.66667"
-                      />
-                    </svg>
-                  </div>
-                  <div class="">
-                    <span class="text-white text-lg md:ml-14">۱۲,۵۹۰,۰۰۰</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-    </main>
-  </body>
+    <!-- Toggle Button 3: Large Size -->
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold mb-4 text-gray-800">Large Toggle Button</h3>
+      <button id="toggle3" class="relative inline-flex h-8 w-14 items-center rounded-full bg-gray-200 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2" role="switch" aria-checked="false">
+        <span id="toggle3-thumb" class="inline-block h-6 w-6 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out translate-x-0.5"></span>
+      </button>
+      <p id="toggle3-status" class="mt-2 text-sm text-gray-600">Status: Inactive</p>
+    </div>
+
+    <!-- Toggle Button 4: With Labels -->
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h3 class="text-lg font-semibold mb-4 text-gray-800">Toggle with Labels</h3>
+      <div class="flex items-center space-x-3">
+        <span class="text-sm font-medium text-gray-700">Dark Mode</span>
+        <button id="toggle4" class="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" role="switch" aria-checked="false">
+          <span id="toggle4-thumb" class="inline-block h-4 w-4 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out translate-x-0.5"></span>
+        </button>
+        <span id="toggle4-label" class="text-sm text-gray-500">Light</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Toggle Button 1: Simple Toggle
+    const toggle1 = document.getElementById('toggle1');
+    const toggle1Thumb = document.getElementById('toggle1-thumb');
+    const toggle1Status = document.getElementById('toggle1-status');
+    let isToggle1On = false;
+
+    toggle1.addEventListener('click', () => {
+      isToggle1On = !isToggle1On;
+      
+      if (isToggle1On) {
+        toggle1.classList.remove('bg-gray-200');
+        toggle1.classList.add('bg-blue-600');
+        toggle1Thumb.classList.remove('translate-x-0.5');
+        toggle1Thumb.classList.add('translate-x-5');
+        toggle1.setAttribute('aria-checked', 'true');
+        toggle1Status.textContent = 'Status: On';
+      } else {
+        toggle1.classList.remove('bg-blue-600');
+        toggle1.classList.add('bg-gray-200');
+        toggle1Thumb.classList.remove('translate-x-5');
+        toggle1Thumb.classList.add('translate-x-0.5');
+        toggle1.setAttribute('aria-checked', 'false');
+        toggle1Status.textContent = 'Status: Off';
+      }
+    });
+
+    // Toggle Button 2: Dark/Light Mode Toggle
+    const toggle2 = document.getElementById('toggle2');
+    
+    
+    const lightMode = document.getElementById('lightMode');
+    const darkMode = document.getElementById('darkMode');
+    let isToggle2On = false;
+
+    toggle2.addEventListener('click', () => {
+      isToggle2On = !isToggle2On;
+      
+      if (isToggle2On) {
+        // Switch to Dark Mode
+        
+        
+        
+        
+        lightMode.classList.add('hidden');
+        darkMode.classList.remove('hidden');
+        
+        
+      } else {
+        // Switch to Light Mode
+        
+        lightMode.classList.remove('hidden');
+        darkMode.classList.add('hidden');
+        
+      }
+    });
+
+    // Toggle Button 3: Large Size
+    const toggle3 = document.getElementById('toggle3');
+    const toggle3Thumb = document.getElementById('toggle3-thumb');
+    const toggle3Status = document.getElementById('toggle3-status');
+    let isToggle3On = false;
+
+    toggle3.addEventListener('click', () => {
+      isToggle3On = !isToggle3On;
+      
+      if (isToggle3On) {
+        toggle3.classList.remove('bg-gray-200');
+        toggle3.classList.add('bg-purple-600');
+        toggle3Thumb.classList.remove('translate-x-0.5');
+        toggle3Thumb.classList.add('translate-x-6');
+        toggle3.setAttribute('aria-checked', 'true');
+        toggle3Status.textContent = 'Status: Active';
+      } else {
+        toggle3.classList.remove('bg-purple-600');
+        toggle3.classList.add('bg-gray-200');
+        toggle3Thumb.classList.remove('translate-x-6');
+        toggle3Thumb.classList.add('translate-x-0.5');
+        toggle3.setAttribute('aria-checked', 'false');
+        toggle3Status.textContent = 'Status: Inactive';
+      }
+    });
+
+    // Toggle Button 4: With Labels
+    const toggle4 = document.getElementById('toggle4');
+    const toggle4Thumb = document.getElementById('toggle4-thumb');
+    const toggle4Label = document.getElementById('toggle4-label');
+    let isToggle4On = false;
+
+    toggle4.addEventListener('click', () => {
+      isToggle4On = !isToggle4On;
+      
+      if (isToggle4On) {
+        toggle4.classList.remove('bg-gray-200');
+        toggle4.classList.add('bg-indigo-600');
+        toggle4Thumb.classList.remove('translate-x-0.5');
+        toggle4Thumb.classList.add('translate-x-5');
+        toggle4.setAttribute('aria-checked', 'true');
+        toggle4Label.textContent = 'Dark';
+        toggle4Label.classList.remove('text-gray-500');
+        toggle4Label.classList.add('text-indigo-600');
+      } else {
+        toggle4.classList.remove('bg-indigo-600');
+        toggle4.classList.add('bg-gray-200');
+        toggle4Thumb.classList.remove('translate-x-5');
+        toggle4Thumb.classList.add('translate-x-0.5');
+        toggle4.setAttribute('aria-checked', 'false');
+        toggle4Label.textContent = 'Light';
+        toggle4Label.classList.remove('text-indigo-600');
+        toggle4Label.classList.add('text-gray-500');
+      }
+    });
+  </script>
+</body>
 </html>
