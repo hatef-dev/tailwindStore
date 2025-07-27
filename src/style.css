@@ -60,10 +60,10 @@
     @apply text-small px-2 border-l-[1px] nth-[3n]:border-l-0 2xl:pl-4 md:nth-[3n]:border-l-[1px] md:border-l-[1px] border-[#B4B3C0]  ;
   }
   .more {
-    @apply absolute  -top-14 md:-top-24 2xl:-top-18  left-12 md:left-7 lg:left-10 xl:left-7 2xl:left-8 bg-[url('/images/ad1.jpg')] rounded-t-[20px] w-3/4  md:w-4/5    2xl:w-4/5  h-[150px] md:h-[160px]  bg-cover;
+    @apply absolute  -top-14 md:-top-24 2xl:-top-18  left-12 md:left-7 lg:left-10 xl:left-7 2xl:left-8 rounded-t-[20px] w-3/4  md:w-4/5    2xl:w-4/5  h-[150px] md:h-[160px]  overflow-hidden;
   }
   .product {
-    @apply bg-[url('/images/monitor1.jpg')] w-[192px]  h-[192px] bg-cover;
+    @apply  w-[192px]  h-[192px] overflow-hidden;
   }
   .border-left-and-right-product {
     @apply group-hover/leftAndRight:after:bg-[#FF4040] group-hover/leftAndRight:before:bg-[#FF4040] before:transition-all before:duration-300 before:ease-in-out after:transition-all after:duration-300 after:ease-in-out after:absolute after:w-1 after:h-[95px] before:absolute before:w-1 before:h-[95px] before:bg-[#EEF0F1] before:top-[75px] before:rounded-tl-full before:rounded-bl-full before:right-0 after:bg-[#EEF0F1] after:top-[75px] after:rounded-tr-full after:rounded-br-full after:left-0;
