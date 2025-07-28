@@ -1,181 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Toggle Button Demo</title>
-</head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
-  <div class="space-y-8">
-    <!-- Toggle Button 1: Simple Toggle -->
-    <div class="bg-white p-6 rounded-lg shadow-md">
-      <h3 class="text-lg font-semibold mb-4 text-gray-800">Simple Toggle Button</h3>
-      <button id="toggle1" class="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" role="switch" aria-checked="false">
-        <span id="toggle1-thumb" class="inline-block h-4 w-4 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out translate-x-0.5"></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <li
+      class="w-full relative overflow-hidden"
+      data-start="2025-07-28T08:00:00Z"
+      data-end="2025-07-28T15:00:00Z"
+    >
+      <div
+        class="progress-bar absolute bottom-0 right-0 h-0.5 bg-[#FFB7B7] transition-all duration-300"
+        style="width: 100%"
+      ></div>
+      <button class="selected-items w-full text-right">
+        محصول دوم با تخفیف
       </button>
-      <p id="toggle1-status" class="mt-2 text-sm text-gray-600">Status: Off</p>
-    </div>
+    </li>
 
-    <!-- Toggle Button 2: Dark/Light Mode Toggle -->
-    <div class="bg-white p-6 rounded-lg shadow-md">
-      
-      <button id="toggle2" class="relative bg-gray-200 transition-colors duration-200 ease-in-out " role="switch" aria-checked="false">
-        <span id="toggle2-thumb" >
-          <svg id="lightMode" class="w-5 h-5 text-yellow-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M7.28451 10.3333C7.10026 10.8546 7 11.4156 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C11.4156 7 10.8546 7.10026 10.3333 7.28451" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M12 2V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M12 20V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M4 12L2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M22 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M19.7778 4.22266L17.5558 6.25424" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M4.22217 4.22266L6.44418 6.25424" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M6.44434 17.5557L4.22211 19.7779" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M19.7778 19.7773L17.5558 17.5551" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-          <svg id="darkMode" class="hidden w-5 h-5 text-gray-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M13 6V3M18.5 12V7M14.5 4.5H11.5M21 9.5H16M15.5548 16.8151C16.7829 16.8151 17.9493 16.5506 19 16.0754C17.6867 18.9794 14.7642 21 11.3698 21C6.74731 21 3 17.2527 3 12.6302C3 9.23576 5.02061 6.31331 7.92462 5C7.44944 6.05072 7.18492 7.21708 7.18492 8.44523C7.18492 13.0678 10.9322 16.8151 15.5548 16.8151Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
+    <li
+      class="w-full relative overflow-hidden"
+      data-start="2025-07-28T06:00:00Z"
+      data-end="2025-07-28T12:00:00Z"
+    >
+      <div
+        class="progress-bar absolute bottom-0 right-0 h-0.5 bg-[#FFB7B7] transition-all duration-300"
+        style="width: 100%"
+      ></div>
+      <button class="selected-items w-full text-right">
+        مانیتور گیمینگ ایسوس ASUS ROG Strix
       </button>
-      <p id="toggle2-status" class="mt-2 text-sm text-gray-600">Status: Light Mode</p>
-    </div>
-
-
-    <!-- Toggle Button 3: Large Size -->
-    <div class="bg-white p-6 rounded-lg shadow-md">
-      <h3 class="text-lg font-semibold mb-4 text-gray-800">Large Toggle Button</h3>
-      <button id="toggle3" class="relative inline-flex h-8 w-14 items-center rounded-full bg-gray-200 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2" role="switch" aria-checked="false">
-        <span id="toggle3-thumb" class="inline-block h-6 w-6 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out translate-x-0.5"></span>
+    </li>
+    <li
+      class="w-full relative overflow-hidden"
+      data-start="2025-07-28T06:00:00Z"
+      data-end="2025-07-28T12:00:00Z"
+    >
+      <div
+        class="progress-bar absolute bottom-0 right-0 h-0.5 bg-[#FFB7B7] transition-all duration-300"
+        style="width: 100%"
+      ></div>
+      <button class="selected-items w-full text-right">
+        مانیتور گیمینگ ایسوس ASUS ROG Strix
       </button>
-      <p id="toggle3-status" class="mt-2 text-sm text-gray-600">Status: Inactive</p>
-    </div>
+    </li>
+    <li
+      class="w-full relative overflow-hidden"
+      data-start="2025-07-28T06:00:00Z"
+      data-end="2025-07-28T12:00:00Z"
+    >
+      <div
+        class="progress-bar absolute bottom-0 right-0 h-0.5 bg-[#FFB7B7] transition-all duration-300"
+        style="width: 100%"
+      ></div>
+      <button class="selected-items w-full text-right">
+        مانیتور گیمینگ ایسوس ASUS ROG Strix
+      </button>
+    </li>
+    <li
+      class="w-full relative overflow-hidden"
+      data-start="2025-07-28T06:00:00Z"
+      data-end="2025-07-28T12:00:00Z"
+    >
+      <div
+        class="progress-bar absolute bottom-0 right-0 h-0.5 bg-[#FFB7B7] transition-all duration-300"
+        style="width: 100%"
+      ></div>
+      <button class="selected-items w-full text-right">
+        مانیتور گیمینگ ایسوس ASUS ROG Strix
+      </button>
+    </li>
+    <li
+      class="w-full relative overflow-hidden"
+      data-start="2025-07-28T06:00:00Z"
+      data-end="2025-07-28T12:00:00Z"
+    >
+      <div
+        class="progress-bar absolute bottom-0 right-0 h-0.5 bg-[#FFB7B7] transition-all duration-300"
+        style="width: 100%"
+      ></div>
+      <button class="selected-items w-full text-right">
+        مانیتور گیمینگ ایسوس ASUS ROG Strix
+      </button>
+    </li>
+    <li
+      class="w-full relative overflow-hidden"
+      data-start="2025-07-28T06:00:00Z"
+      data-end="2025-07-28T23:00:00Z"
+    >
+      <div
+        class="progress-bar absolute bottom-0 right-0 h-0.5 bg-[#FFB7B7] transition-all duration-300"
+        style="width: 100%"
+      ></div>
+      <button class="selected-items w-full text-right">
+        مانیتور گیمینگ ایسوس ASUS ROG Strix
+      </button>
+    </li>
 
-    <!-- Toggle Button 4: With Labels -->
-    <div class="bg-white p-6 rounded-lg shadow-md">
-      <h3 class="text-lg font-semibold mb-4 text-gray-800">Toggle with Labels</h3>
-      <div class="flex items-center space-x-3">
-        <span class="text-sm font-medium text-gray-700">Dark Mode</span>
-        <button id="toggle4" class="relative inline-flex h-6 w-11 items-center rounded-full bg-gray-200 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2" role="switch" aria-checked="false">
-          <span id="toggle4-thumb" class="inline-block h-4 w-4 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out translate-x-0.5"></span>
-        </button>
-        <span id="toggle4-label" class="text-sm text-gray-500">Light</span>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    // Toggle Button 1: Simple Toggle
-    const toggle1 = document.getElementById('toggle1');
-    const toggle1Thumb = document.getElementById('toggle1-thumb');
-    const toggle1Status = document.getElementById('toggle1-status');
-    let isToggle1On = false;
-
-    toggle1.addEventListener('click', () => {
-      isToggle1On = !isToggle1On;
-      
-      if (isToggle1On) {
-        toggle1.classList.remove('bg-gray-200');
-        toggle1.classList.add('bg-blue-600');
-        toggle1Thumb.classList.remove('translate-x-0.5');
-        toggle1Thumb.classList.add('translate-x-5');
-        toggle1.setAttribute('aria-checked', 'true');
-        toggle1Status.textContent = 'Status: On';
-      } else {
-        toggle1.classList.remove('bg-blue-600');
-        toggle1.classList.add('bg-gray-200');
-        toggle1Thumb.classList.remove('translate-x-5');
-        toggle1Thumb.classList.add('translate-x-0.5');
-        toggle1.setAttribute('aria-checked', 'false');
-        toggle1Status.textContent = 'Status: Off';
+    <script>
+      const totalTime = 12 * 60 * 60; // ۱۲ ساعت به ثانیه
+      const timeLeft = document.querySelectorAll("#time-left").textContent;
+      for (let i = 0; i < timeLeft; i++) {
+        i; // مثلا ۳ ساعت مونده
       }
-    });
 
-    // Toggle Button 2: Dark/Light Mode Toggle
-    const toggle2 = document.getElementById('toggle2');
-    
-    
-    const lightMode = document.getElementById('lightMode');
-    const darkMode = document.getElementById('darkMode');
-    let isToggle2On = false;
-
-    toggle2.addEventListener('click', () => {
-      isToggle2On = !isToggle2On;
-      
-      if (isToggle2On) {
-        // Switch to Dark Mode
-        
-        
-        
-        
-        lightMode.classList.add('hidden');
-        darkMode.classList.remove('hidden');
-        
-        
-      } else {
-        // Switch to Light Mode
-        
-        lightMode.classList.remove('hidden');
-        darkMode.classList.add('hidden');
-        
-      }
-    });
-
-    // Toggle Button 3: Large Size
-    const toggle3 = document.getElementById('toggle3');
-    const toggle3Thumb = document.getElementById('toggle3-thumb');
-    const toggle3Status = document.getElementById('toggle3-status');
-    let isToggle3On = false;
-
-    toggle3.addEventListener('click', () => {
-      isToggle3On = !isToggle3On;
-      
-      if (isToggle3On) {
-        toggle3.classList.remove('bg-gray-200');
-        toggle3.classList.add('bg-purple-600');
-        toggle3Thumb.classList.remove('translate-x-0.5');
-        toggle3Thumb.classList.add('translate-x-6');
-        toggle3.setAttribute('aria-checked', 'true');
-        toggle3Status.textContent = 'Status: Active';
-      } else {
-        toggle3.classList.remove('bg-purple-600');
-        toggle3.classList.add('bg-gray-200');
-        toggle3Thumb.classList.remove('translate-x-6');
-        toggle3Thumb.classList.add('translate-x-0.5');
-        toggle3.setAttribute('aria-checked', 'false');
-        toggle3Status.textContent = 'Status: Inactive';
-      }
-    });
-
-    // Toggle Button 4: With Labels
-    const toggle4 = document.getElementById('toggle4');
-    const toggle4Thumb = document.getElementById('toggle4-thumb');
-    const toggle4Label = document.getElementById('toggle4-label');
-    let isToggle4On = false;
-
-    toggle4.addEventListener('click', () => {
-      isToggle4On = !isToggle4On;
-      
-      if (isToggle4On) {
-        toggle4.classList.remove('bg-gray-200');
-        toggle4.classList.add('bg-indigo-600');
-        toggle4Thumb.classList.remove('translate-x-0.5');
-        toggle4Thumb.classList.add('translate-x-5');
-        toggle4.setAttribute('aria-checked', 'true');
-        toggle4Label.textContent = 'Dark';
-        toggle4Label.classList.remove('text-gray-500');
-        toggle4Label.classList.add('text-indigo-600');
-      } else {
-        toggle4.classList.remove('bg-indigo-600');
-        toggle4.classList.add('bg-gray-200');
-        toggle4Thumb.classList.remove('translate-x-5');
-        toggle4Thumb.classList.add('translate-x-0.5');
-        toggle4.setAttribute('aria-checked', 'false');
-        toggle4Label.textContent = 'Light';
-        toggle4Label.classList.remove('text-indigo-600');
-        toggle4Label.classList.add('text-gray-500');
-      }
-    });
-  </script>
-</body>
+      const percent = (timeLeft / totalTime) * 100;
+      document.querySelectorAll("#border-bottom-progress").forEach((item) => {
+        item.style.width = percent + "%";
+      });
+    </script>
+  </body>
 </html>

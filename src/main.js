@@ -94,3 +94,40 @@ Menubackground.addEventListener("click", () => {
   Menubackground.classList.remove("right-0");
   Menubackground.classList.add("right-[-100%]");
 });
+
+function updateProgressBars() {
+  const now = Date.now();
+
+  document.querySelectorAll("li[data-start][data-end]").forEach(li => {
+    const start = new Date(li.dataset.start).getTime();
+    const end = new Date(li.dataset.end).getTime();
+
+    if (isNaN(start) || isNaN(end)) {
+      console.warn("Invalid dates:", li.dataset.start, li.dataset.end);
+      return;
+    }
+
+    if (now < start) {
+      // هنوز شروع نشده، نوار کامل باشه
+      li.querySelector(".progress-bar").style.width = "100%";
+      return;
+    }
+
+    if (now > end) {
+      // تخفیف تموم شده، نوار حذف شه
+      li.querySelector(".progress-bar").style.width = "0%";
+      return;
+    }
+
+    const total = end - start;
+    const elapsed = now - start;
+    const percent = Math.max(0, Math.min(100, ((total - elapsed) / total) * 100));
+
+    li.querySelector(".progress-bar").style.width = percent + "%";
+  });
+}
+
+// اجرای اول
+updateProgressBars();
+// هر ۱ ثانیه آپدیت کن
+setInterval(updateProgressBars, 1000);

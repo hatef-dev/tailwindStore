@@ -71,4 +71,8 @@
   .discount-with-box{
     @apply text-small text-red flex justify-between items-center gap-x-1.5 py-[3px] px-[4px] bg-[#FFE0E099] rounded-full
   }
+  .border-bottom-progress {
+    @apply bg-[#FFB7B7]
+  }
+
 }
