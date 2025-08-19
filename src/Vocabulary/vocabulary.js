@@ -1,17 +1,26 @@
+
 import Swiper from "swiper";
 import { Pagination } from "swiper/modules";
-// import 'swiper/css';
+import "swiper/css"
 import 'swiper/css/pagination';
-import 'swiper/css/bundle';
+
 
 var vocabularySwiper = new Swiper(".vocabularySwiper", {
-	modules:[Pagination ],
+	modules:[Pagination],
 	direction: 'horizontal',
+    autoHeight: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    allowTouchMove: false,
+    
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
-		renderBullet: function (index, className) {
-			return '<span class="' + className + '">' + (index + 1) + '</span>';
-		}
-	}
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+
+	},
+    // rtl: true
+
 });

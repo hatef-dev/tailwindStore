@@ -1,0 +1,11 @@
+.my-swiper-wrapper {
+  :global(.swiper-pagination-bullet) {
+    background: white;
+    /* ... other styles */
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    background-color: rgb(249, 0, 0);
+    /* ... other styles */
+  }
+}

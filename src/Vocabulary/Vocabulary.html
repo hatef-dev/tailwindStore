@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../style.css" />
+    <style>
+
+        .swiper-pagination{
+            position: static !important;
+        }
+       .swiper-pagination-bullet {
+        width: 20px !important;
+        height: 20px !important;
+        border-radius: 4px !important;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color: #403f4c;
+        opacity: 1;
+        background: #e8ebed !important;
+      }
+      .swiper-pagination-bullet-active {
+        color: white;
+        background-color: #6b697f !important;
+      } 
+    </style>
   </head>
   <body class="font-display bg-[#F9FAFA] w-screen overflow-x-hidden">
     <!-- Header -->
@@ -961,78 +982,368 @@
         </div>
       </div>
 
-      <div class="flex flex-col gap-y-6 vocabularySwiper">
+     
+
+      <div class="vocabularySwiper overflow-hidden">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div
-            class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-8"
-          >
-            <h4 class="text-sm font-medium text-typo">تکنولوژی 3 ال سی دی</h4>
-            <span class="text-gray-light text-small">3LCD</span>
-            <p class="text-small text-[#6B697F]">
-              یکی از تکنولوژی‌های ساخت تصویر در ویدئو پروژکتورها می‌باشد که از
-              طریق یک منشور که در دستگاه‌های ویدیو پروژکتور قرار گرفته نور را
-              تجزیه نموده و با ترکیب رنگ‌های اصلی تصویر نهایی را به نمایش
-              می‌گذارد. وضوح و کیفیت تصاویر خروجی در تکنولوژی 3lcd بسیار شفاف و
-              واقعی می‌باشد. خالق این تکنولوژی کمپانی ژاپنی اپسون می‌باشد که در
-              ساخت تمام دیتا پروژکتورهای ساخت این کمپانی از این تکنولوژی استفاده
-              گردیده.
-            </p>
-            <div class="text-end mt-4">
-              <a
-                href=""
-                class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
-                >دسته بندی</a
+                class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-8"
               >
-              <a
-                href=""
-                class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
-                >دسته بندی</a
+                <h4 class="text-sm font-medium text-typo">
+                  تکنولوژی 3 ال سی دی
+                </h4>
+                <span class="text-gray-light text-small">3LCD</span>
+                <p class="text-small text-[#6B697F]">
+                  یکی از تکنولوژی‌های ساخت تصویر در ویدئو پروژکتورها می‌باشد که
+                  از طریق یک منشور که در دستگاه‌های ویدیو پروژکتور قرار گرفته
+                  نور را تجزیه نموده و با ترکیب رنگ‌های اصلی تصویر نهایی را به
+                  نمایش می‌گذارد. وضوح و کیفیت تصاویر خروجی در تکنولوژی 3lcd
+                  بسیار شفاف و واقعی می‌باشد. خالق این تکنولوژی کمپانی ژاپنی
+                  اپسون می‌باشد که در ساخت تمام دیتا پروژکتورهای ساخت این کمپانی
+                  از این تکنولوژی استفاده گردیده.
+                </p>
+                <div class="text-end mt-4">
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                </div>
+              </div>
+              <div
+                class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-8"
               >
-            </div>
-          </div>
-          
-          
-          
+                <h4 class="text-sm font-medium text-typo">
+                  تکنولوژی 3 ال سی دی
+                </h4>
+                <span class="text-gray-light text-small">3LCD</span>
+                <p class="text-small text-[#6B697F]">
+                  یکی از تکنولوژی‌های ساخت تصویر در ویدئو پروژکتورها می‌باشد که
+                  از طریق یک منشور که در دستگاه‌های ویدیو پروژکتور قرار گرفته
+                  نور را تجزیه نموده و با ترکیب رنگ‌های اصلی تصویر نهایی را به
+                  نمایش می‌گذارد. وضوح و کیفیت تصاویر خروجی در تکنولوژی 3lcd
+                  بسیار شفاف و واقعی می‌باشد. خالق این تکنولوژی کمپانی ژاپنی
+                  اپسون می‌باشد که در ساخت تمام دیتا پروژکتورهای ساخت این کمپانی
+                  از این تکنولوژی استفاده گردیده.
+                </p>
+                <div class="text-end mt-4">
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                </div>
+              </div>
+              <div
+                class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-8"
+              >
+                <h4 class="text-sm font-medium text-typo">
+                  تکنولوژی 3 ال سی دی
+                </h4>
+                <span class="text-gray-light text-small">3LCD</span>
+                <p class="text-small text-[#6B697F]">
+                  یکی از تکنولوژی‌های ساخت تصویر در ویدئو پروژکتورها می‌باشد که
+                  از طریق یک منشور که در دستگاه‌های ویدیو پروژکتور قرار گرفته
+                  نور را تجزیه نموده و با ترکیب رنگ‌های اصلی تصویر نهایی را به
+                  نمایش می‌گذارد. وضوح و کیفیت تصاویر خروجی در تکنولوژی 3lcd
+                  بسیار شفاف و واقعی می‌باشد. خالق این تکنولوژی کمپانی ژاپنی
+                  اپسون می‌باشد که در ساخت تمام دیتا پروژکتورهای ساخت این کمپانی
+                  از این تکنولوژی استفاده گردیده.
+                </p>
+                <div class="text-end mt-4">
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                </div>
+              </div>
+              <div
+                class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-8"
+              >
+                <h4 class="text-sm font-medium text-typo">
+                  تکنولوژی 3 ال سی دی
+                </h4>
+                <span class="text-gray-light text-small">3LCD</span>
+                <p class="text-small text-[#6B697F]">
+                  یکی از تکنولوژی‌های ساخت تصویر در ویدئو پروژکتورها می‌باشد که
+                  از طریق یک منشور که در دستگاه‌های ویدیو پروژکتور قرار گرفته
+                  نور را تجزیه نموده و با ترکیب رنگ‌های اصلی تصویر نهایی را به
+                  نمایش می‌گذارد. وضوح و کیفیت تصاویر خروجی در تکنولوژی 3lcd
+                  بسیار شفاف و واقعی می‌باشد. خالق این تکنولوژی کمپانی ژاپنی
+                  اپسون می‌باشد که در ساخت تمام دیتا پروژکتورهای ساخت این کمپانی
+                  از این تکنولوژی استفاده گردیده.
+                </p>
+                <div class="text-end mt-4">
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                </div>
+              </div>
+              <div
+                class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-8"
+              >
+                <h4 class="text-sm font-medium text-typo">
+                  تکنولوژی 3 ال سی دی
+                </h4>
+                <span class="text-gray-light text-small">3LCD</span>
+                <p class="text-small text-[#6B697F]">
+                  یکی از تکنولوژی‌های ساخت تصویر در ویدئو پروژکتورها می‌باشد که
+                  از طریق یک منشور که در دستگاه‌های ویدیو پروژکتور قرار گرفته
+                  نور را تجزیه نموده و با ترکیب رنگ‌های اصلی تصویر نهایی را به
+                  نمایش می‌گذارد. وضوح و کیفیت تصاویر خروجی در تکنولوژی 3lcd
+                  بسیار شفاف و واقعی می‌باشد. خالق این تکنولوژی کمپانی ژاپنی
+                  اپسون می‌باشد که در ساخت تمام دیتا پروژکتورهای ساخت این کمپانی
+                  از این تکنولوژی استفاده گردیده.
+                </p>
+                <div class="text-end mt-4">
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                </div>
+              </div>
+              <div
+                class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-8"
+              >
+                <h4 class="text-sm font-medium text-typo">
+                  تکنولوژی 3 ال سی دی
+                </h4>
+                <span class="text-gray-light text-small">3LCD</span>
+                <p class="text-small text-[#6B697F]">
+                  یکی از تکنولوژی‌های ساخت تصویر در ویدئو پروژکتورها می‌باشد که
+                  از طریق یک منشور که در دستگاه‌های ویدیو پروژکتور قرار گرفته
+                  نور را تجزیه نموده و با ترکیب رنگ‌های اصلی تصویر نهایی را به
+                  نمایش می‌گذارد. وضوح و کیفیت تصاویر خروجی در تکنولوژی 3lcd
+                  بسیار شفاف و واقعی می‌باشد. خالق این تکنولوژی کمپانی ژاپنی
+                  اپسون می‌باشد که در ساخت تمام دیتا پروژکتورهای ساخت این کمپانی
+                  از این تکنولوژی استفاده گردیده.
+                </p>
+                <div class="text-end mt-4">
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                </div>
+              </div>
           </div>
           <div class="swiper-slide">
             <div
-            class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-8"
-          >
-            <h4 class="text-sm font-medium text-typo">تکنولوژی 3 ال سی دی</h4>
-            <span class="text-gray-light text-small">3LCD</span>
-            <p class="text-small text-[#6B697F]">
-              یکی از تکنولوژی‌های ساخت تصویر در ویدئو پروژکتورها می‌باشد که از
-              طریق یک منشور که در دستگاه‌های ویدیو پروژکتور قرار گرفته نور را
-              تجزیه نموده و با ترکیب رنگ‌های اصلی تصویر نهایی را به نمایش
-              می‌گذارد. وضوح و کیفیت تصاویر خروجی در تکنولوژی 3lcd بسیار شفاف و
-              واقعی می‌باشد. خالق این تکنولوژی کمپانی ژاپنی اپسون می‌باشد که در
-              ساخت تمام دیتا پروژکتورهای ساخت این کمپانی از این تکنولوژی استفاده
-              گردیده.
-            </p>
-            <div class="text-end mt-4">
-              <a
-                href=""
-                class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
-                >دسته بندی</a
+                class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-8"
               >
-              <a
-                href=""
-                class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
-                >دسته بندی</a
+                <h4 class="text-sm font-medium text-typo">
+                  تکنولوژی 3 ال سی دی
+                </h4>
+                <span class="text-gray-light text-small">3LCD</span>
+                <p class="text-small text-[#6B697F]">
+                  یکی از تکنولوژی‌های ساخت تصویر در ویدئو پروژکتورها می‌باشد که
+                  از طریق یک منشور که در دستگاه‌های ویدیو پروژکتور قرار گرفته
+                  نور را تجزیه نموده و با ترکیب رنگ‌های اصلی تصویر نهایی را به
+                  نمایش می‌گذارد. وضوح و کیفیت تصاویر خروجی در تکنولوژی 3lcd
+                  بسیار شفاف و واقعی می‌باشد. خالق این تکنولوژی کمپانی ژاپنی
+                  اپسون می‌باشد که در ساخت تمام دیتا پروژکتورهای ساخت این کمپانی
+                  از این تکنولوژی استفاده گردیده.
+                </p>
+                <div class="text-end mt-4">
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                </div>
+              </div>
+              <div
+                class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-8"
               >
-            </div>
+                <h4 class="text-sm font-medium text-typo">
+                  تکنولوژی 3 ال سی دی
+                </h4>
+                <span class="text-gray-light text-small">3LCD</span>
+                <p class="text-small text-[#6B697F]">
+                  یکی از تکنولوژی‌های ساخت تصویر در ویدئو پروژکتورها می‌باشد که
+                  از طریق یک منشور که در دستگاه‌های ویدیو پروژکتور قرار گرفته
+                  نور را تجزیه نموده و با ترکیب رنگ‌های اصلی تصویر نهایی را به
+                  نمایش می‌گذارد. وضوح و کیفیت تصاویر خروجی در تکنولوژی 3lcd
+                  بسیار شفاف و واقعی می‌باشد. خالق این تکنولوژی کمپانی ژاپنی
+                  اپسون می‌باشد که در ساخت تمام دیتا پروژکتورهای ساخت این کمپانی
+                  از این تکنولوژی استفاده گردیده.
+                </p>
+                <div class="text-end mt-4">
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                </div>
+              </div>
+              <div
+                class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-8"
+              >
+                <h4 class="text-sm font-medium text-typo">
+                  تکنولوژی 3 ال سی دی
+                </h4>
+                <span class="text-gray-light text-small">3LCD</span>
+                <p class="text-small text-[#6B697F]">
+                  یکی از تکنولوژی‌های ساخت تصویر در ویدئو پروژکتورها می‌باشد که
+                  از طریق یک منشور که در دستگاه‌های ویدیو پروژکتور قرار گرفته
+                  نور را تجزیه نموده و با ترکیب رنگ‌های اصلی تصویر نهایی را به
+                  نمایش می‌گذارد. وضوح و کیفیت تصاویر خروجی در تکنولوژی 3lcd
+                  بسیار شفاف و واقعی می‌باشد. خالق این تکنولوژی کمپانی ژاپنی
+                  اپسون می‌باشد که در ساخت تمام دیتا پروژکتورهای ساخت این کمپانی
+                  از این تکنولوژی استفاده گردیده.
+                </p>
+                <div class="text-end mt-4">
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                </div>
+              </div>
+              <div
+                class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-8"
+              >
+                <h4 class="text-sm font-medium text-typo">
+                  تکنولوژی 3 ال سی دی
+                </h4>
+                <span class="text-gray-light text-small">3LCD</span>
+                <p class="text-small text-[#6B697F]">
+                  یکی از تکنولوژی‌های ساخت تصویر در ویدئو پروژکتورها می‌باشد که
+                  از طریق یک منشور که در دستگاه‌های ویدیو پروژکتور قرار گرفته
+                  نور را تجزیه نموده و با ترکیب رنگ‌های اصلی تصویر نهایی را به
+                  نمایش می‌گذارد. وضوح و کیفیت تصاویر خروجی در تکنولوژی 3lcd
+                  بسیار شفاف و واقعی می‌باشد. خالق این تکنولوژی کمپانی ژاپنی
+                  اپسون می‌باشد که در ساخت تمام دیتا پروژکتورهای ساخت این کمپانی
+                  از این تکنولوژی استفاده گردیده.
+                </p>
+                <div class="text-end mt-4">
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                </div>
+              </div>
+              <div
+                class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-8"
+              >
+                <h4 class="text-sm font-medium text-typo">
+                  تکنولوژی 3 ال سی دی
+                </h4>
+                <span class="text-gray-light text-small">3LCD</span>
+                <p class="text-small text-[#6B697F]">
+                  یکی از تکنولوژی‌های ساخت تصویر در ویدئو پروژکتورها می‌باشد که
+                  از طریق یک منشور که در دستگاه‌های ویدیو پروژکتور قرار گرفته
+                  نور را تجزیه نموده و با ترکیب رنگ‌های اصلی تصویر نهایی را به
+                  نمایش می‌گذارد. وضوح و کیفیت تصاویر خروجی در تکنولوژی 3lcd
+                  بسیار شفاف و واقعی می‌باشد. خالق این تکنولوژی کمپانی ژاپنی
+                  اپسون می‌باشد که در ساخت تمام دیتا پروژکتورهای ساخت این کمپانی
+                  از این تکنولوژی استفاده گردیده.
+                </p>
+                <div class="text-end mt-4">
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                </div>
+              </div>
+              <div
+                class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-8"
+              >
+                <h4 class="text-sm font-medium text-typo">
+                  تکنولوژی 3 ال سی دی
+                </h4>
+                <span class="text-gray-light text-small">3LCD</span>
+                <p class="text-small text-[#6B697F]">
+                  یکی از تکنولوژی‌های ساخت تصویر در ویدئو پروژکتورها می‌باشد که
+                  از طریق یک منشور که در دستگاه‌های ویدیو پروژکتور قرار گرفته
+                  نور را تجزیه نموده و با ترکیب رنگ‌های اصلی تصویر نهایی را به
+                  نمایش می‌گذارد. وضوح و کیفیت تصاویر خروجی در تکنولوژی 3lcd
+                  بسیار شفاف و واقعی می‌باشد. خالق این تکنولوژی کمپانی ژاپنی
+                  اپسون می‌باشد که در ساخت تمام دیتا پروژکتورهای ساخت این کمپانی
+                  از این تکنولوژی استفاده گردیده.
+                </p>
+                <div class="text-end mt-4">
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                  <a
+                    href=""
+                    class="py-1 px-1 md:px-2 text-[10.24px] rounded-full bg-[#EEF0F1]"
+                    >دسته بندی</a
+                  >
+                </div>
+              </div>
           </div>
           
-          
-          
-          </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
     </main>
-    <div class=""></div>
     <script type="module" src="./vocabulary.js"></script>
-    <script type="module" src="../main.js"></script>
+    <!-- <script type="module" src="../main.js"></script> -->
   </body>
 </html>
