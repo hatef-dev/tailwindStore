@@ -937,7 +937,7 @@
                 >سبد خرید</span
               >
               <div
-                class="w-6 h-6 border-2 bg-[#EEF0F1] border-[#52B9F3] rounded-full"
+                class="w-6 h-6 border-2 bg-[#52B9F3] border-[#52B9F3] rounded-full"
               ></div>
             </div>
             <div class="w-[180px] h-1 bg-[#52B9F3] rounded-full"></div>
@@ -964,10 +964,10 @@
         </div>
       </div>
 
-      <section class="md:container flex flex-col gap-y-6">
+      <section class="md:container flex flex-col">
         <!--Title -->
-        <div class="flex items-center gap-x-2">
-          <div class="w-[40px] h-[40px] p-2">
+        <div class="flex items-center gap-x-3 mb-4">
+          <div class="w-[24px] h-[30px]">
             <svg
               width="100%"
               height="100%"
@@ -987,14 +987,16 @@
           </div>
           <h1 class="text-xl text-[#403F4C]">انتخاب آدرس</h1>
         </div>
-        <div class="relative bg-white rounded-[12px] w-full">
+        <div class="relative bg-white rounded-[12px] py-4 w-full mb-8">
           <div
-            class="before:rounded-tl-full before:top-0 before:rounded-bl-full before:absolute before:right-4 before:w-1 before:h-[44px] before:bg-red-500 after:top-0 after:rounded-tr-full after:rounded-br-full after:absolute after:left-4 after:w-1 after:h-[44px] after:bg-red-500"
+            class="before:rounded-tl-full before:top-4 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[44px] hover:before:bg-red-500 after:top-4 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[44px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500"
           >
             <div class="flex items-center justify-between px-8 py-0.5">
               <span class="text-[#9B9AAB] ml-3">آدرس:</span>
-              <h3 class="w-full">میدان فاطمی، ساختمان64، طبقه4، واحد3</h3>
-              <div class="w-[40px] h-[40px] rounded-[8px] p-1">
+              <h3 class="w-full text-[#273A54]">
+                میدان فاطمی، ساختمان64، طبقه4، واحد3
+              </h3>
+              <div class="w-[40px] h-[40px] rounded-[8px] p-1 cursor-pointer">
                 <svg
                   width="100%"
                   height="100%"
@@ -1018,19 +1020,23 @@
           </div>
         </div>
 
-        <div class="bg-white flex justify-center p-8 ">
-            <button class="flex justify-center gap-x-3 items-center w-full cursor-pointer ">
-                <span class="text-3xl">+ </span>
-                <span class="text-xl font-[400] ">آدرس جدید</span>
-            </button>
+        <div class="bg-white flex justify-center mb-4 py-[15.5px] rounded-xl">
+          <button
+            class="flex justify-center text-typo gap-x-3 items-center w-full cursor-pointer"
+          >
+            <span class="text-3xl">+ </span>
+            <span class="text-xl font-[400]">آدرس جدید</span>
+          </button>
         </div>
-
-        <div>
-            
+        
+        <div class="flex items-center justify-end px-4 gap-x-30">
+          <a href="" class="text-[#1A1F1680]">بازگشت</a>
+          <button class="text-[14px] bg-[#FF4040] text-white py-2 w-[273px] rounded-[10px]">
+            <a href="">انتخاب  زمان ارسال</a>
+          </button>
         </div>
+        <div></div>
       </section>
-
-
     </main>
     <script src="../main.js"></script>
   </body>
