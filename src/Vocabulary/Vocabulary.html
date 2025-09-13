@@ -927,47 +927,77 @@
       </section>
     </header>
 
-    <div class="container">
+    <div class="md:container">
       <main class="flex flex-col px-5 my-[18px]   md:px-0">
-        <div class="flex items-center border-b-[1px] border-[#E8EBED]">
-          <div class="p-2">
-            <svg
-              width="24"
-              height="25"
-              viewBox="0 0 24 25"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3 7.5H21"
-                stroke="#292D32"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              />
-              <path
-                d="M6 12.5H18"
-                stroke="#292D32"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              />
-              <path
-                d="M10 17.5H14"
-                stroke="#292D32"
-                stroke-width="1.5"
-                stroke-linecap="round"
-              />
-            </svg>
+        <div class="flex justify-between items-center border-b-[1px] border-[#E8EBED]">
+          <div class="flex items-center">
+            <div class="p-2">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 7.5H21"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M6 12.5H18"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M10 17.5H14"
+                  stroke="#292D32"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="p-2 md:px-3 text-xl font-[400] text-[#FF4040]">
+              واژه‌نامه‌ها
+            </div>
           </div>
-          <div class="p-2 md:px-3 text-xl font-[400] text-[#FF4040]">
-            واژه‌نامه‌ها
+          <div class="py-2 px-3 flex items-center gap-x-3">
+            <div class="w-6 h-6 cursor-pointer oneCols">
+              <svg class="ActiveCols" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6C4 4.89543 4.89543 4 6 4H18C19.1046 4 20 4.89543 20 6V9C20 10.1046 19.1046 11 18 11H6C4.89543 11 4 10.1046 4 9V6Z" fill="#FF4040"/>
+                <path d="M4 16C4 14.8954 4.89543 14 6 14H18C19.1046 14 20 14.8954 20 16V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V16Z" fill="#FF4040"/>
+                </svg>
+                <svg class="deActiveCols hidden" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 6C4 4.89543 4.89543 4 6 4H18C19.1046 4 20 4.89543 20 6V9C20 10.1046 19.1046 11 18 11H6C4.89543 11 4 10.1046 4 9V6Z" fill="#E8EBED"/>
+                  <path d="M4 16C4 14.8954 4.89543 14 6 14H18C19.1046 14 20 14.8954 20 16V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V16Z" fill="#E8EBED"/>
+                  </svg>
+                     
+            </div>
+            <div class="w-6 h-6 cursor-pointer hidden md:block twoCols">
+              <svg class="deActiveTwoCols" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 5.75977C3 4.51713 4.00736 3.50977 5.25 3.50977H8.34C9.58264 3.50977 10.59 4.51713 10.59 5.75977V8.84976C10.59 10.0924 9.58264 11.0998 8.34 11.0998H5.25C4.00736 11.0998 3 10.0924 3 8.84977V5.75977Z" fill="#E8EBED"/>
+                <path d="M13.41 5.75977C13.41 4.51713 14.4174 3.50977 15.66 3.50977H18.75C19.9926 3.50977 21 4.51713 21 5.75977V8.84976C21 10.0924 19.9926 11.0998 18.75 11.0998H15.66C14.4174 11.0998 13.41 10.0924 13.41 8.84977V5.75977Z" fill="#E8EBED"/>
+                <path d="M3 16.1598C3 14.9171 4.00736 13.9098 5.25 13.9098H8.34C9.58264 13.9098 10.59 14.9171 10.59 16.1598V19.2498C10.59 20.4924 9.58264 21.4998 8.34 21.4998H5.25C4.00736 21.4998 3 20.4924 3 19.2498V16.1598Z" fill="#E8EBED"/>
+                <path d="M13.41 16.1598C13.41 14.9171 14.4174 13.9098 15.66 13.9098H18.75C19.9926 13.9098 21 14.9171 21 16.1598V19.2498C21 20.4924 19.9926 21.4998 18.75 21.4998H15.66C14.4174 21.4998 13.41 20.4924 13.41 19.2498V16.1598Z" fill="#E8EBED"/>
+                </svg>
+                <svg class="activeTwoCols hidden" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 5.75977C3 4.51713 4.00736 3.50977 5.25 3.50977H8.34C9.58264 3.50977 10.59 4.51713 10.59 5.75977V8.84976C10.59 10.0924 9.58264 11.0998 8.34 11.0998H5.25C4.00736 11.0998 3 10.0924 3 8.84977V5.75977Z" fill="#FF4040"/>
+                  <path d="M13.41 5.75977C13.41 4.51713 14.4174 3.50977 15.66 3.50977H18.75C19.9926 3.50977 21 4.51713 21 5.75977V8.84976C21 10.0924 19.9926 11.0998 18.75 11.0998H15.66C14.4174 11.0998 13.41 10.0924 13.41 8.84977V5.75977Z" fill="#FF4040"/>
+                  <path d="M3 16.1598C3 14.9171 4.00736 13.9098 5.25 13.9098H8.34C9.58264 13.9098 10.59 14.9171 10.59 16.1598V19.2498C10.59 20.4924 9.58264 21.4998 8.34 21.4998H5.25C4.00736 21.4998 3 20.4924 3 19.2498V16.1598Z" fill="#FF4040"/>
+                  <path d="M13.41 16.1598C13.41 14.9171 14.4174 13.9098 15.66 13.9098H18.75C19.9926 13.9098 21 14.9171 21 16.1598V19.2498C21 20.4924 19.9926 21.4998 18.75 21.4998H15.66C14.4174 21.4998 13.41 20.4924 13.41 19.2498V16.1598Z" fill="#FF4040"/>
+                  </svg>
+                  
+            </div>
+
           </div>
         </div>
   
        
   
-        <div class=" overflow-hidden">
-          <div class="">
-            <div class="">
+        <div class="countanierContent overflow-hidden  ">
+          
               <div
                   class="bg-white mt-6 flex flex-col gap-y-3 rounded-[12px] py-4 px-4 md:px-8"
                 >
@@ -1142,10 +1172,10 @@
                     >
                   </div>
                 </div>
-            </div>
             
             
-          </div>
+            
+          
           
         </div>
         <div class="flex justify-center items-center mt-10 mb-14">
@@ -1359,7 +1389,7 @@
       </div>
   
   </footer>
-
+    <script type="module" src="vocabulary.js"></script>
     <script type="module" src="../main.js"></script>
     
   </body>
