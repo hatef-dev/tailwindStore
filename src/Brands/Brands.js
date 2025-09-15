@@ -23,7 +23,7 @@ oneCols.addEventListener("click", () => {
 
 twoCols.addEventListener("click", () => {
     countanierContent.classList.remove("grid", "grid-cols-1", "gap-y-6")
-    countanierContent.classList.add("grid", "grid-cols-2", "gap-6" )
+    countanierContent.classList.add("grid", "grid-cols-2", "gap-6")
     activeCols.classList.remove("block")
     activeCols.classList.add("hidden")
     deActiveCols.classList.remove("hidden")
