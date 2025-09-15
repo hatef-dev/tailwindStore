@@ -1,18 +1,4 @@
-import Swiper from "swiper";
-import "swiper/swiper-bundle.css";
 
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 40,
-});
-var swiper2 = new Swiper(".discountSecetion", {
-  spaceBetween: 40,
-});
-var swiper3 = new Swiper(".articleSecetion", {
-  spaceBetween: 40,
-});
-var swiper3 = new Swiper(".videoSection", {
-  spaceBetween: 40,
-});
 
 const menu = document.querySelector(".MobileMenu");
 const menuButton = document.querySelector(".MenuButton");
@@ -108,13 +94,13 @@ function updateProgressBars() {
     }
 
     if (now < start) {
-      // هنوز شروع نشده، نوار کامل باشه
+      
       li.querySelector(".progress-bar").style.width = "100%";
       return;
     }
 
     if (now > end) {
-      // تخفیف تموم شده، نوار حذف شه
+      
       li.querySelector(".progress-bar").style.width = "0%";
       return;
     }
@@ -127,7 +113,7 @@ function updateProgressBars() {
   });
 }
 
-// اجرای اول
+
 updateProgressBars();
-// هر ۱ ثانیه آپدیت کن
+
 setInterval(updateProgressBars, 1000);
