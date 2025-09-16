@@ -8,139 +8,220 @@
   </head>
   <body>
     <div class="w-80 bg-white p-4 rounded-lg shadow space-y-4" id="accordion">
-
       <div class="w-full px-4 py-10">
         <label for="range" class="sr-only">Example range</label>
-        
+
         <div class="relative w-full h-2 bg-gray-200 rounded-full">
           <!-- خط پر شده بین دو دسته -->
-          <div id="range-fill" class="absolute h-2 bg-red-500 rounded-full"></div>
-      
+          <div
+            id="range-fill"
+            class="absolute h-2 bg-red-500 rounded-full"
+          ></div>
+
           <!-- دسته اول -->
-          <div id="handle1" class="absolute top-1/2 w-5 h-5 bg-white border-4 border-red-500 rounded-full -translate-y-1/2 cursor-pointer"></div>
-      
+          <div
+            id="handle1"
+            class="absolute top-1/2 w-5 h-5 bg-white border-4 border-red-500 rounded-full -translate-y-1/2 cursor-pointer"
+          ></div>
+
           <!-- دسته دوم -->
-          <div id="handle2" class="absolute top-1/2 w-5 h-5 bg-white border-4 border-red-500 rounded-full -translate-y-1/2 cursor-pointer"></div>
+          <div
+            id="handle2"
+            class="absolute top-1/2 w-5 h-5 bg-white border-4 border-red-500 rounded-full -translate-y-1/2 cursor-pointer"
+          ></div>
         </div>
-      
+
         <div class="flex justify-between mt-2 text-sm text-gray-600">
           <span id="value1">25</span>
           <span id="value2">75</span>
         </div>
       </div>
-      
+
       <script>
-      const slider = document.querySelector('.relative');
-      const handle1 = document.getElementById('handle1');
-      const handle2 = document.getElementById('handle2');
-      const fill = document.getElementById('range-fill');
-      const value1 = document.getElementById('value1');
-      const value2 = document.getElementById('value2');
-      
-      let max = 100;
-      let min = 0;
-      
-      function updatePositions() {
-        const sliderRect = slider.getBoundingClientRect();
-        const sliderWidth = sliderRect.width;
-      
-        let pos1 = ((+value1.textContent - min) / (max - min)) * sliderWidth;
-        let pos2 = ((+value2.textContent - min) / (max - min)) * sliderWidth;
-      
-        handle1.style.left = `${pos1}px`;
-        handle2.style.left = `${pos2}px`;
-      
-        fill.style.left = `${pos1}px`;
-        fill.style.width = `${pos2 - pos1}px`;
-      }
-      
-      function makeDraggable(handle, valueElement, otherValueElement) {
-        handle.onmousedown = function(e) {
-          e.preventDefault();
+        const slider = document.querySelector(".relative");
+        const handle1 = document.getElementById("handle1");
+        const handle2 = document.getElementById("handle2");
+        const fill = document.getElementById("range-fill");
+        const value1 = document.getElementById("value1");
+        const value2 = document.getElementById("value2");
+
+        let max = 100;
+        let min = 0;
+
+        function updatePositions() {
           const sliderRect = slider.getBoundingClientRect();
-      
-          function onMouseMove(e) {
-            let newX = e.clientX - sliderRect.left;
-            newX = Math.max(0, Math.min(newX, sliderRect.width));
-            let percent = (newX / sliderRect.width) * (max - min) + min;
-      
-            // جلوگیری از عبور دسته‌ها از هم
-            if (handle === handle1 && percent > +otherValueElement.textContent) {
-              percent = +otherValueElement.textContent;
+          const sliderWidth = sliderRect.width;
+
+          let pos1 = ((+value1.textContent - min) / (max - min)) * sliderWidth;
+          let pos2 = ((+value2.textContent - min) / (max - min)) * sliderWidth;
+
+          handle1.style.left = `${pos1}px`;
+          handle2.style.left = `${pos2}px`;
+
+          fill.style.left = `${pos1}px`;
+          fill.style.width = `${pos2 - pos1}px`;
+        }
+
+        function makeDraggable(handle, valueElement, otherValueElement) {
+          handle.onmousedown = function (e) {
+            e.preventDefault();
+            const sliderRect = slider.getBoundingClientRect();
+
+            function onMouseMove(e) {
+              let newX = e.clientX - sliderRect.left;
+              newX = Math.max(0, Math.min(newX, sliderRect.width));
+              let percent = (newX / sliderRect.width) * (max - min) + min;
+
+              // جلوگیری از عبور دسته‌ها از هم
+              if (
+                handle === handle1 &&
+                percent > +otherValueElement.textContent
+              ) {
+                percent = +otherValueElement.textContent;
+              }
+              if (
+                handle === handle2 &&
+                percent < +otherValueElement.textContent
+              ) {
+                percent = +otherValueElement.textContent;
+              }
+
+              valueElement.textContent = Math.round(percent);
+              updatePositions();
             }
-            if (handle === handle2 && percent < +otherValueElement.textContent) {
-              percent = +otherValueElement.textContent;
+
+            function onMouseUp() {
+              document.removeEventListener("mousemove", onMouseMove);
+              document.removeEventListener("mouseup", onMouseUp);
             }
-      
-            valueElement.textContent = Math.round(percent);
-            updatePositions();
-          }
-      
-          function onMouseUp() {
-            document.removeEventListener('mousemove', onMouseMove);
-            document.removeEventListener('mouseup', onMouseUp);
-          }
-      
-          document.addEventListener('mousemove', onMouseMove);
-          document.addEventListener('mouseup', onMouseUp);
-        };
-      }
-      
-      makeDraggable(handle1, value1, value2);
-      makeDraggable(handle2, value2, value1);
-      
-      updatePositions();
+
+            document.addEventListener("mousemove", onMouseMove);
+            document.addEventListener("mouseup", onMouseUp);
+          };
+        }
+
+        makeDraggable(handle1, value1, value2);
+        makeDraggable(handle2, value2, value1);
+
+        updatePositions();
       </script>
-      
-    
+
       <!-- برند -->
       <details class="border-b pb-2 group">
         <summary class="flex justify-between items-center cursor-pointer">
           <span class="font-medium">برند</span>
-          <svg class="w-4 h-4 transform transition-transform duration-200 group-open:rotate-180"
-               fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M19 9l-7 7-7-7"/>
+          <svg
+            class="w-4 h-4 transform transition-transform duration-200 group-open:rotate-180"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
           </svg>
         </summary>
         <div class="mt-3 space-y-2">
           <label class="flex items-center gap-2">
-            <input type="checkbox" class="w-4 h-4 border-gray-400 rounded">
+            <input type="checkbox" class="w-4 h-4 border-gray-400 rounded" />
             <span>سامسونگ</span>
           </label>
           <label class="flex items-center gap-2">
-            <input type="checkbox" class="w-4 h-4 border-gray-400 rounded">
+            <input type="checkbox" class="w-4 h-4 border-gray-400 rounded" />
             <span>ال‌جی</span>
           </label>
         </div>
       </details>
-    
+
       <!-- کاربرد -->
       <details class="border-b pb-2 group">
         <summary class="flex justify-between items-center cursor-pointer">
           <span class="font-medium">کاربرد</span>
-          <svg class="w-4 h-4 transform transition-transform duration-200 group-open:rotate-180"
-               fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M19 9l-7 7-7-7"/>
+          <svg
+            class="w-4 h-4 transform transition-transform duration-200 group-open:rotate-180"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M19 9l-7 7-7-7" />
           </svg>
         </summary>
         <div class="mt-3 space-y-2">
           <label class="flex items-center gap-2">
-            <input type="checkbox" class="w-4 h-4 border-gray-400 rounded">
+            <input type="checkbox" class="w-4 h-4 border-gray-400 rounded" />
             <span>خانگی</span>
           </label>
           <label class="flex items-center gap-2">
-            <input type="checkbox" class="w-4 h-4 border-gray-400 rounded">
+            <input type="checkbox" class="w-4 h-4 border-gray-400 rounded" />
             <span>کلاسی</span>
           </label>
           <label class="flex items-center gap-2">
-            <input type="checkbox" class="w-4 h-4 border-gray-400 rounded">
+            <input type="checkbox" class="w-4 h-4 border-gray-400 rounded" />
             <span>فضای باز</span>
           </label>
         </div>
       </details>
-    
     </div>
+
+    <label class="inline-flex items-center cursor-pointer">
+      <input type="checkbox" class="sr-only peer" />
+      <div
+        class="relative w-14 h-8 bg-[#B4B3C0] rounded-full
+               
+               after:content-[''] after:absolute after:top-0.5 after:right-0.5
+               after:bg-[#6B697F]
+               after:rounded-full after:h-7 after:w-7
+               after:transition-all 
+               peer-checked:after:-translate-x-6
+               "
+      ></div>
+      <span class="mr-3 text-sm font-medium text-gray-900">
+        موجود
+      </span>
+    </label>
     
+    <details class="group">
+      <summary
+        class="cursor-pointer bg-white p-6 rounded-[12px] flex items-center"
+      >
+        <span class="text-[16px] font-medium text-typo">
+          آیا می توان از آن برای فضای باز استفاده کرد؟
+        </span>
+      </summary>
+    
+      <div class="content-wrapper px-6 overflow-hidden transition-all duration-500 ease-in-out">
+        <p class="py-3">این متن تستی است که باید با انیمیشن باز و بسته شود.</p>
+      </div>
+    </details>
+    
+    <script>
+      document.querySelectorAll("details").forEach((el) => {
+        const content = el.querySelector(".content-wrapper");
+    
+        el.addEventListener("toggle", () => {
+          if (el.open) {
+            // باز شدن → انیمیت کن
+            content.style.maxHeight = content.scrollHeight + "px";
+          } else {
+            // بسته شدن → صفر کن
+            content.style.maxHeight = "0px";
+          }
+        });
+    
+        // مقدار اولیه
+        if (!el.open) {
+          content.style.maxHeight = "0px";
+        }
+      });
+    </script>
+    
+    
+    
+    
+    
+    
+    
+
     <script>
       const accordions = document.querySelectorAll("#accordion details");
       accordions.forEach((el) => {
@@ -153,6 +234,5 @@
         });
       });
     </script>
-    
   </body>
 </html>
