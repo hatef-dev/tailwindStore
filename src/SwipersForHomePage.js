@@ -13,3 +13,4 @@ var swiper3 = new Swiper(".articleSecetion", {
 var swiper3 = new Swiper(".videoSection", {
   spaceBetween: 40,
 });
+

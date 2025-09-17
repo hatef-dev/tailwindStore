@@ -83,6 +83,7 @@
     max-width: 100%;
   }
   
+  
   /* Ensure grid items don't overflow */
   .grid {
     max-width: 100%;
