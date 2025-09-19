@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body
+    class="font-display flex justify-center items-center w-screen h-screen overflow-hidden"
+  >
+    <div class="w-[689px] relative group/leftAndRight  bg-[#F9FAFA] rounded-[12px]">
+      <div class="flex flex-col gap-y-4 p-8 border-left-and-right-product after:h-[137px] before:h-[137px] after:top-48  before:top-48">
+        <div class="flex flex-col">
+          <div class="flex justify-center items-center gap-x-3 mb-8">
+            <span class="text-2xl text-typo">+</span>
+            <h2 class="text-typo text-[16px] font-medium">
+              عضویت در پرو استور
+            </h2>
+          </div>
+          <form class="flex flex-col gap-y-4 ">
+            <div class="grid grid-cols-2 gap-x-2 lg:gap-x-4">
+                <div class="p-2 flex flex-col gap-y-2">
+                    <label for="name" class="text-option text-sm font-medium px-2"
+                      >نام و نام خانوادگی:</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="نام و نام خانوادگی"
+                      class="w-full placeholder:text-neutral rounded-[13px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-[16px] outline-none"
+                    />
+                  </div>
+                  <div class="p-2 flex flex-col gap-y-2">
+                    <label
+                      for="mobilePhoneNumber"
+                      class="text-option text-sm font-medium px-2"
+                      >شماره تلفن همراه:</label
+                    >
+                    <input
+                      type="text"
+                      id="mobilePhoneNumber"
+                      placeholder="شماره تلفن همراه:"
+                      class="w-full placeholder:text-neutral rounded-[13px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-[16px] outline-none"
+                    />
+                  </div>
+            </div>
+            <div class="flex flex-col gap-y-2 py-2">
+                <label for="options" class="text-option  text-sm font-medium px-2"
+                      >انتخاب دسته محصول:</label
+                    >
+            <div class="relative">
+                
+                <select id="options" name="options" class="appearance-none focus:outline-none focus:border-0 outline-none border-0 w-full bg-white py-4 rounded-lg text-sm font-medium text-typo pr-4 pl-10">
+                  <option class="focus:bg-white bg-white text-sm font-medium text-typo" value="1">
+                    پروژکتور
+                  </option>
+                </select>
+                
+                <div class="pointer-events-none absolute top-1/2 -translate-y-1/2 left-4">
+                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1126 4C13.8431 4 13.5736 4.10246 13.368 4.30807L8.49853 9.17825L3.62905 4.30807C3.21782 3.89754 2.55116 3.89754 2.13993 4.30807C1.7294 4.7193 1.7294 5.38597 2.13993 5.7972L7.75397 11.4112C8.1652 11.8218 8.83186 11.8218 9.24309 11.4112L14.8571 5.7972C15.2677 5.38597 15.2677 4.7193 14.8571 4.30807C14.6515 4.10246 14.382 4 14.1126 4Z" fill="#6B697F"></path>
+                  </svg>
+                </div>
+            </div>
+            </div>
+            <div class="py-2 flex flex-col gap-y-2">
+                <label
+                  for="productName"
+                  class="text-option flex gap-x-2 items-center text-sm font-medium px-2"
+                  >
+                    <span class="text-sm">نام کالا:</span>
+                    <span class="text-[10.24px] ">(اختیاری)</span>
+                  </label
+                >
+                <input
+                  type="text"
+                  id="productName"
+                  placeholder="نام کالا"
+                  class="w-full placeholder:text-neutral rounded-[13px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-[16px] outline-none"
+                />
+              </div>
+            
+
+            <div class="justify-center flex ">
+                <button class="my-4 cursor-pointer w-[273px] bg-red mx-2 py-2 rounded-[10px]">
+                    <span class="text-white text-sm">عضویت</span>
+                  </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

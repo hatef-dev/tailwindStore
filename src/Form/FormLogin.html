@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body
+    class="font-display flex justify-center items-center w-screen h-screen overflow-hidden"
+  >
+    <div class="w-[689px] relative bg-[#F9FAFA] rounded-[12px] group/leftAndRight">
+      <div class="flex flex-col gap-y-4 p-8 border-left-and-right-product after:h-[137px] before:h-[137px] after:top-50  before:top-50">
+        <div class="flex flex-col">
+          <div class="flex justify-center items-center gap-x-3 mb-8">
+            <span class="text-2xl text-typo">+</span>
+            <h2 class="text-typo text-[16px] font-medium">
+              عضویت در پرو استور
+            </h2>
+          </div>
+          <form class="flex flex-col gap-x-2 gap-y-4 lg:gap-x-4">
+            
+            <div class="p-2 flex flex-col gap-y-2">
+              <label
+                for="mobilePhoneNumber"
+                class="text-option text-sm font-medium px-2"
+                >شماره تلفن همراه:</label
+              >
+              <input
+                type="text"
+                id="mobilePhoneNumber"
+                placeholder="شماره تلفن همراه:"
+                class="w-full placeholder:text-neutral rounded-[13px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-[16px] outline-none"
+              />
+            </div>
+            <div class="p-2 flex flex-col gap-y-2">
+              <label for="password" class="text-option text-sm font-medium px-2"
+                >کلمه ی عبور:</label
+              >
+              <input
+                type="password"
+                id="password"
+                placeholder="کلمه ی عبور:"
+                class="w-full placeholder:text-neutral rounded-[13px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-[16px] outline-none"
+              />
+            </div>
+            <div class="flex justify-center items-center mb-4">
+                <a href="" class="text-[#52B9F3] text-small font-medium">رمز عبور خود را فراموش کرده اید؟ </a>
+            </div>
+            <label class="flex items-center space-x-2 cursor-pointer mb-4">
+                <input type="checkbox" class="peer  hidden ">
+                <span class="w-6 h-6 bg-[#ECF1F4] rounded-[4px] shadow-inner 
+                flex items-center justify-center
+                peer-checked:bg-transparent 
+                peer-checked:before:content-['✔'] 
+               peer-checked:before:text-red-500 
+                peer-checked:before:text-sm">
+            </span>
+
+              <span class="text-[12.8px] px-1 text-[#1A1F1680] ">شرایط و قوانین نشر دیدگاه میپذیرم.</span>
+            </label>
+            <div class="grid grid-cols-2 gap-x-2">
+                <button class="my-4 cursor-pointer py-2">
+                    <span class="text-option text-sm py-8">ورود</span>
+                  </button>
+      
+                  <button class="my-4 cursor-pointer bg-red mx-2 py-2 rounded-[10px]">
+                    <span class="text-white text-sm">عضویت</span>
+                  </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
