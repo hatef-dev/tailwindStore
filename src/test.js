@@ -1,53 +1,8 @@
-import Swiper from "swiper/bundle";
-import "swiper/swiper-bundle.css";
-import "./Product.css";
-
-const swiperThumbs = new Swiper(".swiperThumbs", {
-  spaceBetween: 12,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesProgress: true,
-});
-
-
-const productSwiper = new Swiper(".productShow", {
-  spaceBetween: 10,
-  slidesPerView: 1,
-  centeredSlides: true,
-  thumbs: {
-    swiper: swiperThumbs, // Reference the thumbs swiper here
-  },
-});
-
-const relatedProducts = new Swiper(".relatedProducts", {
-  slidesPerView: 1,
-    slideClass: 'relatedProducts-slider',
-  spaceBetween: 32,
-  breakpoints: {
-    640: { // sm
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    768: { // md
-      slidesPerView: 3,
-      spaceBetween: 24,
-    },
-    1024: { // lg
-      slidesPerView: 4,
-      spaceBetween: 32,
-    },
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
 document.addEventListener('DOMContentLoaded', () => {
-  
+  // Get all radio buttons with name="state"
   const tabButtons = document.querySelectorAll('input[name="state"]');
   
-  
+  // Get all content sections
   const reviewSection = document.querySelector('.reviewSection');
   const specificationSection = document.querySelector('.specificationSection');
   const commentSection = document.querySelector('.commentSection');
@@ -55,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const bestPriceSection = document.querySelector('.bestPriceSection');
   const accessoriesSection = document.querySelector('.accessoriesSection');
   
-  
+  // Function to hide all sections
   const hideAllSections = () => {
     const sections = [reviewSection, specificationSection, commentSection, bestPriceSection];
     sections.forEach(section => {
@@ -66,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
   
-  
+  // Function to show a specific section
   const showSection = (section) => {
     if (section) {
       section.classList.remove('hidden');
@@ -74,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
   
-  
+  // Add event listeners to all tab buttons
   tabButtons.forEach((button, index) => {
     button.addEventListener('change', () => {
       if (button.checked) {
@@ -100,8 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
-  
+  // Initialize: show the first section (review) by default
   hideAllSections();
   showSection(reviewSection);
 });
-
