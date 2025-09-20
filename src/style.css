@@ -10,6 +10,7 @@
   --color-neutral: #e8ebed;
   --color-typo: #403F4C;
   --color-option : #9B9AAB;
+  --color-secondary-ontainer: #101013;
 
   --text-small: 12.8px;
 }
@@ -65,6 +66,10 @@
   .product {
     @apply  w-[192px]  h-[192px] overflow-hidden;
   }
+  .productFeature {
+    @apply relative pr-4 before:content-['•'] font-medium text-small text-typo before:absolute before:right-0 before:text-typo
+  }
+
   .border-left-and-right-product {
     @apply group-hover/leftAndRight:after:bg-[#FF4040] group-hover/leftAndRight:before:bg-[#FF4040] before:transition-all before:duration-300 before:ease-in-out after:transition-all after:duration-300 after:ease-in-out after:absolute after:w-1 after:h-[95px] before:absolute before:w-1 before:h-[95px] before:bg-[#EEF0F1] before:top-[75px] before:rounded-tl-full before:rounded-bl-full before:right-0 after:bg-[#EEF0F1] after:top-[75px] after:rounded-tr-full after:rounded-br-full after:left-0;
   }

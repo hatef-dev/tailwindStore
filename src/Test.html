@@ -194,6 +194,39 @@
       </div>
     </details>
     
+
+    <div class="relative w-20 h-20">
+      <svg class="w-full h-full transform rotate-[180deg]">
+        
+        <circle
+          cx="50%"
+          cy="50%"
+          r="28"
+          stroke="lightgray"
+          stroke-width="6"
+          fill="transparent"
+        />
+        
+        <circle
+          cx="50%"
+          cy="50%"
+          r="28"
+          stroke="#3B82F6"
+          stroke-width="6"
+          stroke-linecap="round"
+          fill="transparent"
+          stroke-dasharray="176"
+          stroke-dashoffset="69" 
+        />
+      </svg>
+      
+      <span class="absolute inset-0 flex items-center justify-center text-xl font-bold text-gray-800">
+        100
+      </span>
+    </div>
+    
+    
+
     <script>
       document.querySelectorAll("details").forEach((el) => {
         const content = el.querySelector(".content-wrapper");
