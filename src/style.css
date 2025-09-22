@@ -79,6 +79,15 @@
   .border-bottom-progress {
     @apply bg-[#FFB7B7]
   }
+
+  .timeRadioBtn {
+    @apply w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo
+    before:content-[''] after:content-['']
+    before:rounded-tl-full before:rounded-bl-full before:absolute before:right-0 before:top-2.5 before:w-1 before:h-[22px]
+    after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:top-2.5 after:w-1 after:h-[22px]
+    before:bg-transparent after:bg-transparent before:transition-all before:ease-in-out before:duration-300 after:transition-all after:ease-in-out after:duration-300
+    peer-checked:before:bg-red peer-checked:after:bg-red 
+  }
   .container, .md\\:container {
     max-width: 100%;
     padding-left: 1rem;

@@ -625,7 +625,7 @@
         <!--انتخاب ادرس-->
         <div class="relative bg-white rounded-[12px] py-4 w-full mb-8">
           <div
-            class="before:rounded-tl-full before:top-4 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[44px] hover:before:bg-red-500 after:top-4 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[44px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500"
+            class="before:rounded-tl-full before:top-4 before:rounded-bl-full before:absolute before:transition-all before:ease-in-out before:duration-150 after:transition-all after:ease-in-out after:duration-150 before:right-0 before:w-1 before:h-[44px] hover:before:bg-red-500 after:top-4 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[44px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500"
           >
             <div class="flex items-center justify-between px-8 py-0.5">
               <span class="text-option ml-3">آدرس:</span>
@@ -667,135 +667,80 @@
           </button>
         </div>
         <!-- new Address  -->
-        <div class="newAddressForm hidden">
-          <div class="text-typo flex items-center gap-x-3">
-            <span class="text-5xl">+</span>
-            <h1 class="text-xl font-medium">آدرس جدید</h1>
-          </div>
-
-          <div class="bg-white rounded-[12px] flex flex-col p-2 md:p-8 gap-y-4">
-            <div class="flex flex-col p-2">
-              <div class="flex flex-col gap-y-2">
-                <label for="name" class="text-option text-sm font-medium"
-                  >نام و نام خانوادگی:</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="سعید مدرسی"
-                  class="w-full placeholder:text-typo rounded-[13px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-xl outline-none"
-                />
-              </div>               
-            </div>
-            <div class="grid grid-cols-2 items-center md:gap-x-4">
-              <div class="flex flex-col p-2">
-                <label for="city" class="text-option text-sm font-medium"
-                  >شهر :</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="تهران"
-                  class="placeholder:text-typo rounded-[13px] text-[16px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-xl outline-none"
-                />
+        <div class="newAddressForm block relative group/leftAndRight">
+          <div class=" block  border-left-and-right-product after:top-[270px] before:top-[270px]">
+              <div class="text-typo flex items-center gap-x-3">
+                <span class="text-4xl">+</span>
+                <h1 class="text-xl font-medium">آدرس جدید</h1>
               </div>
-              <div class="flex flex-col p-2">
-                <label for="city" class="text-option text-sm font-medium"
-                  >کد ملی:</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="کد ملی"
-                  class="placeholder:text-neutral rounded-[13px] text-[16px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-xl outline-none"
-                />
-              </div>
-            </div>
-            <div class="grid grid-cols-2 gap-x-4">
-              <div class="flex flex-col p-2">
-                <label for="city" class="text-option text-sm font-medium"
-                  >استان:</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="تهران"
-                  class="placeholder:text-typo rounded-[13px] text-small md:text-[16px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-xl outline-none"
-                />
-              </div>
-              <div class="flex flex-col  p-2">
-                <label for="city" class="text-option text-sm font-medium"
-                  >شهر :</label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="تهران"
-                  class="placeholder:text-typo rounded-[13px] text-[16px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-xl outline-none"
-                />
-              </div>
-            </div>
-            <div class="flex flex-col p-2">
-              <label for="address" class="text-option text-sm font-medium"
-                >آدرس:</label
-              >
-              <div class="relative">
-                <input
-                  type="text"
-                  id="address"
-                  placeholder="میدان فاطمی، ساختمان64، طبقه4، واحد3"
-                  class="w-full placeholder:text-typo rounded-[13px] pl-16 shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-small md:text-xl outline-none"
-                />
-                <div class="flex items-center gap-x-4 absolute left-5 top-1 md:top-3">
-                  <div class="w-[1px] h-10 bg-neutral"></div>
-                  <svg
-                    width="22"
-                    height="27"
-                    viewBox="0 0 22 27"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M21 11.2273C21 19.1818 11 26 11 26C11 26 1 19.1818 1 11.2273C1 8.51483 2.05357 5.91348 3.92893 3.9955C5.8043 2.07751 8.34784 1 11 1C13.6522 1 16.1957 2.07751 18.0711 3.9955C19.9464 5.91348 21 8.51483 21 11.2273Z"
-                      stroke="#B4B3C0"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <circle cx="11" cy="11" r="4" fill="#B4B3C0" />
-                  </svg>
+    
+              <div class="bg-white mt-3 rounded-[12px] flex flex-col p-2 md:p-8 gap-y-4">
+                <div class="flex flex-col p-2">
+                  <div class="flex flex-col gap-y-2">
+                    <label for="name" class="text-option text-sm font-medium">نام و نام خانوادگی:</label>
+                    <input type="text" id="name" placeholder="نام و نام خانوادگی" class="w-full placeholder:text-neutral rounded-[13px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-[16px] outline-none">
+                  </div>               
                 </div>
-              </div>
-            </div>
-            <div class="py-4 px-2">
-              <label class="flex w-full items-center space-x-2 cursor-pointer">
-                <input type="checkbox" class="peer hidden" />
-                <span
-                  class="w-6 h-6 bg-[#ECF1F4] rounded-[4px] shadow-inner flex items-center justify-center peer-checked:bg-transparent peer-checked:before:content-['✔'] peer-checked:before:text-red-500 peer-checked:before:text-sm"
-                >
+                <div class="grid grid-cols-2 items-center md:gap-x-4">
+                  <div class="flex flex-col p-2">
+                    <label for="city" class="text-option text-sm font-medium">شهر :</label>
+                    <input type="text" id="name" placeholder="تهران" class="placeholder:text-neutral rounded-[13px] text-[16px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-xl outline-none">
+                  </div>
+                  <div class="flex flex-col p-2">
+                    <label for="city" class="text-option text-sm font-medium">کد ملی:</label>
+                    <input type="text" id="name" placeholder="کد ملی" class="placeholder:text-neutral rounded-[13px] text-[16px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-xl outline-none">
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-x-4">
+                  <div class="flex flex-col p-2">
+                    <label for="city" class="text-option text-sm font-medium">استان:</label>
+                    <input type="text" id="name" placeholder="تهران" class="placeholder:text-neutral rounded-[13px] text-small md:text-[16px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-xl outline-none">
+                  </div>
+                  <div class="flex flex-col  p-2">
+                    <label for="city" class="text-option text-sm font-medium">شهر :</label>
+                    <input type="text" id="name" placeholder="تهران" class="placeholder:text-neutral rounded-[13px] text-[16px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-xl outline-none">
+                  </div>
+                </div>
+                <div class="flex flex-col p-2">
+                  <label for="address" class="text-option text-sm font-medium">آدرس:</label>
+                  <div class="relative">
+                    <input type="text" id="address" placeholder="میدان فاطمی، ساختمان64، طبقه4، واحد3" class="w-full placeholder:text-neutral rounded-[13px] pl-16 shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-small md:text-[16px] outline-none">
+                    <div class="flex items-center gap-x-2 md:gap-x-4 absolute left-3 md:left-5 top-1 md:top-2">
+                      <div class="w-[1px] h-10 bg-neutral"></div>
+                      <svg width="22" height="27" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 11.2273C21 19.1818 11 26 11 26C11 26 1 19.1818 1 11.2273C1 8.51483 2.05357 5.91348 3.92893 3.9955C5.8043 2.07751 8.34784 1 11 1C13.6522 1 16.1957 2.07751 18.0711 3.9955C19.9464 5.91348 21 8.51483 21 11.2273Z" stroke="#B4B3C0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <circle cx="11" cy="11" r="4" fill="#B4B3C0"></circle>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center gap-x-2 py-[16px] px-2">
+                  <label class="flex items-center space-x-2 cursor-pointer">
+                    <input type="checkbox" class="peer  hidden ">
+                    <span class="w-6 h-6 bg-[#ECF1F4] rounded-[4px] shadow-inner 
+                    flex items-center justify-center
+                    peer-checked:bg-transparent 
+                    peer-checked:before:content-['✔'] 
+                   peer-checked:before:text-red-500 
+                    peer-checked:before:text-sm">
                 </span>
 
-                <span class="text-[12.8px] px-1 text-[#1A1F1680]"
-                  >آدرس را ذخیره کن</span
-                >
-              </label>
-            </div>
-            <div class=" grid grid-cols-2 gap-x-8 py-4 p-4">
-              <a href="" class="w-full">
-                <button
-                  class="returnBtn cursor-pointer rounded-[10px] w-full text-typo py-2"
-                >
-                  بازگشت
-                </button>
-              </a>
-              <a href="" class="w-full">
-                <button
-                  class="cursor-pointer rounded-[10px] w-full bg-red text-white py-2"
-                >
-                  تایید آدرس
-                </button>
-              </a>
-            </div>
+                  <span class="text-[12.8px] px-1 text-[#1A1F1680] ">آدرس را ذخیره کن</span>
+                </label>
+                </div>
+                <div class=" grid grid-cols-2 gap-x-8 py-4 p-4">
+                  <a href="" class="w-full">
+                    <button class="returnBtn cursor-pointer rounded-[10px] w-full text-typo py-2">
+                      بازگشت
+                    </button>
+                  </a>
+                  <a href="" class="w-full">
+                    <button class="cursor-pointer compeleted rounded-[10px] w-full bg-red text-white py-2">
+                      تایید آدرس
+                    </button>
+                  </a>
+                </div>
+              </div>
           </div>
         </div>
 
@@ -813,42 +758,42 @@
             </span>
             <h1 class="text-xl font-medium">زمان ارسال مناسب خود را انتخاب کنید</h1>
           </div>
-          <div class="bg-white rounded-[12px] p-6">
-            <table class="table-fixed w-full gap-y-6">
+          <div class="bg-white rounded-[12px] p-4 sm:p-6 overflow-x-auto scrollbar-hide">
+            <table class="table-fixed w-full min-w-[640px] sm:min-w-0">
               <thead>
                 <tr>
-                  <th>
-                    <div class="flex flex-col justify-center items-center gap-y-1">
+                  <th class="px-2 sm:px-4">
+                    <div class="flex flex-col justify-center items-center gap-y-1 whitespace-nowrap">
                       <span class="px-2 text-sm text-option">شنبه</span>
                       <span class="px-2 text-[10.24px] font-medium text-[#52B9F3]">7 / اردیبهشت </span>
                     </div>
                   </th>
-                  <th >
-                    <div class="flex flex-col justify-center items-center gap-y-1">
+                  <th class="px-2 sm:px-4">
+                    <div class="flex flex-col justify-center items-center gap-y-1 whitespace-nowrap">
                       <span class="px-2 text-sm text-option">شنبه</span>
                       <span class="px-2 text-[10.24px] font-medium text-[#52B9F3]">7 / اردیبهشت </span>
                     </div>
                   </th>
-                  <th >
-                    <div class="flex flex-col justify-center items-center gap-y-1">
+                  <th class="px-2 sm:px-4">
+                    <div class="flex flex-col justify-center items-center gap-y-1 whitespace-nowrap">
                       <span class="px-2 text-sm text-option">شنبه</span>
                       <span class="px-2 text-[10.24px] font-medium text-[#52B9F3]">7 / اردیبهشت </span>
                     </div>
                   </th>
-                  <th >
-                    <div class="flex flex-col justify-center items-center gap-y-1">
+                  <th class="px-2 sm:px-4">
+                    <div class="flex flex-col justify-center items-center gap-y-1 whitespace-nowrap">
                       <span class="px-2 text-sm text-option">شنبه</span>
                       <span class="px-2 text-[10.24px] font-medium text-[#52B9F3]">7 / اردیبهشت </span>
                     </div>
                   </th>
-                  <th >
-                    <div class="flex flex-col justify-center items-center gap-y-1">
+                  <th class="px-2 sm:px-4">
+                    <div class="flex flex-col justify-center items-center gap-y-1 whitespace-nowrap">
                       <span class="px-2 text-sm text-option">شنبه</span>
                       <span class="px-2 text-[10.24px] font-medium text-[#52B9F3]">7 / اردیبهشت </span>
                     </div>
                   </th>
-                  <th >
-                    <div class="flex flex-col justify-center items-center gap-y-1">
+                  <th class="px-2 sm:px-4">
+                    <div class="flex flex-col justify-center items-center gap-y-1 whitespace-nowrap">
                       <span class="px-2 text-sm text-option">شنبه</span>
                       <span class="px-2 text-[10.24px] font-medium text-[#52B9F3]">7 / اردیبهشت </span>
                     </div>
@@ -857,179 +802,275 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
-                      </div>
-                    </div>
+                    </label>
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
                 </tr>
                 <tr>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
                   </td>
-                  <td>
-                    <div class=" cursor-pointer mt-6 flex justify-center items-center ">
-                      <div class="w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo">
-                        <span class="before:rounded-tl-full before:top-2.5 before:rounded-bl-full before:absolute before:right-0 before:w-1 before:h-[22px] hover:before:bg-red-500 after:top-2.5 after:rounded-tr-full after:rounded-br-full after:absolute after:left-0 after:w-1 after:h-[22px] after:bg-[#EEF0F1] before:bg-[#EEF0F1] hover:after:bg-red-500 ">۹ تا ۱۲</span>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
                       </div>
-                    </div>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
+                      </div>
+                    </label>
+                  </td>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
+                      </div>
+                    </label>
+                  </td>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
+                      </div>
+                    </label>
+                  </td>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
+                      </div>
+                    </label>
+                  </td>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
+                      </div>
+                    </label>
+                  </td>
+                  <td class="px-2 sm:px-4">
+                    <label class="cursor-pointer group mt-6 flex justify-center items-center">
+                      <input type="radio" name="time" value="9-12" class="peer hidden" />
+                    
+                      <div
+                        class="timeRadioBtn"
+                      >
+                        ۹ تا ۱۲
+                      </div>
+                    </label>
                   </td>
                 </tr>
                 
