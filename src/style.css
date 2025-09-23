@@ -67,7 +67,7 @@
     @apply  w-[192px]  h-[192px] overflow-hidden;
   }
   .productFeature {
-    @apply relative pr-4 before:content-['•'] font-medium text-small text-typo before:absolute before:right-0 before:text-typo
+    @apply relative pr-4 before:content-['•'] font-[400] text-small text-typo before:absolute before:right-0 before:text-typo
   }
 
   .border-left-and-right-product {
