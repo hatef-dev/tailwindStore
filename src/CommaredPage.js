@@ -1,23 +1,21 @@
 import Swiper from "swiper/bundle";
 import "swiper/swiper-bundle.css";
-import "./Product.css";
+import "./CommaredPage.css";
 const relatedProducts = new Swiper(".relatedProducts", {
   slidesPerView: 1,
-  slideClass: "relatedProducts-slider",
+  slideClass: 'relatedProducts-slider',
   spaceBetween: 32,
+  autoHeight: true,
   breakpoints: {
-    640: {
-      // sm
-      slidesPerView: 2,
+    640: { // sm
+      slidesPerView: 1,
       spaceBetween: 20,
     },
-    768: {
-      // md
+    768: { // md
       slidesPerView: 3,
       spaceBetween: 24,
     },
-    1024: {
-      // lg
+    1024: { // lg
       slidesPerView: 4,
       spaceBetween: 32,
     },
