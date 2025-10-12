@@ -22,8 +22,9 @@ function updatePositions() {
   fill.style.width = `${pos2 + 5 - pos1}px`;
 }
 
-// ساخت draggable برای دسته‌ها
+
 function makeDraggable(handle, valueElement, otherValueElement) {
+  // Mouse events for desktop
   handle.onmousedown = function(e) {
     e.preventDefault();
     const sliderRect = slider.getBoundingClientRect();
@@ -33,7 +34,7 @@ function makeDraggable(handle, valueElement, otherValueElement) {
       newX = Math.max(0, Math.min(newX, sliderRect.width));
       let percent = (newX / sliderRect.width) * (max - min) + min;
 
-      // جلوگیری از عبور دسته‌ها از هم
+      
       if (handle === handle1 && percent > +otherValueElement.textContent) {
         percent = +otherValueElement.textContent;
       }
@@ -52,6 +53,39 @@ function makeDraggable(handle, valueElement, otherValueElement) {
 
     document.addEventListener('mousemove', onMouseMove);
     document.addEventListener('mouseup', onMouseUp);
+  };
+
+  // Touch events for mobile
+  handle.ontouchstart = function(e) {
+    e.preventDefault();
+    const sliderRect = slider.getBoundingClientRect();
+    const touch = e.touches[0];
+
+    function onTouchMove(e) {
+      e.preventDefault();
+      const touch = e.touches[0];
+      let newX = touch.clientX - sliderRect.left;
+      newX = Math.max(0, Math.min(newX, sliderRect.width));
+      let percent = (newX / sliderRect.width) * (max - min) + min;
+
+      if (handle === handle1 && percent > +otherValueElement.textContent) {
+        percent = +otherValueElement.textContent;
+      }
+      if (handle === handle2 && percent < +otherValueElement.textContent) {
+        percent = +otherValueElement.textContent;
+      }
+
+      valueElement.textContent = Math.round(percent);
+      updatePositions();
+    }
+
+    function onTouchEnd() {
+      document.removeEventListener('touchmove', onTouchMove);
+      document.removeEventListener('touchend', onTouchEnd);
+    }
+
+    document.addEventListener('touchmove', onTouchMove);
+    document.addEventListener('touchend', onTouchEnd);
   };
 }
 
