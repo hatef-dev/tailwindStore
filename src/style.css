@@ -20,7 +20,7 @@
     @apply text-sm py-2.5 pt-[9px] px-3   cursor-pointer ;
   }
   .selected-items {
-    @apply  before:rounded-tl-full before:rounded-bl-full before:absolute before:right-4 before:w-[2.8px] before:h-5 before:bg-transparent  hover:before:bg-red-500  rounded-full md:rounded-r-none md:rounded-l-full w-full flex justify-center md:justify-start items-center py-2 px-7 text-[10.5px] text-[#403F4C] border-b  border-b-[#EEF0F1];
+    @apply  before:rounded-tl-full  before:rounded-bl-full before:absolute before:right-4 before:w-[2.8px] hover:bg-[#F9FAFA] before:h-5 before:bg-transparent  hover:before:bg-red-500   md:rounded-r-none  w-full flex justify-center md:justify-start items-center py-2 px-7 text-[10.5px] text-[#403F4C] border-b  border-b-[#EEF0F1];
   }
   .nav-item-dropdown {
     @apply py-3 px-4 text-[#6B697F] hover:text-red-500 transition-all duration-300 ease-in-out
@@ -58,8 +58,17 @@
     @apply absolute top-2 right-2 text-red text-sm;
   }
   .footer-nav-item {
-    @apply text-small px-2 border-l-[1px] nth-[3n]:border-l-0 2xl:pl-4 md:nth-[3n]:border-l-[1px] md:border-l-[1px] border-[#B4B3C0]  ;
+    @apply text-small px-2 py-1 lg:py-0 border-l-[1px] border-[#B4B3C0] transition-colors duration-200 hover:text-red-500;
   }
+  
+  /* Remove left border on mobile for better visual separation */
+  @media (max-width: 1023px) {
+    .footer-nav-item:nth-child(3n) {
+      border-left: none;
+    }
+  }
+  
+  
   .more {
     @apply absolute  -top-14 md:-top-24 2xl:-top-18  left-12 md:left-7 lg:left-10 xl:left-7 2xl:left-8 rounded-t-[20px] w-3/4  md:w-4/5    2xl:w-4/5  h-[150px] md:h-[160px]  overflow-hidden;
   }
