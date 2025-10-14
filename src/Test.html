@@ -7,56 +7,51 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="px-[15px] md:px-0 md:p-4">
-      <div
-        class="md:container flex flex-col md:flex-row md:items-center md:justify-center gap-y-2 md:gap-y-0 gap-x-8"
-      >
-        <h3 class="text-center md:text-start py-2 md:py-0">گروه محصولات</h3>
-        <div>
-          <ul
-            class="flex py-3 lg:py-0 lg:w-full gap-y-4 lg:gap-y-0 flex-wrap xl:flex-row lg:gap-x-4"
-          >
-            <li class="w-1/3 md:w-auto footer-nav-item">
-              <a href="">ویدیو پروژکتور</a>
-            </li>
-            <li class="w-1/3 md:w-auto footer-nav-item">
-              <a href="">کامپیوتر و تجهیزات</a>
-            </li>
-            <li class="w-1/3 md:w-auto footer-nav-item">
-              <a href="">نمایشگر لمسی</a>
-            </li>
-            <li class="w-1/3 md:w-auto footer-nav-item">
-              <a href="">یو پی ای</a>
-            </li>
-            <li class="w-1/3 md:w-auto footer-nav-item">
-              <a href="">برد هوشمند</a>
-            </li>
-            <li class="w-1/3 md:w-auto footer-nav-item">
-              <a href="">ویدیو پروژکتور</a>
-            </li>
-            <li class="w-1/3 md:w-auto footer-nav-item">
-              <a href="">مقالات</a>
-            </li>
-            <li class="w-1/3 md:w-auto footer-nav-item">
-              <a href="">واژه نامه</a>
-            </li>
-            <li class="w-1/3 md:w-auto footer-nav-item"><a href="">برند</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!-- کانتینر اصلی (بدون transform/opacity که stacking context می‌سازه) -->
+<div class="relative">
 
-    <script>
-      const accordions = document.querySelectorAll("#accordion details");
-      accordions.forEach((el) => {
-        el.addEventListener("toggle", () => {
-          if (el.open) {
-            accordions.forEach((other) => {
-              if (other !== el) other.open = false;
-            });
-          }
-        });
-      });
-    </script>
+  <!-- سایدبار (مثال) -->
+  <aside id="sidebar" class="w-64 h-screen fixed left-0 top-0 bg-gray-100 z-20">
+    <!-- محتوای فیلتر -->
+  </aside>
+
+  <!-- دکمه مگا منو -->
+  <div class="ml-64 p-4"> <!-- ml-64 تا کناره سایدبار قرار بگیره -->
+    <button id="megaBtn" class="px-4 py-2 bg-blue-600 text-white rounded">باز کردن مگا منو</button>
+
+    <!-- مگا منو: position absolute/fixed + z بالا + overflow-visible والد -->
+    <div id="megaMenu"
+         class="hidden fixed top-16 left-64 w-[700px] bg-white shadow-2xl z-50 border rounded-md p-6"
+         role="menu"
+         aria-hidden="true">
+      <!-- محتوای مگا منو -->
+      <div class="grid grid-cols-3 gap-4">
+        <div>ستون ۱</div>
+        <div>ستون ۲</div>
+        <div>ستون ۳</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const btn = document.getElementById('megaBtn');
+  const menu = document.getElementById('megaMenu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    menu.setAttribute('aria-hidden', menu.classList.contains('hidden'));
+  });
+
+  // کلیک بیرون برای بستن (اختیاری)
+  document.addEventListener('click', (e) => {
+    if (!btn.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.add('hidden');
+      menu.setAttribute('aria-hidden', 'true');
+    }
+  });
+</script>
+
   </body>
 </html>
