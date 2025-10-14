@@ -13,7 +13,7 @@
 
       <section class=" w-full grid grid-cols-12  md:flex flex-col bg-white">
         <!-- Top Header -->
-      <section class="bg-typo col-span-full ">
+      <section class="bg-[#403F4C] col-span-full ">
         <section  class="px-2 md:px-0">
           <div class="   md:container text-white text-small md:gap-x-0 py-2 flex justify-between items-center">
             <div class="flex items-center md:gap-x-2">
@@ -40,16 +40,16 @@
       <section class="relative col-span-full px-4 md:px-0">
         <section class="relative   md:container py-2 md:pt-6 md:pb-2">
           <section class="flex items-center justify-between ">
-            <div class="block md:hidden w-[30px] h-[30px] MenuButton">
+            <div class="block lg:hidden w-[30px] h-[30px] MenuButton">
               <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none">
                 <path d="M20 7L4 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
                 <path d="M20 12L4 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
                 <path d="M20 17L4 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
             </div>
-            <div class="w-screen h-screen transition-all duration-300  right-[-100%] bg-gray/50 delay-75 fixed top-0 z-30 Menubackground block md:hidden" ></div>
+            <div class="w-screen h-screen transition-all duration-300  right-[-100%] bg-gray/50 delay-75 fixed top-0 z-30 Menubackground block lg:hidden" ></div>
             <!-- Mobile Menu -->
-            <div class="MobileMenu fixed w-[250px] transition-all duration-300  right-[-100%] top-0 z-50 h-screen bg-white ">
+            <div class="MobileMenu  fixed w-[290px] transition-all duration-300  right-[-100%] top-0 z-50 h-screen bg-white ">
               <div class="flex flex-col ">
                 <div class="flex justify-between items-center">
                   <div class="flex justify-start items-center p-4 CloseButton ">
@@ -77,12 +77,12 @@
                 </div>
               </div>
             </div>
-            <div class="flex items-center md:space-x-6">
+            <div class="flex items-center  xl:gap-x-6">
               <!-- Logo -->
-              <img src="../images/logo.png" alt="logo" class="w-[242px] px-2 pt-2" />
+              <img src="../images/logo.png" alt="logo" class="w-[152px] xl:w-[242px] pr-2 pt-2" />
               <!-- Search -->
               <div class=" relative">
-                <input type="text" placeholder="جستجو کن" class="hidden md:block bg-[#F9FAFA] placeholder:text-small py-[17px] px-4 xl:w-[420px] 2xl:w-[522px]  outline-0 pr-10 text-small rounded-xl" />
+                <input type="text" placeholder="جستجو کن" class="hidden md:block bg-[#F9FAFA] placeholder:text-small py-[17px] w-full px-4 lg:w-[420px] 2xl:w-[522px]  outline-0 pr-10 text-small rounded-xl" />
                 <div class="hidden md:block absolute right-3 top-3">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -94,7 +94,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex justify-start items-center gap-x-2 md:gap-x-6">
+            <div class="flex justify-start items-center gap-x-2 md:gap-x-3">
               <!-- Shopping Cart Icon-->
                <button class="p-2 bg-white drop-shadow-2xl rounded-md">
                 
@@ -171,13 +171,14 @@
             </div>
             <a href="" class="text-small">مشاهده سبد خرید</a>
           </header>
-          <div class="flex flex-row justify-start gap-x-9 w-full">
+          <div class="flex flex-row relative justify-start group/leftAndRight gap-x-9 w-full lg:px-3">
+            <div class="absolute w-full border-left-and-right-product before:-right-4 before:top-6 group-hover/leftAndRight:after:bg-[#FF4040] group-hover/leftAndRight:before:bg-[#FF4040] after:top-6 before:h-14 after:h-14 after:left-3 before:bg-transparent after:bg-transparent"></div>
             <a
               href=""
               class="w-[123px] h-[87px] flex justify-center items-center"
             >
               <img
-                src="images/image.png"
+                src="../images/image.png"
                 alt="pic"
                 class="w-[87px] h-[87px] object-cover"
               />
@@ -224,13 +225,14 @@
               </a>
             </div>
           </div>
-          <div class="flex flex-row justify-start gap-x-9 w-full">
+          <div class="flex flex-row relative justify-start group/leftAndRight gap-x-9 w-full lg:px-3">
+            <div class="absolute w-full border-left-and-right-product before:-right-4 before:top-6 group-hover/leftAndRight:after:bg-[#FF4040] group-hover/leftAndRight:before:bg-[#FF4040] after:top-6 before:h-14 after:h-14 after:left-3 before:bg-transparent after:bg-transparent"></div>
             <a
               href=""
               class="w-[123px] h-[87px] flex justify-center items-center"
             >
               <img
-                src="images/image.png"
+                src="../images/image.png"
                 alt="pic"
                 class="w-[87px] h-[87px] object-cover"
               />
@@ -310,9 +312,9 @@
         </div>
       </section>
       <!-- Bottom Header (Navbar) -->
-      <section class=" md:container hidden md:block">
+      <section class=" md:container hidden lg:block">
         <nav class="relative grid grid-cols-12">
-          <ul class="hidden relative md:flex items-center col-span-full md:col-span-10 2xl:col-span-7 space-x-1 w-full justify-between">
+          <ul class="hidden relative lg:flex items-center col-span-full md:col-span-10 2xl:col-span-7 space-x-1 w-full justify-between">
             <li class="nav-item border-b-2 border-[#FF4040] text-[#FF4040]  dropdownMenu">
               <a class="">ویدیو پروژکتور</a>
             </li>
@@ -331,10 +333,10 @@
           </ul>
           <!-- Dropdown Menu -->
           <div class="dropdownItems hidden bg-white rounded-b-2xl z-10 absolute top-11 left-0 w-full h-[317px] col-span-full pt-5 grid-cols-12">
-            <nav class="relative hidden md:flex  col-span-full md:col-span-10 2xl:col-span-7 space-x-1 w-full justify-between">
+            <nav class="relative hidden lg:flex  col-span-full md:col-span-10 2xl:col-span-7 space-x-1 w-full justify-between">
               <div>
                 <ul class="flex  flex-col text-small ">
-                  <li class="videoProjectorItem flex items-center gap-x-4 justify-between  py-3 px-4 group hover:bg-[#E8EBED]  transition-all duration-300 ease-in-out  text-typo">
+                  <li class="videoProjectorItem flex items-center gap-x-4 justify-between  py-3 px-4 group hover:bg-[#E8EBED]  transition-all duration-300 ease-in-out  text-[#403F4C]">
                     <a href="">قیمت ویدئو پروژکتور</a>
                     <svg class="invisible group-hover:visible transition-all duration-300 ease-in-out " width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3.63347 7.76076C3.70512 7.82838 3.79996 7.86596 3.89847 7.86576C3.99662 7.86662 4.09074 7.8268 4.15847 7.75576C4.22995 7.68612 4.27026 7.59056 4.27026 7.49076C4.27026 7.39097 4.22995 7.29541 4.15847 7.22576L1.30844 4.37573H7.91858C8.12569 4.37573 8.29358 4.20784 8.29358 4.00073C8.29358 3.79363 8.12569 3.62573 7.91858 3.62573H1.30735L4.16347 0.760764C4.23495 0.69112 4.27526 0.595558 4.27526 0.495764C4.27526 0.39597 4.23495 0.300408 4.16347 0.230764C4.01706 0.0845371 3.77988 0.0845371 3.63347 0.230764L0.133474 3.73076C-0.012753 3.87717 -0.012753 4.11435 0.133474 4.26076L3.63347 7.76076Z" fill="#9B9AAB"/>
@@ -378,7 +380,7 @@
                       </nav>
                      </div> 
                   </li>
-                  <li class="videoProjectorItem flex items-center gap-x-4 justify-between  py-3 px-4 group hover:bg-[#E8EBED]  transition-all duration-300 ease-in-out  text-typo">
+                  <li class="videoProjectorItem flex items-center gap-x-4 justify-between  py-3 px-4 group hover:bg-[#E8EBED]  transition-all duration-300 ease-in-out  text-[#403F4C]">
                     <a href="">قیمت ویدئو پروژکتور</a>
                     <svg class="invisible group-hover:visible transition-all duration-300 ease-in-out " width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3.63347 7.76076C3.70512 7.82838 3.79996 7.86596 3.89847 7.86576C3.99662 7.86662 4.09074 7.8268 4.15847 7.75576C4.22995 7.68612 4.27026 7.59056 4.27026 7.49076C4.27026 7.39097 4.22995 7.29541 4.15847 7.22576L1.30844 4.37573H7.91858C8.12569 4.37573 8.29358 4.20784 8.29358 4.00073C8.29358 3.79363 8.12569 3.62573 7.91858 3.62573H1.30735L4.16347 0.760764C4.23495 0.69112 4.27526 0.595558 4.27526 0.495764C4.27526 0.39597 4.23495 0.300408 4.16347 0.230764C4.01706 0.0845371 3.77988 0.0845371 3.63347 0.230764L0.133474 3.73076C-0.012753 3.87717 -0.012753 4.11435 0.133474 4.26076L3.63347 7.76076Z" fill="#9B9AAB"/>
@@ -422,7 +424,7 @@
                       </nav>
                      </div> 
                   </li>
-                  <li class="videoProjectorItem flex items-center gap-x-4 justify-between  py-3 px-4 group hover:bg-[#E8EBED]  transition-all duration-300 ease-in-out  text-typo">
+                  <li class="videoProjectorItem flex items-center gap-x-4 justify-between  py-3 px-4 group hover:bg-[#E8EBED]  transition-all duration-300 ease-in-out  text-[#403F4C]">
                     <a href="">قیمت ویدئو پروژکتور</a>
                     <svg class="invisible group-hover:visible transition-all duration-300 ease-in-out " width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3.63347 7.76076C3.70512 7.82838 3.79996 7.86596 3.89847 7.86576C3.99662 7.86662 4.09074 7.8268 4.15847 7.75576C4.22995 7.68612 4.27026 7.59056 4.27026 7.49076C4.27026 7.39097 4.22995 7.29541 4.15847 7.22576L1.30844 4.37573H7.91858C8.12569 4.37573 8.29358 4.20784 8.29358 4.00073C8.29358 3.79363 8.12569 3.62573 7.91858 3.62573H1.30735L4.16347 0.760764C4.23495 0.69112 4.27526 0.595558 4.27526 0.495764C4.27526 0.39597 4.23495 0.300408 4.16347 0.230764C4.01706 0.0845371 3.77988 0.0845371 3.63347 0.230764L0.133474 3.73076C-0.012753 3.87717 -0.012753 4.11435 0.133474 4.26076L3.63347 7.76076Z" fill="#9B9AAB"/>
@@ -466,7 +468,7 @@
                       </nav>
                      </div> 
                   </li>
-                  <li class="videoProjectorItem flex items-center gap-x-4 justify-between  py-3 px-4 group hover:bg-[#E8EBED]  transition-all duration-300 ease-in-out  text-typo">
+                  <li class="videoProjectorItem flex items-center gap-x-4 justify-between  py-3 px-4 group hover:bg-[#E8EBED]  transition-all duration-300 ease-in-out  text-[#403F4C]">
                     <a href="">بر اساس  کیفیت تصویر</a>
                     <svg class="invisible group-hover:visible transition-all duration-300 ease-in-out " width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3.63347 7.76076C3.70512 7.82838 3.79996 7.86596 3.89847 7.86576C3.99662 7.86662 4.09074 7.8268 4.15847 7.75576C4.22995 7.68612 4.27026 7.59056 4.27026 7.49076C4.27026 7.39097 4.22995 7.29541 4.15847 7.22576L1.30844 4.37573H7.91858C8.12569 4.37573 8.29358 4.20784 8.29358 4.00073C8.29358 3.79363 8.12569 3.62573 7.91858 3.62573H1.30735L4.16347 0.760764C4.23495 0.69112 4.27526 0.595558 4.27526 0.495764C4.27526 0.39597 4.23495 0.300408 4.16347 0.230764C4.01706 0.0845371 3.77988 0.0845371 3.63347 0.230764L0.133474 3.73076C-0.012753 3.87717 -0.012753 4.11435 0.133474 4.26076L3.63347 7.76076Z" fill="#9B9AAB"/>

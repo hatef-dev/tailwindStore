@@ -56,7 +56,7 @@ function makeDraggable(handle, valueElement, otherValueElement) {
   };
 
   // Touch events for mobile
-  handle.ontouchstart = function(e) {
+  handle.addEventListener('touchstart', function(e) {
     e.preventDefault();
     const sliderRect = slider.getBoundingClientRect();
     const touch = e.touches[0];
@@ -80,13 +80,13 @@ function makeDraggable(handle, valueElement, otherValueElement) {
     }
 
     function onTouchEnd() {
-      document.removeEventListener('touchmove', onTouchMove);
+      document.removeEventListener('touchmove', onTouchMove, { passive: false });
       document.removeEventListener('touchend', onTouchEnd);
     }
 
-    document.addEventListener('touchmove', onTouchMove);
+    document.addEventListener('touchmove', onTouchMove, { passive: false });
     document.addEventListener('touchend', onTouchEnd);
-  };
+  }, { passive: false });
 }
 
 makeDraggable(handle1, value1, value2);
