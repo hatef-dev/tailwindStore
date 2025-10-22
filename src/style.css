@@ -88,7 +88,42 @@
   .border-bottom-progress {
     @apply bg-[#FFB7B7]
   }
-
+  .videoProjectorItem .videoProjectNav {
+    display: none;
+  }
+  
+  .videoProjectorItem:hover .videoProjectNav {
+    display: block;
+  }
+  
+  
+  .videoProjectorItem:first-child .videoProjectNav {
+    display: block;
+  }
+  
+  /* اما وقتی روی آیتم دیگه‌ای hover شد، اولی بسته بشه */
+  ul:hover .videoProjectorItem:first-child .videoProjectNav {
+    display: none;
+  }
+  ul:hover .videoProjectorItem:hover .videoProjectNav {
+    display: block;
+  }
+  
+  .videoProjectorItem svg {
+    visibility: hidden;
+  }
+  .videoProjectorItem:hover svg {
+    visibility: visible;
+  }
+  .videoProjectorItem:first-child svg {
+    visibility: visible;
+  }
+  ul:hover .videoProjectorItem:first-child svg {
+    visibility: hidden;
+  }
+  .megamenu:first-child{
+    @apply bg-[#E8EBED]
+  }
   .timeRadioBtn {
     @apply w-20 flex justify-center items-center relative bg-white rounded-[8px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] py-2 px-4 text-[16px] text-typo
     before:content-[''] after:content-['']

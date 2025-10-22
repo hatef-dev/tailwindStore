@@ -36,9 +36,38 @@ toggle2.addEventListener("click", () => {
   }
 });
 
-dropdownMenu.addEventListener("click", () => {
-  dropdownItems.classList.toggle("hidden");
-  dropdownBackground.classList.toggle("hidden");
+// Handle dropdown hover with mouseenter and mouseleave
+dropdownMenu.addEventListener("mouseenter", () => {
+  dropdownItems.classList.remove("hidden");
+  dropdownBackground.classList.remove("hidden");
+});
+
+const megaMenu = document.querySelector(".megamenu");
+const items = megaMenu.querySelectorAll(".videoProjectorItem");
+
+// اول از همه، آیتم اول رو باز کن
+items[0].classList.add("active");
+items[0].querySelector(".videoProjectNav").classList.remove("hidden");
+
+// وقتی روی هر آیتم hover می‌کنی
+items.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    // همه آیتم‌ها رو ببند
+    items.forEach((i) => {
+      i.classList.remove("active");
+      i.querySelector(".videoProjectNav").classList.add("hidden");
+    });
+
+    // فقط همین یکی باز شه
+    item.classList.add("active");
+    item.querySelector(".videoProjectNav").classList.remove("hidden");
+  });
+});
+
+// وقتی موس از کل منو بیرون رفت، دوباره اولی باز شه
+megaMenu.addEventListener("mouseleave", () => {
+  items.forEach((i) => i.querySelector(".videoProjectNav").classList.add("hidden"));
+  items[0].querySelector(".videoProjectNav").classList.remove("hidden");
 });
 
 shoppingCard.addEventListener("click", (e) => {
@@ -48,15 +77,7 @@ shoppingCard.addEventListener("click", (e) => {
   ActiveShoppingCard.classList.toggle("hidden");
 });
 
-videoProjectorItems.forEach((item, index) => {
-  item.addEventListener("click", (e) => {
-    e.preventDefault();
-    videoProjectNavs.forEach((nav) => {
-      nav.classList.add("hidden");
-    });
-    videoProjectNavs[index].classList.remove("hidden");
-  });
-});
+
 
 dropdownBackground.addEventListener("click", () => {
   dropdownItems.classList.add("hidden");
