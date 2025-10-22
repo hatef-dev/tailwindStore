@@ -9,10 +9,8 @@ const labels = document.querySelectorAll('.label-focus')
 
 inputs.forEach((input, index) => {
     input.addEventListener('focus', () => {
-        // Find the corresponding label - check both direct sibling and parent's previous sibling
         let label = input.previousElementSibling
         if (!label || !label.classList.contains('label-focus')) {
-            // If direct sibling is not the label, check parent's previous sibling
             label = input.parentElement.previousElementSibling
         }
         if (label && label.classList.contains('label-focus')) {
@@ -21,10 +19,8 @@ inputs.forEach((input, index) => {
     })
     
     input.addEventListener('blur', () => {
-        // Find the corresponding label - check both direct sibling and parent's previous sibling
         let label = input.previousElementSibling
         if (!label || !label.classList.contains('label-focus')) {
-            // If direct sibling is not the label, check parent's previous sibling
             label = input.parentElement.previousElementSibling
         }
         if (label && label.classList.contains('label-focus')) {

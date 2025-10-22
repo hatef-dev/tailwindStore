@@ -56,3 +56,10 @@
         border-radius: 12px;
     }
 }
+@media (min-width: 641px) and (max-width: 768px) {
+  .swiper-slide {
+    width: 60% !important;
+    height: auto;
+    border-radius: 14px;
+  }
+}
