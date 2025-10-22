@@ -106,3 +106,37 @@ var swiper4 = new Swiper(".videoSection", {
   },
 });
 
+// Brand Icons Swiper
+var swiper5 = new Swiper(".brandIcons", {
+  spaceBetween: 8,
+  slidesPerView: 2,
+  // centeredSlides: false,
+  // loop: true,
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
+  breakpoints: {
+    480: {
+      slidesPerView: 2.5,
+      spaceBetween: 12,
+    },
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 24,
+    },
+    1280: {
+      slidesPerView: 6,
+      spaceBetween: 32,
+    },
+  },
+});
+
