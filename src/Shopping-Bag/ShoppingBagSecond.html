@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../style.css" />
+    <style>
+      .label-focus {
+        transition: color 0.3s ease;
+      }
+      .label-focus.active {
+        color: #FF4040;
+      }
+    </style>
   </head>
   <body class="font-display bg-[#F9FAFA] w-screen overflow-x-hidden">
      <!-- Header -->
@@ -541,32 +549,32 @@
               <div class="bg-white mt-3 rounded-[12px] flex flex-col p-2 md:p-8 gap-y-4">
                 <div class="flex flex-col p-2">
                   <div class="flex flex-col gap-y-2">
-                    <label for="name" class="text-option text-sm font-medium">نام و نام خانوادگی:</label>
+                    <label for="name" class="text-option text-sm font-medium label-focus">نام و نام خانوادگی:</label>
                     <input type="text" id="name" placeholder="نام و نام خانوادگی" class="w-full placeholder:text-neutral rounded-[13px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-[16px] outline-none">
                   </div>               
                 </div>
                 <div class="grid grid-cols-2 items-center md:gap-x-4">
                   <div class="flex flex-col p-2">
-                    <label for="city" class="text-option text-sm font-medium">شهر :</label>
+                    <label for="city" class="text-option text-sm font-medium label-focus">شهر :</label>
                     <input type="text" id="name" placeholder="تهران" class="placeholder:text-neutral rounded-[13px] text-[16px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-xl outline-none">
                   </div>
                   <div class="flex flex-col p-2">
-                    <label for="city" class="text-option text-sm font-medium">کد ملی:</label>
+                    <label for="city" class="text-option text-sm font-medium label-focus">کد ملی:</label>
                     <input type="text" id="name" placeholder="کد ملی" class="placeholder:text-neutral rounded-[13px] text-[16px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-xl outline-none">
                   </div>
                 </div>
                 <div class="grid grid-cols-2 gap-x-4">
                   <div class="flex flex-col p-2">
-                    <label for="city" class="text-option text-sm font-medium">استان:</label>
+                    <label for="city" class="text-option text-sm font-medium label-focus">استان:</label>
                     <input type="text" id="name" placeholder="تهران" class="placeholder:text-neutral rounded-[13px] text-small md:text-[16px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-xl outline-none">
                   </div>
                   <div class="flex flex-col  p-2">
-                    <label for="city" class="text-option text-sm font-medium">شهر :</label>
+                    <label for="city" class="text-option text-sm font-medium label-focus">شهر :</label>
                     <input type="text" id="name" placeholder="تهران" class="placeholder:text-neutral rounded-[13px] text-[16px] shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-xl outline-none">
                   </div>
                 </div>
                 <div class="flex flex-col p-2">
-                  <label for="address" class="text-option text-sm font-medium">آدرس:</label>
+                  <label for="address" class="text-option text-sm font-medium label-focus">آدرس:</label>
                   <div class="relative">
                     <input type="text" id="address" placeholder="میدان فاطمی، ساختمان64، طبقه4، واحد3" class="w-full placeholder:text-neutral rounded-[13px] pl-16 shadow-[0_1px_4px_0_rgba(0,0,0,0.05)] p-4 bg-white text-typo text-small md:text-[16px] outline-none">
                     <div class="flex items-center gap-x-2 md:gap-x-4 absolute left-3 md:left-5 top-1 md:top-2">
