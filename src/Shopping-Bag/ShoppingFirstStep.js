@@ -3,10 +3,7 @@ const decreaseBtns = document.querySelectorAll('.decrease')
 const quantitySpans = document.querySelectorAll('.quantity')
 
 
-function toPersianNumber(num) {
-    const persianNumbers = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹']
-    return num.toString().replace(/\d/g, (digit) => persianNumbers[parseInt(digit)])
-}
+
 
 let counts = Array.from(quantitySpans).map(() => 1)
 
@@ -14,7 +11,7 @@ let counts = Array.from(quantitySpans).map(() => 1)
 increaseBtns.forEach((btn, index) => {
     btn.addEventListener("click", () => {
         counts[index]++
-        quantitySpans[index].textContent = toPersianNumber(counts[index])
+        quantitySpans[index].textContent = counts[index]
         // updateTotalPrice(index)
     })
 })
@@ -24,7 +21,7 @@ decreaseBtns.forEach((btn, index) => {
     btn.addEventListener("click", () => {
         if (counts[index] > 1) {
             counts[index]--
-            quantitySpans[index].textContent = toPersianNumber(counts[index])
+            quantitySpans[index].textContent = counts[index]
             // updateTotalPrice(index)
         }
     })

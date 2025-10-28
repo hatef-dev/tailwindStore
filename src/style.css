@@ -1,8 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap");
 @import "tailwindcss";
 @config "../tailwind.config.js";
+
+
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("./fonts/Vazirmatn-FD-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 @theme {
-  --font-display: "Vazirmatn", sans-serif;
+  --font-vazirmatn: "Vazirmatn", sans-serif;
   --color-red: #ff4040;
   --color-gray: #6b697f;
   --color-blue: #52b9f3;
@@ -157,3 +166,9 @@
   }
 }
 
+
+@layer utilities {
+  .farsi-digits {
+    font-feature-settings: "ss01";
+  }
+}
