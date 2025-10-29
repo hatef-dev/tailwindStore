@@ -4,15 +4,15 @@ import "./CommaredPage.css";
 const relatedProducts = new Swiper(".relatedProducts", {
   slidesPerView: 1,
   slideClass: 'relatedProducts-slider',
-  spaceBetween: 32,
+  spaceBetween: 12,
   autoHeight: true,
   breakpoints: {
     640: { // sm
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 0,
     },
     768: { // md
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 24,
     },
     1024: { // lg
