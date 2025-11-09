@@ -78,7 +78,7 @@ shoppingCard.addEventListener("click", (e) => {
 
 
 
-dropdownBackground.addEventListener("click", () => {
+dropdownBackground.addEventListener("mouseenter", () => {
   dropdownItems.classList.add("hidden");
   dropdownBackground.classList.add("hidden");
 });
