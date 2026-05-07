@@ -1,52 +1,46 @@
-# Online Shop
+# TailwindStore (ProStore)
 
-## Description
-An online shopping platform that allows users to browse products, add them to their cart, and place orders. The system offers a seamless shopping experience with various features such as user registration, product filtering, and payment processing.
+## Overview
+A multi-page storefront UI built with Vite + Tailwind CSS. This project focuses on the frontend pages and interactions (product listing, product details, shopping bag steps, profile pages, brand pages, etc.). It does not include a backend API, authentication, or payment integration.
 
-## Features
-- User registration and authentication
-- Product catalog with images and descriptions
-- Shopping cart functionality
-- Secure payment processing
-- Product reviews and ratings
-- Wishlist functionality
-- Search functionality
-- Responsive design for mobile and desktop
-- User profile management
-- Admin dashboard for product management
-- Order confirmation emails
-## Technologies Used
-- Frontend: Tailwind CSS
-- Backend: Node.js, Express
-- Database: MongoDB
-- Payment Gateway: [Payment Provider Name]
+## Tech Stack
+- Vite (project root is configured as `src/`)
+- Tailwind CSS v4 (via `@tailwindcss/vite`)
+- Swiper (sliders/carousels)
 
-## Installation Instructions
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/onlineshop.git
-   cd onlineshop
-   ```
-2. Install dependencies:
+## Project Structure
+- `src/`: all HTML pages, JS modules, and styles (Vite root)
+- `static/`: fonts and images (served as the public directory)
+- `dist/`: production build output (generated)
+
+## Getting Started
+1. Install dependencies:
    ```bash
    npm install
    ```
-3. Start the server:
+2. Start the dev server:
    ```bash
-   npm start
+   npm run dev
    ```
-4. Open your browser and go to `http://localhost:3000`.
+3. Open the URL printed in your terminal (Vite will show it, usually `http://localhost:5173/`).
 
-## Usage
-1. Register for a new account or log in if you already have one.
-2. Browse the available products.
-3. Add products to your cart and proceed to checkout.
+## Build & Preview
+- Build for production:
+  ```bash
+  npm run build
+  ```
+- Preview the production build:
+  ```bash
+  npm run preview
+  ```
 
-## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+## Pages
+The app is multi-page and most screens are separate HTML files inside `src/`, such as:
+- Home: `src/index.html`
+- PLP: `src/PLP/Plp.html`
+- PDP: `src/Product.html`
+- Shopping Bag: `src/Shopping-Bag/ShoppingBagFirstStep.html`
+- Profile: `src/Profile/Profile.html`
 
 ## Contact
-For any inquiries, please reach out to me at [hatef.dev21@gmail.com]. 
+For any inquiries, reach out at: hatef.dev21@gmail.com
